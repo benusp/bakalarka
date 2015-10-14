@@ -37,9 +37,40 @@
 	
 	\maketitle
 	
+	\section{Testovanie softvéru}
+	Testovanie softvéru je empirická činnosť, ktorá skúma kvalitu testovaného produktu alebo služby vykonávaná na podanie informácií o kvalite všetkým zainteresovaným osobám.\cite{Kaner2006} V súčastnosti existuje veľa spôsobov testovania a veľa častí životného cyklu softvéru v ktorých sa aplikujú iné typy testov. Testovanie softvéru môžem rozdeliť na kategórie podľa postupu, ktorý sa používa pri testovaní, podľa spôsobu testovanie a podľa úrovne testu.
+	
+	\subsection{Podľa postupu testovania}
+	\begin{itemize}
+		\item \textbf{Testovanie formou čiernej skrinky} \newline
+			Testuje funkcionalitu bez informácií o tom ako je softvér implementovaný. Tester dostane iba informácie o tom, aký by mal byť výsledok testu po zadaní vstupných dát a kontroluje výstup softvéru či sú výstupné dáta totožné s očakávanými.\cite{EST2002}
+		\item \textbf{Testovanie formou bielej skrinky} \newline
+			Pri tomto spôsobe testovania je testerovi známa vnútorná štruktúra softvéru a aj konkrétna implementácia. Test sa tvorí tak, aby bola otestovaná každá časť zdrojového kódu. Vyhodnocuje sa tiež porovnaním výstupných a očakávaných dát.\cite{EST2002}
+		\item \textbf{Testovanie formou sivej skrinky} \newline
+			Spôsob testovanie, pri ktorom je známy zdrojový kód(nemusí byť sprístupnený úplne celý), ale testy sa vykonávajú rovnako ako pri testovaní formou čiernej skrinky. Používa sa napríklad pri integračnom testovaní ak máme dva moduly od rôznych vývojárov a odkryté sú len rozhrania (interfaces).\cite{EST2002}
+	\end{itemize}
+	
+	\subsection{Podľa spôsobu testovania}
+	\begin{itemize}
+		\item \textbf{Statické testovanie} \newline
+			Statické testovanie je často implicitné. Zahŕňa napríklad kontrolu zdrojového kódu jeho čítaním hneď po napísaní, kontrolu štruktúry a syntaxe kódu nástrojom alebo editorom, v ktorom sa zdrojový kód píše. K statickému testovaniu sa viaže verifikácia.
+		\item \textbf{Dynamické testovanie} \newline
+			Dynamické testovanie prebieha už na spustenom softvéri. Začína skôr ako je úplne dokončený softvér, pretože sa počas vývoja testujú aj menšie spustiteľné časti. K dynamickému testovaniu sa viaže validácia.
+	\end{itemize}
+	
+	\subsection{Podľa úrovne testu}
+	\begin{itemize}
+		\item \textbf{Unit testing} \newline
+			Unit testing je metóda testovania softvéru, pri ktorej sa testujú individuálne komponenty (jednotky) zdrojového kódu. Kvalitné testovanie na tejto úrovni môže výrazne znížiť cenu a čas potrebný na vývoj celého softvéru.\cite{EST2002}
+		\item \textbf{Integračné testovanie} \newline
+			Integračné testovanie nasleduje po Unit testingu. Viaceré komponenty sa spolu skombinujú podľa požiadaviek a následne sú testované ako skupina.	
+		\item \textbf{Systémové testovanie} \newline		
+			Systémove testovanie je vykonávané na úplnom a integrovanom systéme za účelom vyhodnotenia súladu systému z jeho špecifikovanými požiadavkami.\cite{Dictionary}
+		\item \textbf{Akceptačné testovanie} \newline		
+			Akceptačné testovanie je formálne testovanie zamerané na potreby používateľa, požiadavky a  biznis procesy vedúce k rozhodnutiu či systému vyhovuje alebo nevyhovuje akceptačným kritériám a umožniť používateľovi, zákazníkovi alebo inému splnomocnenému subjektu či má alebo nemá byť systém akceptovaný.\cite{Veenendaal2010}
+	\end{itemize}
 	
 	
-	
-%	\bibliography{literatura_benus13}
-%	\bibliographystyle{plain}
+	\bibliography{literatura}
+	\bibliographystyle{plain}
 \end{document}

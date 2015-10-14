@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{Dictionary}
+Standard~Computer Dictionary.
+\newblock {\em {Standard Computer Dictionary}}.
+
+\bibitem{EST2002}
+Elfriede Dustin.
+\newblock {\em Effective Software Testing: 50 specific ways to improve your
+  testing}.
+\newblock 2002.
+
+\bibitem{Kaner2006}
+Cem Kaner.
+\newblock {Exploratory Testing}.
+\newblock {\em Quality Assurance International}, (c), 2006.
+
+\bibitem{Veenendaal2010}
+E.~V Veenendaal.
+\newblock {Standard glossary of terms used in Software Testing, Version 1.2}.
+\newblock {\em International Software Testing Qualification Board}, 1:1--51,
+  2010.
+
+\end{thebibliography}
