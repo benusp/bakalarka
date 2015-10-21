@@ -1,8 +1,14 @@
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[11pt,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
 \usepackage[T1]{fontenc}
+%\usepackage[IL2]{fontenc}
+\usepackage{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[nottoc]{tocbibind}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{listings}
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
@@ -17,37 +23,74 @@
 
 \usepackage{etoolbox}
 
-\pagestyle{headings}
-
-
-\title{Automatické testovanie softvéru% \thanks{Špecifikácia práce na predmet Princípy informačnej bezpečnosti}
-	} 
-
-\author{Peter Beňuš\\[2pt]
-	{\small Slovenská technická univerzita v Bratislave}\\
-	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{benus13@fiit.stuba.sk}}
-}
-
-\date{\small 1. jún 2016} 
-
-
+\pagestyle{myheadings}
 
 \begin{document}
 	
-	\maketitle
+	\begin{titlepage}
+		\newlength{\myind}
+		\addtolength{\myind}{57mm}
+		
+		\newlength{\myrulelength}
+		\addtolength{\myrulelength}{.6\marginparwidth}
+		\addtolength{\myrulelength}{\textwidth}
+		\newcommand{\myrule}{\parbox{\myrulelength}{\hrulefill}}
+		%\newcommand{\mybox}[1]{\hspace{.5\marginparwidth}\parbox{\myrulelength}{#1}}
+		%\newcommand{\mycbox}[1]{\hspace{.5\marginparwidth}\parbox{\myrulelength}{\centering #1}}
+		\newcommand{\mybox}[1]{\parbox{\myrulelength}{#1}}
+		\newcommand{\mycbox}[1]{\parbox{\myrulelength}{\centering #1}}
+		
+		\centering
+		\large 		Slovenská technická univerzita v Bratislave\\
+		Fakulta informatiky a informačných technológií\\
+		Študijný program: Informatika
+		
+		\vspace{4mm}
+		\myrule
+		
+		\vspace{55mm}
+		
+		\mycbox{Peter Beňuš}
+		
+		\vspace{10mm}
+		
+		\mycbox{\LARGE \textbf{Automatické testovanie softvéru}}
+		
+		\vspace{4mm}
+		\mycbox{\large Bakalársky projekt 1}
+		
+		
+		\vfill
+		\begin{flushleft}
+			Vedúci bakalárskeho projektu: Ing. Karol Rástočný\\
+			December 2015
+		\end{flushleft}
+	\end{titlepage}
+	
+	
+%	\begin{titlepage}
+%		\section*{Anotácia}
+%		\ldots
+%	\end{titlepage}
+	
+	
+	\tableofcontents
+	
+	
+	\pagestyle{fancy}
+	\headheight 14pt
 	
 	\section{Testovanie softvéru}
-	Testovanie softvéru je empirická činnosť, ktorá skúma kvalitu testovaného produktu alebo služby vykonávaná na podanie informácií o kvalite všetkým zainteresovaným osobám.\cite{Kaner2006} V súčastnosti existuje veľa spôsobov testovania a veľa častí životného cyklu softvéru v ktorých sa aplikujú iné typy testov. Testovanie softvéru môžem rozdeliť na kategórie podľa postupu, ktorý sa používa pri testovaní, podľa spôsobu testovanie a podľa úrovne testu.
+	Testovanie softvéru je empirická činnosť, ktorá skúma kvalitu testovaného produktu alebo služby vykonávaná na podanie informácií o kvalite všetkým zainteresovaným osobám\cite{Kaner2006}. V súčastnosti existuje veľa spôsobov testovania a veľa častí životného cyklu softvéru v ktorých sa aplikujú iné typy testov. Testovanie softvéru môžem rozdeliť na kategórie podľa postupu, ktorý sa používa pri testovaní, podľa spôsobu testovanie a podľa úrovne testu.
 	
 	\subsection{Podľa postupu testovania}
 	\begin{itemize}
 		\item \textbf{Testovanie formou čiernej skrinky} \newline
-			Testuje funkcionalitu bez informácií o tom ako je softvér implementovaný. Tester dostane iba informácie o tom, aký by mal byť výsledok testu po zadaní vstupných dát a kontroluje výstup softvéru či sú výstupné dáta totožné s očakávanými.\cite{EST2002}
+			Testuje funkcionalitu bez informácií o tom ako je softvér implementovaný. Tester dostane iba informácie o tom, aký by mal byť výsledok testu po zadaní vstupných dát a kontroluje výstup softvéru či sú výstupné dáta totožné s očakávanými\cite{EST2002}. Výhodou tohto typu testovania je, že tester nie je ovplyvnený štruktúrou zdrojového kódu a tým môže odhaliť chyby aj tam, kde to programátor nehľadal lebo to považoval za správne pri pohľade na zdrojový kód, ale bola tam chyba, ktorá zo zdrojového kódu nemusí byť viditeľná. Hlavnou výhodou je, že tester nemusí poznať zdrojový kód a preto môže oveľa rýchlejšie vytvoriť testy. Nevýhodou je úroveň otestovania systému, pretože tvorca testov nevie ako program funguje veľmi pravdepodobne nebude schopný vytvoriť test, ktorý by testoval všetky vetvy programu. Používa sa pri jednotkovom, integračnom, systémovom a akceptačnom testovaní.
 		\item \textbf{Testovanie formou bielej skrinky} \newline
-			Pri tomto spôsobe testovania je testerovi známa vnútorná štruktúra softvéru a aj konkrétna implementácia. Test sa tvorí tak, aby bola otestovaná každá časť zdrojového kódu. Vyhodnocuje sa tiež porovnaním výstupných a očakávaných dát.\cite{EST2002}
+			Pri tomto spôsobe testovania je testerovi známa vnútorná štruktúra softvéru a aj konkrétna implementácia. Test sa tvorí tak, aby bola otestovaná každá vetva zdrojového kódu\cite{EST2002}. Používa sa pri jednotkovom testovaní na skoré odhalenie všetkých chýb, pri integračnom testovaní na testovanie správnej spolupráce rôznych jednotiek programu a aj pri regresnom testovaní, kde sa používajú recyklované testovacie prípady z integračného a jednotkového testovania. Výhodou je schopnosť otestovať komplexne všetky vetvy, ktoré program na danej úrovni testu vykonáva, ale nevýhodou je, že tester musí mať dobré vedomosti o zdrojovom kóde a v niektorých prípadoch tvorenia testov môže byť znalosť zdrojového kódu nevýhoda.
 		\item \textbf{Testovanie formou sivej skrinky} \newline
-			Spôsob testovanie, pri ktorom je známy zdrojový kód(nemusí byť sprístupnený úplne celý), ale testy sa vykonávajú rovnako ako pri testovaní formou čiernej skrinky. Používa sa napríklad pri integračnom testovaní ak máme dva moduly od rôznych vývojárov a odkryté sú len rozhrania (interfaces).\cite{EST2002}
+			Spôsob testovania, pri ktorom je známy zdrojový kód (nemusí byť sprístupnený úplne celý), ale testy sa vykonávajú rovnako ako pri testovaní formou čiernej skrinky. Používa sa napríklad pri integračnom testovaní ak máme dva moduly od rôznych vývojárov a odkryté sú len rozhrania \cite{EST2002}. Poskytuje výhody obidvoch predchádzajúcich prístupov, ale má oproti nim aj nejaké nevýhody. Oproti testovaniu čiernou skrinkou má výhodu v lepšom pokrytí rôznych vetiev zdrojového kódu, ale je časovo náročnejšie na tvorbu testov. Oproti testovaniu bielou skrinkou je menej náročné na znalosť zdrojového kódu, pretože ho nemá prístupný celý, ale nepokrýva všetky vetvy programu a preto je menej komplexné.
 	\end{itemize}
 	
 	\subsection{Podľa spôsobu testovania}
@@ -60,14 +103,14 @@
 	
 	\subsection{Podľa úrovne testu}
 	\begin{itemize}
-		\item \textbf{Unit testing} \newline
-			Unit testing je metóda testovania softvéru, pri ktorej sa testujú individuálne komponenty (jednotky) zdrojového kódu. Kvalitné testovanie na tejto úrovni môže výrazne znížiť cenu a čas potrebný na vývoj celého softvéru.\cite{EST2002}
+		\item \textbf{Jednotkové testovanie} \newline
+			Jednotkové testovanie je metóda testovania softvéru, pri ktorej sa testujú individuálne komponenty (jednotky) zdrojového kódu. Kvalitné testovanie na tejto úrovni môže výrazne znížiť cenu a čas potrebný na vývoj celého softvéru\cite{EST2002}.
 		\item \textbf{Integračné testovanie} \newline
-			Integračné testovanie nasleduje po Unit testingu. Viaceré komponenty sa spolu skombinujú podľa požiadaviek a následne sú testované ako skupina.	
+			Integračné testovanie nasleduje po jednotkovom testovaní. Viaceré komponenty sa spolu skombinujú podľa požiadaviek a následne sú testované ako skupina.	
 		\item \textbf{Systémové testovanie} \newline		
-			Systémove testovanie je vykonávané na úplnom a integrovanom systéme za účelom vyhodnotenia súladu systému z jeho špecifikovanými požiadavkami.\cite{Dictionary}
+			Systémove testovanie je vykonávané na úplnom a integrovanom systéme za účelom vyhodnotenia súladu systému z jeho špecifikovanými požiadavkami\cite{Dictionary}.
 		\item \textbf{Akceptačné testovanie} \newline		
-			Akceptačné testovanie je formálne testovanie zamerané na potreby používateľa, požiadavky a  biznis procesy vedúce k rozhodnutiu či systému vyhovuje alebo nevyhovuje akceptačným kritériám a umožniť používateľovi, zákazníkovi alebo inému splnomocnenému subjektu či má alebo nemá byť systém akceptovaný.\cite{Veenendaal2010}
+			Akceptačné testovanie je formálne testovanie zamerané na potreby používateľa, požiadavky a  biznis procesy vedúce k rozhodnutiu či systému vyhovuje alebo nevyhovuje akceptačným kritériám a umožniť používateľovi, zákazníkovi alebo inému splnomocnenému subjektu či má alebo nemá byť systém akceptovaný\cite{Veenendaal2010}.
 	\end{itemize}
 	
 	
