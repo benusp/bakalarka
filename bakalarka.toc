@@ -3,4 +3,4 @@
 \contentsline {subsection}{\numberline {1.1}Pod\IeC {\v l}a postupu testovania}{2}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Pod\IeC {\v l}a sp\IeC {\^o}sobu testovania}{3}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Pod\IeC {\v l}a \IeC {\'u}rovne testu}{3}{subsection.1.3}
-\contentsline {section}{Literat\'ura}{3}{section*.2}
+\contentsline {section}{Literat\'ura}{4}{section*.2}

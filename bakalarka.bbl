@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{Alba2008}
+Enrique Alba and Francisco Chicano.
+\newblock {Observations in using parallel and sequential evolutionary
+  algorithms for automatic software testing}.
+\newblock {\em Computers {\&} Operations Research}, 35(10):3161--3183, 2008.
+
 \bibitem{Dictionary}
 Standard~Computer Dictionary.
 \newblock {\em {Standard Computer Dictionary}}.
@@ -14,6 +20,11 @@ Elfriede Dustin.
 Cem Kaner.
 \newblock {Exploratory Testing}.
 \newblock {\em Quality Assurance International}, (c), 2006.
+
+\bibitem{Moha1991}
+A.A.~Omar;F.A. Moha.
+\newblock {A survey of software functional testing methods}.
+\newblock {\em Software Engineering Notes}, page~75, 1991.
 
 \bibitem{Veenendaal2010}
 E.~V Veenendaal.
