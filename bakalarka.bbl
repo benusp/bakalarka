@@ -32,4 +32,10 @@ E.~V Veenendaal.
 \newblock {\em International Software Testing Qualification Board}, 1:1--51,
   2010.
 
+\bibitem{Wei2014}
+Wang Wei.
+\newblock {From source code analysis to static software testing}.
+\newblock {\em 2014 IEEE Workshop on Advanced Research and Technology in
+  Industry Applications (WARTIA)}, pages 1280--1283, 2014.
+
 \end{thebibliography}

@@ -96,7 +96,7 @@
 	\subsection{Podľa spôsobu testovania}
 	\begin{itemize}
 		\item \textbf{Statické testovanie} \newline
-			Statické testovanie je často implicitné. Zahŕňa napríklad kontrolu zdrojového kódu jeho čítaním hneď po napísaní, kontrolu štruktúry a syntaxe kódu nástrojom alebo editorom, v ktorom sa zdrojový kód píše. K statickému testovaniu sa viaže verifikácia.
+			Statické testovanie je často implicitné. Zahŕňa napríklad kontrolu zdrojového kódu programátorom jeho čítaním hneď po napísaní, kontrolu štruktúry a syntaxe kódu nástrojom alebo editorom, v ktorom sa zdrojový kód píše. Program nie je potrebné spúšťať, ale analýza zdrojového kódu založená na upravovacích pravidlách zistí v zdrojovom kóde rôzne možné chyby, ktoré sa zvyčajne objavujú v spravovaní pamäte, neinicializovaných premenných, výnimke nulového smerníku, porušení prístupu k poľu a taktiež pretečení vyrovnávacej pamäti\cite{Wei2014}.
 		\item \textbf{Dynamické testovanie} \newline
 			Dynamické testovanie prebieha už na spustenom softvéri. Začína skôr ako je úplne dokončený softvér, pretože sa počas vývoja testujú aj menšie spustiteľné časti. K dynamickému testovaniu sa viaže validácia.
 	\end{itemize}
@@ -119,6 +119,20 @@
 			Narozdiel od predchádzajúcich foriem testovania, akceptačné testovanie demonštruje, že systém spĺňa požiadavky \cite{Alba2008}. \newline
 			V komerčnej sfére sú niekedy tieto testy nazývané aj podľa toho kým sú vykonávané "alfa testy" (používateľmi vo firme) alebo "beta testy" (súčasnými alebo potenciálnymi zákazníkmi) \cite{Alba2008}.
 	\end{itemize}
+	
+	\section{xUnit}
+		xUnit je označenie pre skupinu frameworkov, ktoré slúžia na jednotkové testovanie. Vznikol pôvodne pre programovací jazyk Smalltalk a veľmi rýchlo sa stal známym a úspešným. Dnes už majú všetky bežne používané programovacie jazyky minimálne jeden vlastný framework na jednotkové testovanie a mnoho z nich je odvodených práve od xUnit. 		http://www.martinfowler.com/bliki/Xunit.html \newline
+
+		Spoločné znaky frameworkov patriacich do skupinu xUnit:
+		\begin{itemize}
+			\item \textbf{Test runner} Je to spustitešný program, ktorý vykoná test a zároveň vytvorí správu o výsledku testu.
+			\item \textbf{Test case} Je to základná trieda, od ktorej sú odvodené všetky testy.
+			\item \textbf{Test fixtures} Množina podmienok definovaných programátorom, ktoré musia byť splnené pred vykonaním testu. Po teste by mali byť vrátené do pôvodného stavu.
+			\item \textbf{Test suites} Množina testov, ktoré zdieľajú podmienky potrebné pre spustenie testu.
+			\item \textbf{Vykonanie testu} Vykonanie individuálneho jednotkového testu.
+			\item \textbf{Test result formatter} Výsledok testu môže byť v jednom alebo viacerých formátoch. Okrem textu čitateľného pre človeka sa často používa aj výstup vo formáte XML.
+			\item \textbf{Assertion} Je to funkcia alebo makro, ktorá definuje stav testovanej jednotky. Zvyčajne je to logická podmienka, ktorá pravdivá ak je výsledok testu správny. Zlyhanie väčšinou končí volaním výnimky, ktorá ukončí vykonávanie testu.
+		\end{itemize}
 	
 	
 	\bibliography{literatura}
