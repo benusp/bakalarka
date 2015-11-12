@@ -133,6 +133,40 @@
 			\item \textbf{Test result formatter} Výsledok testu môže byť v jednom alebo viacerých formátoch. Okrem textu čitateľného pre človeka sa často používa aj výstup vo formáte XML.
 			\item \textbf{Assertion} Je to funkcia alebo makro, ktorá definuje stav testovanej jednotky. Zvyčajne je to logická podmienka, ktorá pravdivá ak je výsledok testu správny. Zlyhanie väčšinou končí volaním výnimky, ktorá ukončí vykonávanie testu.
 		\end{itemize}
+		
+		\subsection{Nástroje patriace do skupiny xUnit pre .NET}
+			
+			\paragraph{Fixie} Patrí k novším frameworkom a umožňujem programátorovi vytvárať a vykonávať jednotkové testovanie. Výhoda, ktorú Fixie prináša, že je založený na konvencií. Preto programátor pri písaní testu nemusí používať atribúty na označovanie tried a metód. Keď je dodržaná konvencia tak Fixie vie podľa názvu zistiť či ide o metódu alebo triedu. Ak by predvolená konvencia nebola vyhovujúca, je možné vytvoriť si vlastnú a následne sa riadiť ňou. Na internete je možné aj nájsť plugin pre ReSharper, avšak zatiaľ len beta verziu. https://visualstudiomagazine.com/articles/2015/04/22/fixie-c-sharp-testing.aspx
+			
+			\paragraph{MbUnit} Je to rozšíriteľný framework, ktorý okrem toho, že prijíma vzory xUnit ide ešte ďalej a poskytuje programátorovi viac, ako napríklad:
+			\begin{itemize}
+				\item \textbf{Porovnávanie XML (XML assertions)} MbUnit obsahuje metódy pomocou, ktorých sa dajú porovnávať aj hodnoty v XML súboroch. https://vkreynin.wordpress.com/2010/07/18/test/
+				\item \textbf{Paralelizovateľné testy} Každý test, ktorý je označený ako paralelný bude pri vykonávaní spustený spolu z ostatnými paralelizovateľnými testami. http://blog.bits-in-motion.com/2009/03/announcing-gallio-and-mbunit-v306.html
+				\item \textbf{Externé zdroje dát} Dáta používaného v testoch môžu byť uložené v rôznych typoch súborov (XML, CSV, a pod.) a počas testu používané priamo z nich.
+			\end{itemize}
+			Okrem tohto je MbUnit aj generatívny framework. čo znamená že dokáže z jednoduchého jednotkového testu urobiť niekoľko ďalších. Od roku 2013 uz ale nie sú žiadne commity na GitHube a preto ho môžeme považovať za už nevyvíjaný softvér. http://stackoverflow.com/questions/3678783/mbunit-vs-nunit
+			
+			\paragraph{Mock} Je to simulovaný objekt, ktorý imituje správanie reálneho objektu. Zvyčajne sa používajú pri jednotkovom testovaní. Mockovanie je celé o imitovaní (faking) reálnych objektov a robení operácií kontrolovaným spôsobom.http://www.agile-code.com/blog/mocking-with-moq/
+			
+			\paragraph{Moq} Je podľa tvorcov jediná mockovacia knižnica, ktorá je vytváraná od začiatku, tak aby využila naplno výhody .NET Ling (Language-Integrated Query) strom výrazov a lambda výrazy.
+			\begin{itemize}
+				\item Strong-typed: no strings for expectations, no object-typed return values or constraints
+				\item Neprekonaná integrácia s intellisense vo Visual Studio: všetko je plne podporované intellisense vo Visual Studio
+				\item Žiadne nahraj/prehraj idiómy(jazyk) (No Record/Replay idioms to learn.) na učenie. Stačí vytvoriť mock, nastaviť ho, použíť ho a voliteľne potvrdiť ich volania (netreba potvrdzovať mocky, keď vystupujú len ako stuby (stubs) alebo keď sa robí klasickejšie stavovo-založené (state-based) testovnie kontrolovaním navratových hodnôt testovaného objektu).
+				\item Veľmi nízka učiaca krivka (learning curve). Pre väčšinu častí ani netreba čítať dokumentáciu.
+				\item Granulovaná kontrola (granular control) nad správaním mocku s jednoduchou MockBehavior enumeráciou (netreba vedieť teoretické rozdiely medzi mockom, stubom, imitáciou (fake), dynamickým mockom a pod.)
+				\item Je možne mockovať rozhrania aj triedy
+				\item Override expectations: can set default expectations in a fixture setup, and override as needed on tests
+				\item Posielať argumenty pre mockované triedy
+				\item Ohraničiť (Intercept) a vyvolať (raise) akcie (events) na mockoch
+				\item Intuitívna podpora pre out/ref argumenty
+			\end{itemize}
+			https://github.com/Moq/moq4
+			
+
+			
+			
+			
 	
 	
 	\bibliography{literatura}
