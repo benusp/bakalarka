@@ -3,10 +3,14 @@
 \contentsline {subsection}{\numberline {1.1}Pod\IeC {\v l}a postupu testovania}{2}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Pod\IeC {\v l}a sp\IeC {\^o}sobu testovania}{3}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Pod\IeC {\v l}a \IeC {\'u}rovne testu}{3}{subsection.1.3}
-\contentsline {section}{\numberline {2}xUnit}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}N\IeC {\'a}stroje patriace do skupiny xUnit pre .NET}{5}{subsection.2.1}
-\contentsline {paragraph}{Fixie}{5}{section*.2}
-\contentsline {paragraph}{MbUnit}{5}{section*.3}
-\contentsline {paragraph}{Mock}{5}{section*.4}
-\contentsline {paragraph}{Moq}{6}{section*.5}
-\contentsline {section}{Literat\'ura}{6}{section*.6}
+\contentsline {section}{\numberline {2}K\IeC {\v l}\IeC {\'u}\IeC {\v c}ov\IeC {\'e} vlastnosti jednotkov\IeC {\'e}ho testovania}{4}{section.2}
+\contentsline {section}{\numberline {3}xUnit}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}N\IeC {\'a}stroje patriace do skupiny xUnit pre .NET}{6}{subsection.3.1}
+\contentsline {paragraph}{Fixie}{6}{section*.2}
+\contentsline {paragraph}{MbUnit}{6}{section*.3}
+\contentsline {paragraph}{Mock}{7}{section*.4}
+\contentsline {paragraph}{Moq}{7}{section*.5}
+\contentsline {paragraph}{Nunit}{7}{section*.6}
+\contentsline {paragraph}{Nbi}{8}{section*.7}
+\contentsline {paragraph}{Pex}{8}{section*.8}
+\contentsline {section}{Literat\'ura}{8}{section*.9}
