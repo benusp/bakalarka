@@ -1,10 +1,15 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Alba2008}
 Enrique Alba and Francisco Chicano.
 \newblock {Observations in using parallel and sequential evolutionary
   algorithms for automatic software testing}.
 \newblock {\em Computers {\&} Operations Research}, 35(10):3161--3183, 2008.
+
+\bibitem{Brauer}
+Johannes Brauer.
+\newblock {\em {Programming Smalltalk – Object-Orientation from the
+  Beginning}}.
 
 \bibitem{Dictionary}
 Standard~Computer Dictionary.
@@ -25,6 +30,17 @@ Cem Kaner.
 A.A.~Omar;F.A. Moha.
 \newblock {A survey of software functional testing methods}.
 \newblock {\em Software Engineering Notes}, page~75, 1991.
+
+\bibitem{Pacheco2007}
+Carlos Pacheco, Shuvendu~K. Lahiri, Michael~D. Ernst, and Thomas Ball.
+\newblock {Feedback-directed random test generation}.
+\newblock {\em Proceedings - International Conference on Software Engineering},
+  pages 75--84, 2007.
+
+\bibitem{Runeson2006}
+P~Runeson.
+\newblock {A survey of unit testing practices}.
+\newblock {\em IEEE Software}, 23(4):22--29, 2006.
 
 \bibitem{Veenendaal2010}
 E.~V Veenendaal.

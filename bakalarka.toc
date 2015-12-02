@@ -1,16 +1,39 @@
 \select@language {slovak}
-\contentsline {section}{\numberline {1}Testovanie softv\IeC {\'e}ru}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Pod\IeC {\v l}a postupu testovania}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Pod\IeC {\v l}a sp\IeC {\^o}sobu testovania}{3}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Pod\IeC {\v l}a \IeC {\'u}rovne testu}{3}{subsection.1.3}
-\contentsline {section}{\numberline {2}K\IeC {\v l}\IeC {\'u}\IeC {\v c}ov\IeC {\'e} vlastnosti jednotkov\IeC {\'e}ho testovania}{4}{section.2}
-\contentsline {section}{\numberline {3}xUnit}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}N\IeC {\'a}stroje patriace do skupiny xUnit pre .NET}{6}{subsection.3.1}
+\contentsline {section}{\numberline {1}\IeC {\'U}vod}{2}{section.1}
+\contentsline {section}{\numberline {2}Testovanie softv\IeC {\'e}ru}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Pod\IeC {\v l}a postupu testovania}{2}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Testovanie formou \IeC {\v c}iernej skrinky}{2}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Testovanie formou bielej skrinky}{3}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Testovanie formou sivej skrinky}{3}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}Pod\IeC {\v l}a sp\IeC {\^o}sobu testovania}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Statick\IeC {\'e} testovanie}{3}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Dynamick\IeC {\'e} testovanie}{3}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Pod\IeC {\v l}a \IeC {\'u}rovne testu}{3}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Jednotkov\IeC {\'e} testovanie}{3}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Testovanie komponentov}{4}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Integra\IeC {\v c}n\IeC {\'e} testovanie}{4}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Syst\IeC {\'e}mov\IeC {\'e} testovanie}{4}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}Akcepta\IeC {\v c}n\IeC {\'e} testovanie}{4}{subsubsection.2.3.5}
+\contentsline {section}{\numberline {3}K\IeC {\v l}\IeC {\'u}\IeC {\v c}ov\IeC {\'e} vlastnosti jednotkov\IeC {\'e}ho testovania}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Zhrnutie vlastnost\IeC {\'\i } jednotkov\IeC {\'e}ho testovania}{5}{subsection.3.1}
+\contentsline {section}{\numberline {4}xUnit}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}N\IeC {\'a}stroje patriace do skupiny xUnit pre .NET}{6}{subsection.4.1}
 \contentsline {paragraph}{Fixie}{6}{section*.2}
-\contentsline {paragraph}{MbUnit}{6}{section*.3}
+\contentsline {paragraph}{MbUnit}{7}{section*.3}
 \contentsline {paragraph}{Mock}{7}{section*.4}
 \contentsline {paragraph}{Moq}{7}{section*.5}
-\contentsline {paragraph}{Nunit}{7}{section*.6}
+\contentsline {paragraph}{Nunit}{8}{section*.6}
 \contentsline {paragraph}{Nbi}{8}{section*.7}
 \contentsline {paragraph}{Pex}{8}{section*.8}
-\contentsline {section}{Literat\'ura}{8}{section*.9}
+\contentsline {paragraph}{Randoop.NET}{9}{section*.9}
+\contentsline {paragraph}{Rhino.Mocks}{9}{section*.10}
+\contentsline {paragraph}{xUnit.net}{9}{section*.11}
+\contentsline {subsection}{\numberline {4.2}N\IeC {\'a}stroje patriace do skupiny xUnit pre Javu}{10}{subsection.4.2}
+\contentsline {paragraph}{Arquillian}{10}{section*.12}
+\contentsline {paragraph}{HavaRunner}{10}{section*.13}
+\contentsline {paragraph}{JExample}{10}{section*.14}
+\contentsline {paragraph}{JUnit}{11}{section*.15}
+\contentsline {paragraph}{Randoop}{11}{section*.16}
+\contentsline {paragraph}{Sprytest}{11}{section*.17}
+\contentsline {paragraph}{TestNG}{11}{section*.18}
+\contentsline {section}{Literat\'ura}{12}{section*.19}
