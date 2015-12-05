@@ -16,6 +16,9 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+\hypersetup{
+	hidelinks = true
+}
 
 \usepackage{cite}
 \usepackage{times}
@@ -78,14 +81,31 @@
 			\textbf{\MakeUppercase{Fakulta informatiky a informačných technológií}}\\
 			\hrulefill
 		\end{center}
-		\fontsize{14}{17}\MakeUppercase{\textbf{Automatické testovanie softvéru}}\\
-		\\
+		%\fontsize{14}{17}\MakeUppercase{\textbf{Automatické testovanie softvéru}}\\
+		%\\
+		\section*{Anotácia}
 		Študijný program: Informatika\\
 		Autor: Peter Beňuš\\
-		Bakalárska práca: \\
+		Názov bakalárskej práce: Automatické testovanie softvéru \\
 		Vedúci bakalárskej práce: Ing. Karol Rástočný\\
 		december 2015\\
-		V práci sa zaoberám automatickým testovaním softvéru a konkrétne jednotkovým testovaním. Jednotkové testovanie je prvým testovaním spustiteľného programu a je neoddeliteľnou súčasťou životného cyklu akéhokoľvek softvérového produktu. V analýze prostredia sú analyzované viaceré dostupné frameworky pre jazyky C\# a Java. Ku každému z vybraných frameworkov je v práci krátky opis základných vlastností a zhodnotenie či spĺňa vlastnosti, ktoré by malo jednotkové testovanie mať a ak áno tak do akej miery sú tieto vlastnosti splnené. Vlastnosti sú definované z praktických skúseností firiem, ktorých produktom je softvér.
+		Práca sa venuje jednotkovému testovaniu softvéru. Obsahuje analýzu vlastností jednotkového testovania, z ktorých vyplývajú vlastnosti na frameworky určené na jednotkové testovanie. Na základe vlastností jednotkového testovania sú odvodené vlastnosti ideálneho testovacieho frameworku na jednotkové testovanie. Vybraných je niekoľko frameworkov pre jazyk C\# a Java a všetky tieto frameworky patria do skupiny xUnit z čoho vyplýva, že majú viacero spoločných vlastností, ale zároveň používajú niekoľko rôznych spôsobov testovania. Každý testovací framework prináša zo sebou nejaké výhody aj nevýhody oproti ostatným softvérom. Preto sú tieto frameworky porovnané s ideálny frameorkom a je vybraný jeden pre jazyk C\# a jeden pre jazyk Java, ktorý sa najviac podobá ideálnemu.
+	\end{titlepage}
+	
+	\begin{titlepage}
+		\begin{center}
+			\large 		Slovak University of Technology Bratislava\\
+			\textbf{\MakeUppercase{Faculty of Informatics and Information Technologies}}\\
+			\hrulefill
+		\end{center}
+		\section*{Annotation}
+		Degree Course: Informatics\\
+		Author: Peter Beňuš \\
+		Title of bachelor thesis: Automatic Software Testing
+		Supervisor: Ing. Karol Rástočný \\
+		december 2015 \\
+		This work devotes to unit testing of software. It includes analysis of unit testing characteristics from which emerge features of unit testing frameworks. Features of ideal unit testing framework are derived from unit testing characteristics. Several of unit testing frameworks for C\# and Java was chosen and  all of these frameworks, belong to the xUnit group, so they have common features, but also they used different ways how to test units. Every of this testing frameworks have prons and cons compared to the others. Because of this, framework are compared with ideal framework. One for C\# and one for Java which is most similar to the ideal is chosen.
+		
 		
 	\end{titlepage}
 	
@@ -142,19 +162,19 @@
 	
 	\section{Kľúčové vlastnosti jednotkového testovania}
 	
-	\hspace{4ex} Per Runeson, profesor na univerzite v Švédskom Lunde robil prieskum medzi 50 firmami, ktorých hlavným produktom je softvér\cite{Runeson2006}. Firmy boli rôznej veľkosti od firiem tvorených jedným človekom až po firmy so stovkami zamestnancov a taktiež aj rôzneho cieľového odboru, v ktorom sa ich softvér používa. Cieľom tohto prieskumu bolo zistiť, kde sú silné stránky firiem v používaní jednotkového testovania a čo podľa nich jednotkové testovanie zahŕňa. Na základe tohto môžeme odvodiť najdôležitejšie vlastnosti jednotkového testovania využívané v praxi a následne podľa nich porovnať rôzne nástroje umožňujúce jednotkové testovanie.
+	Per Runeson, profesor na univerzite v Švédskom Lunde robil prieskum medzi 50 firmami, ktorých hlavným produktom je softvér\cite{Runeson2006}. Firmy boli rôznej veľkosti od firiem tvorených jedným človekom až po firmy so stovkami zamestnancov a taktiež aj rôzneho cieľového odboru, v ktorom sa ich softvér používa. Cieľom tohto prieskumu bolo zistiť, kde sú silné stránky firiem v používaní jednotkového testovania a čo podľa nich jednotkové testovanie zahŕňa. Na základe tohto môžeme odvodiť najdôležitejšie vlastnosti jednotkového testovania využívané v praxi a následne podľa nich porovnať rôzne nástroje umožňujúce jednotkové testovanie.
 	
-	\hspace{4ex} Jednotkové testovanie je podľa prieskumu testovanie najmenších samostatných jednotiek s vnútornými/vonkajšími parametrami. Takisto sa účastníci prieskumu zhodli na tom, že testovanie sa zameriava na samostatné funkcie avšak už v tom či má byť vykonávané samostatne do zbytku systému sa nezhodli.
+	Jednotkové testovanie je podľa prieskumu testovanie najmenších samostatných jednotiek s vnútornými/vonkajšími parametrami. Takisto sa účastníci prieskumu zhodli na tom, že testovanie sa zameriava na samostatné funkcie avšak už v tom či má byť vykonávané samostatne do zbytku systému sa nezhodli.
 	
-	\hspace{4ex} Testy by mali byť založené na štruktúre programu (to znamená testovanie formou bielej alebo sivej skrinky), vykonávané automaticky a vedené vývojármi, ktorí zároveň určujú ako by mali byť vykonávané. Silný nesúhlas bol s tým, že by malo viesť jednotkové testy oddelenie testovania alebo kvality. Špecifikované by mali byť v testovacom kóde a nemali by byť špecifikované v texte.
+	Testy by mali byť založené na štruktúre programu (to znamená testovanie formou bielej alebo sivej skrinky), vykonávané automaticky a vedené vývojármi, ktorí zároveň určujú ako by mali byť vykonávané. Silný nesúhlas bol s tým, že by malo viesť jednotkové testy oddelenie testovania alebo kvality. Špecifikované by mali byť v testovacom kóde a nemali by byť špecifikované v texte.
 	
-	\hspace{4ex} Pri otázke ako často by mali byť vykonávané sa názory dosť líšili a podľa výsledkov si väčšina myslí, že by mali byť vykonávané niekoľkokrát denne a po každej kompilácií. U väčšiny firiem, ktoré sa zúčastnili prieskumu vykonávanie všetkých jednotkových testov trvá niekoľko minút.
+	Pri otázke ako často by mali byť vykonávané sa názory dosť líšili a podľa výsledkov si väčšina myslí, že by mali byť vykonávané niekoľkokrát denne a po každej kompilácií. U väčšiny firiem, ktoré sa zúčastnili prieskumu vykonávanie všetkých jednotkových testov trvá niekoľko minút.
 	
-	\hspace{4ex} Vo väčšine firiem sú jednotkové testy vykonávané aby sa vývojári presvedčili, že daná jednotka vykonáva to čo od nej očakávali a vo všeobecnosti jednotkové testovanie zvyšuje kvalitu výsledného produktu. Neslúžia na akceptovanie jednotiek a nezvyknú byť požiadavkou klientov.
+	Vo väčšine firiem sú jednotkové testy vykonávané aby sa vývojári presvedčili, že daná jednotka vykonáva to čo od nej očakávali a vo všeobecnosti jednotkové testovanie zvyšuje kvalitu výsledného produktu. Neslúžia na akceptovanie jednotiek a nezvyknú byť požiadavkou klientov.
 	
-	\hspace{4ex} Medzi silné stránky jednotkového testovania zaradili účastníci prieskumu to, že jednotkové testy dobre identifikujú jednotky a dobre sa udržuje ich testovací kód. Dobre špecifikujú testovacie prípady a sú vykonávané automaticky. Ďalšou výhodou je množstvo frameworkov a dobrá integrácia s hotovými systémami.
+	Medzi silné stránky jednotkového testovania zaradili účastníci prieskumu to, že jednotkové testy dobre identifikujú jednotky a dobre sa udržuje ich testovací kód. Dobre špecifikujú testovacie prípady a sú vykonávané automaticky. Ďalšou výhodou je množstvo frameworkov a dobrá integrácia s hotovými systémami.
 	
-	\hspace{4ex} Slabou stránkou je určite testovanie grafického používateľského rozhrania. Za slabé bolo označené tiež pokrytie kódu a hlásenie chýb. Veľmi nejasné bolo označené posúdenie kedy je jednotkové testovanie ukončené.
+	Slabou stránkou je určite testovanie grafického používateľského rozhrania. Za slabé bolo označené tiež pokrytie kódu a hlásenie chýb. Veľmi nejasné bolo označené posúdenie kedy je jednotkové testovanie ukončené.
 	
 	\subsection{Zhrnutie vlastností jednotkového testovania}	
 		Základné vlastnosti vyplývajúce z prieskumu:
@@ -166,6 +186,23 @@
 			\item Testovanie by malo trvať len krátko, maximálne niekoľko minút.
 			\item Zvyšuje kvalitu a znižuje cenu výsledného produktu lebo vďaka nemu skoro a rýchlo odhalíme chyby.
 		\end{itemize}
+		
+	\subsection{Vlastnosti ideálneho frameworku pre jednotkové testovanie na základe vlastností jednotkového testovania}
+	
+		Hlavnou úlohou jednotkového testovania je otestovať, či jedna alebo viac testovaných jednotiek plnia svoju funkciu správne. Zjednodušene môžeme povedať, že pri písaní programov používame dva typy operácií a to sú logické a výpočtové(zmeny dát v dátových typoch). Výpočtové môžeme považovať za správne, pretože počítač vykoná akúkoľvek výpočtovú operáciu vždy rovnako a nemôže sa pri tom pomýliť ako človek a keď sa už stane, že výsledok takejto operácie je nesprávny ide aj tak len o nejakú chybu programátora (napr. pretiekol dátový typ alebo práca s rôznymi typmi v jednej operácií a počítač pri pretypovaní zmenil hodnotu inak ako predpokladal programátor a pod.). Teda môžeme povedať, že ťažisko správnej funkcionality je v logických operáciach a správnom použití výpočtových operácií. Ideálny framework na testovanie by preto mal ponúkať možnosti na kontrolu hodnoty premenných, aby sme vedeli skontrolovať či jednotka robí to čo má robiť.
+		
+		Môže sa zdať, že druhý bod v zhrnutí vlastností s frameworkom nijako nesúvisí a ide len o to, aby programátor poznal zdrojový kód, ku ktorému píše test, ale neplatí to až tak úplne. Správne jednotkové testovanie pokrýva 100\% zdrojového kódu a teda každá vetva je vykonaná počas testovania aspoň raz. Framework by preto mal aspoň vedieť zistiť, koľko percent zdrojového kódu je daným testovaním pokrytých, prípadne určiť, ktoré vetvy pokryté nie sú. Pri predstavách o ideálnom frameworku, ale môžeme ísť ešte ďalej, pretože ideálny framework by dokázala sám napísať testy, ktoré by mali 100\% pokrytie kódu. Toto zatiaľ síce nie je úplne reálne, ale už teraz existujú frameworky, ktoré dokážu aj samé generovať testy a preto ak by sme uvažovali o ideálnom a v súčasnosti vytvoriteľnom frameworku tak by mal vedieť generovať testy aspoň do takej miery, aby programátorovi stačilo skontrolovať, resp. prispôsobiť si ich.
+		
+		Špecifikácia testov by v ideálnom frameworku mala byť v zdrojovom kóde. Z toho vyplýva, že forma, v ktorej sú testy špecifikované je rovnaká v akej je napísaný aj zdrojový kód testovanej jednotky. Teda aj jazyk by mal byť rovnaký (prípadne s drobnými odchýlkami ak si to špecifikovanie testov vyžaduje), ale jednoznačne by to nemal byť iný programovací jazyk. Vzhľadom na blízkosť testov k zdrojovému kódu je ideálne ak sú testy a zdrojový kód programu prístupné z toho istého vývojového prostredia.
+		
+		Programátor po napísaní zdrojového kódu, prípadne po nejakej jeho úprave, keď už dokončí všetko čo chcel spraviť kód spustí kompiláciu. Ak kompilácia prebehne úspešne tak potrebuje zistiť, či jednotka pracuje správne, inými slovami chce ju otestovať. Ideálny framework by mal teda programátorovi umožňovať vybrať si či chce po každej kompilácií púšťať testy automaticky. Okrem automatického spúšťania by mal vedieť vyhodnotiť, ktorých testov sa zmeny týkali a spúšťať len tie, pretože je zbytočné znovu testovať tie jednotky, v ktorých sa nič nemenilo. Samozrejme vždy by mala byť možnosť manuálneho spustenia vybraných testov. 
+		
+		Jednotkové testovanie by nemalo dlho trvať, ale dĺžka testovania z väčšej časti nezávisí od frameworku, ale od počtu a dĺžky testov. To ale neznamená, že framework s tým nemôže nič spraviť. Každé testovanie pomocou frameworku si vyžaduje nejakú réžiu počas testovania. Ideálny framework by žiadnu réžiu okolo nepotreboval, ale to je nemožné a preto za ideálny môžeme považovať ten, ktorého réžia nie je väčšia ako naozaj nutná na poskytnutie všetkých potrebných vlastností, ktoré by testovanie malo mať. 
+		
+		Ideálny framework je teda taký, ktorý umožní programátorovi otestovať funkcie jednotiek, vygeneruje testy pre programátora, ktorý ich už len prispôsobí, zistí koľko percent kódu je pokrytého testami, používa rovnaký jazyk na písanie testov ako sa používa v zdrojovom kóde, testy sa píšu v rovnakom vývojom prostredí, púšťajú sa automaticky vtedy kedy chce programátor a len v rozsahu v akom sa robili zmeny v kóde a časová réžia testu je čo najmenšia.
+		
+	\section{Definovanie dôležitých pojmov}
+		\paragraph{Mok} je to simulovaný objekt, ktorý imituje správanie reálneho objektu. Zvyčajne sa používajú pri jednotkovom testovaní. Mockovanie je celé o imitovaní (faking) reálnych objektov a robení operácií kontrolovaným spôsobom. \footnote{http://www.agile-code.com/blog/mocking-with-moq/}
 	
 	\section{xUnit}
 		xUnit je označenie pre skupinu frameworkov, ktoré slúžia na jednotkové testovanie. Vznikol pôvodne pre programovací jazyk Smalltalk a veľmi rýchlo sa stal známym a úspešným. Dnes už majú všetky bežne používané programovacie jazyky minimálne jeden vlastný framework na jednotkové testovanie a mnoho z nich je odvodených práve od xUnit. 		\footnote{http://www.martinfowler.com/bliki/Xunit.html} \newline
@@ -183,56 +220,59 @@
 		
 		\subsection{Nástroje patriace do skupiny xUnit pre .NET}
 			
-			\paragraph{Fixie} patrí k novším frameworkom a umožňujem programátorovi vytvárať a vykonávať jednotkové testovanie. Výhoda, ktorú Fixie prináša, že je založený na konvencií. Preto programátor pri písaní testu nemusí používať atribúty na označovanie tried a metód. Keď je dodržaná konvencia tak Fixie vie podľa názvu zistiť či ide o metódu alebo triedu. Ak by predvolená konvencia nebola vyhovujúca, je možné vytvoriť si vlastnú a následne sa riadiť ňou. Na internete je možné aj nájsť plugin pre ReSharper, avšak zatiaľ len beta verziu. \footnote{https://visualstudiomagazine.com/articles/2015/04/22/fixie-c-sharp-testing.aspx}
+			\paragraph{Fixie} patrí k novším frameworkom a umožňujem programátorovi vytvárať a vykonávať jednotkové testovanie. Výhoda, ktorú Fixie prináša, že rozlišovanie metód a tried je na konvencií. Preto programátor pri písaní testu nemusí používať atribúty na označovanie tried a metód. Keď je dodržaná konvencia tak Fixie vie podľa názvu zistiť či ide o metódu alebo triedu. Ak by predvolená konvencia nebola vyhovujúca, je možné vytvoriť si vlastnú a následne sa riadiť ňou. Rozšírenia nemá, ale existujú pluginy do vývojových prostredí.  \footnote{https://visualstudiomagazine.com/articles/2015/04/22/fixie-c-sharp-testing.aspx}
 			
 			\paragraph{MbUnit} je rozšíriteľný framework, ktorý okrem toho, že prijíma vzory xUnit ide ešte ďalej a poskytuje programátorovi viac, ako napríklad:
 			\begin{itemize}
 				\item \textbf{Porovnávanie XML (XML assertions)} MbUnit obsahuje metódy pomocou, ktorých sa dajú porovnávať aj hodnoty v XML súboroch. \footnote{https://vkreynin.wordpress.com/2010/07/18/test/}
-				\item \textbf{Paralelizovateľné testy} Každý test, ktorý je označený ako paralelný bude pri vykonávaní spustený spolu z ostatnými paralelizovateľnými testami. \footnote{http://blog.bits-in-motion.com/2009/03/announcing-gallio-and-mbunit-v306.html}
+				\item \textbf{Paralelizovateľné testy} Každý test, ktorý je označený ako paralelný bude pri vykonávaní spustený spolu z ostatnými paralelizovateľnými testami\footnote{http://blog.bits-in-motion.com/2009/03/announcing-gallio-and-mbunit-v306.html}. To môže výrazne skrátiť čas potrebný na testovanie, ktorý by mal byť podľa vlastností jednotkového testovania čo najkratší. 
 				\item \textbf{Externé zdroje dát} Dáta používaného v testoch môžu byť uložené v rôznych typoch súborov (XML, CSV, a pod.) a počas testu používané priamo z nich.
 			\end{itemize}
-			Okrem tohto je MbUnit aj generatívny framework. čo znamená že dokáže z jednoduchého jednotkového testu urobiť niekoľko ďalších. Od roku 2013 uz ale nie sú žiadne commity na GitHube a preto ho môžeme považovať za už nevyvíjaný softvér. \footnote{http://stackoverflow.com/questions/3678783/mbunit-vs-nunit}
+			Okrem tohto je MbUnit aj generatívny framework, čo znamená že dokáže z jednoduchého jednotkového testu urobiť niekoľko ďalších. Od roku 2013 už, ale nie sú žiadne commity v jeho GitHub repozitári a preto ho môžeme považovať za už nevyvíjaný softvér. \footnote{http://stackoverflow.com/questions/3678783/mbunit-vs-nunit}
 			
-			\paragraph{Mock} je to simulovaný objekt, ktorý imituje správanie reálneho objektu. Zvyčajne sa používajú pri jednotkovom testovaní. Mockovanie je celé o imitovaní (faking) reálnych objektov a robení operácií kontrolovaným spôsobom. \footnote{http://www.agile-code.com/blog/mocking-with-moq/}
-			
-			\paragraph{Moq} je podľa tvorcov jediná mockovacia knižnica, ktorá je vytváraná od začiatku, tak aby využila naplno výhody .NET Ling (Language-Integrated Query) strom výrazov a lambda výrazy.
+			\paragraph{Moq} je podľa tvorcov jediná mokovacia knižnica, ktorá je vytváraná od začiatku, tak aby využila naplno výhody .NET Ling (Language-Integrated Query) strom výrazov a lambda výrazy. 
+			Funkcie a vlastnosti, ktoré Moq ponúka\footnote{https://github.com/Moq/moq4} :	
 			\begin{itemize}
-				\item Strong-typed: no strings for expectations, no object-typed return values or constraints
-				\item Neprekonaná integrácia s intellisense vo Visual Studio: všetko je plne podporované intellisense vo Visual Studio
-				\item Žiadne nahraj/prehraj idiómy(jazyk) (No Record/Replay idioms to learn.) na učenie. Stačí vytvoriť mock, nastaviť ho, použíť ho a voliteľne potvrdiť ich volania (netreba potvrdzovať mocky, keď vystupujú len ako stuby (stubs) alebo keď sa robí klasickejšie stavovo-založené (state-based) testovnie kontrolovaním navratových hodnôt testovaného objektu).
+				\item Strong-typed: no strings for expectations, no object-typed return values or constraints.
+				\item Neprekonaná integrácia s intellisense vo Visual Studio: všetko je plne podporované intellisense vo Visual Studio.
+				\item Žiadne nahraj/prehraj idiómy(jazyk) (No Record/Replay idioms to learn.) na učenie. Stačí vytvoriť mok, nastaviť ho, použíť ho a voliteľne potvrdiť ich volania (netreba potvrdzovať mocky, keď vystupujú len ako stuby (stubs) alebo keď sa robí klasickejšie stavovo-založené (state-based) testovnie kontrolovaním navratových hodnôt testovaného objektu).
 				\item Veľmi nízka učiaca krivka (learning curve). Pre väčšinu častí ani netreba čítať dokumentáciu.
-				\item Granulovaná kontrola (granular control) nad správaním mocku s jednoduchou MockBehavior enumeráciou (netreba vedieť teoretické rozdiely medzi mockom, stubom, imitáciou (fake), dynamickým mockom a pod.)
-				\item Je možne mockovať rozhrania aj triedy
-				\item Override expectations: can set default expectations in a fixture setup, and override as needed on tests
-				\item Posielať argumenty pre mockované triedy
-				\item Ohraničiť (Intercept) a vyvolať (raise) akcie (events) na mockoch
-				\item Intuitívna podpora pre out/ref argumenty. \footnote{https://github.com/Moq/moq4}	
+				\item Granulovaná kontrola (granular control) nad správaním mocku s jednoduchou MockBehavior enumeráciou (netreba vedieť teoretické rozdiely medzi mokom, stubom, imitáciou (fake), dynamickým mokom a pod.).
+				\item Je možne mokovať rozhrania aj triedy.
+				\item Override expectations: can set default expectations in a fixture setup, and override as needed on tests.
+				\item Posielať argumenty pre mokované triedy.
+				\item Ohraničiť (Intercept) a vyvolať (raise) akcie (events) na mokoch.
+				\item Intuitívna podpora pre out/ref argumenty. 
 			\end{itemize}
+			Vďaka mokom je test rýchlejší a nezávislý od prostredia alebo iných častí systému, lebo netreba komunikovať so skutočnými objektami a teda spĺňa vlastnosti jednotkového testovania.
 			
-		\paragraph{Nunit} je testovací framework pre C\# a je to v podstate to isté, čo je Junit pre Javu (o Junite neskôr v Java frameworkoch).
-		V Nunite je možné pridávať testy do rôznych kategórií a potom spúšťať testy spadajúce len do vybraných kategórií. Môžeme tak ušetriť dosť času ak nepotrebujeme testovať úplne všetko.
+		\paragraph{NUnit} je testovací framework pre C\# a je tým, čím je Junit pre Javu (o Junite neskôr v Java frameworkoch).
 		Poskytuje tiež možnosť mať rôzne nastavenia pre test a rôzne pre tvorbu programu.
 		Vstupné hodnoty testov môžu byť zadané rôznymi spôsobmi. Buď jednoduchou množinou parametrov, náhodne alebo výberom z daného rozsahu alebo z nejakého externého zdroja pomocou metódy.
-		Pomocou atribútov môžeme ovplyvňovať testovacie prostredie. Môžeme tak deklarovať, že daný mest má bežať na samostatnom vlákne, nemá byť spustený, resp. spúšťať sa bude len manuálne alebo má byť len pre špecifickú platformu.\footnote{http://www.slideshare.net/ShirBrass/nunit-features-presentation}
-		Testy je možné spúšťať aj s obmedzeným časom na beh. Po uplynutí stanoveného času je test označený za neúspešný, ale vieme nastaviť či sa má test okamžite ukončiť alebo sa má nechať dobehnúť. \footnote{https://lukewickstead.wordpress.com/2013/02/09/howto-nunit-features/}
+		Pomocou atribútov môžeme ovplyvňovať testovacie prostredie. Môžeme tak deklarovať, že daný mest má bežať na samostatnom vlákne, nemá byť spustený, resp. spúšťať sa bude len manuálne alebo má byť len pre špecifickú platformu\footnote{http://www.slideshare.net/ShirBrass/nunit-features-presentation}.
+		Testy je možné spúšťať aj s obmedzeným časom na beh. Po uplynutí stanoveného času je test označený za neúspešný, ale je možné nastaviť, či sa má test okamžite ukončiť alebo sa má nechať dobehnúť \footnote{https://lukewickstead.wordpress.com/2013/02/09/howto-nunit-features/}.
 		
-		\paragraph{Nbi} je doplnok do Nunit pre Microsoft obchodné služby a prístup k dátam (Microsoft Business Intelligence platform and Data Access). Jeho výhodou je, že netreba vôbec poznať C\# alebo mať nainštalované Microsoft Visual Studio lebo testy sa píšu v Xml. Pomocou frameworku sa potom dajú spúšťať aj bez C\# kompilátora. Dokáže pracovať s databázovými dotazmi, Etl (Extract, transform, load) balíčkami a aj s viacrozmernými a tabuľkovými modelmi.
+		\paragraph{Nbi} je doplnok do Nunit pre Microsoft obchodné služby a prístup k dátam (Microsoft Business Intelligence platform and Data Access), ale čiastočne podporuje aj iné platformy\footnote{http://www.nbi.io/docs/home/}. Jeho výhodou je, že netreba vôbec poznať C\# alebo mať nainštalované Microsoft Visual Studio lebo testy sa píšu v Xml. Pomocou frameworku sa potom dajú spúšťať aj bez C\# kompilátora. Dokáže pracovať s databázovými dotazmi, Etl (Extract, transform, load) balíčkami a aj s viacrozmernými a tabuľkovými modelmi.
 		Testy sa pomocou genbi alebo genbiL dajú generovať aj automaticky. \footnote{http://fr.slideshare.net/CdricCharlier1}
+		Keďže v prípade Nbi ide do veľkej miery o testovanie databáz vďaka frameworku vieme zaručiť aspoň čiastočnú nezávislosť jednotky od okolia, lebo sa nemusíme pripájať na skutočnú databázu na serveri, ale testujeme len na lokálnej.
 		
-		\paragraph{Pex} je v podstate rozšírením Visual Studia a jeho hlavnou funkciou je generovanie testov. Pre každú podmienku, ktorú napíšeme do testu Pex vytvorí samostatnú vetvu, viackrát spustí program a na základe toho, ktoré vetvy uspeli a neuspeli v testoch vie analyzovať zdrojový kód a vytvoriť ďalšie testy. To môže pomôcť programátorovi nájsť chyby v kóde, ktoré si sám nevšimol. \footnote{http://research.microsoft.com/en-us/projects/pex/}
+		
+		\paragraph{Pex} je v podstate rozšírením Visual Studia a jeho hlavnou funkciou je generovanie testov. Pre každú podmienku, ktorú napíšeme do testu, Pex vytvorí samostatnú vetvu, viackrát spustí program a na základe toho, ktoré vetvy uspeli a neuspeli v testoch vie analyzovať zdrojový kód a vytvoriť ďalšie testy. To môže pomôcť programátorovi nájsť chyby v kóde, ktoré si sám nevšimol. \footnote{http://research.microsoft.com/en-us/projects/pex/}
 		\footnote{http://www.pexforfun.com/Documentation.aspx\#HowDoesPexWork}
 		
-		\paragraph{Randoop.NET} je framework, ktorý náhodne generuje testy, ale je riadený spätnou väzbou. Testy vytvára inkrementálne, teda každý ďalší je rozšírením predchádzajúceho, ale najprv vygenerovaný test vykoná a vyhodnotí či má zmysel daný test rozširovať. To znamená, že ak vygeneruje test, ktorý obsahuje nejaké nezmyselné volanie funkcie (napr. nastavMesiac(-1)) tak test označí za nesprávny a už ho rozširovať nebude.\newline
-		Okrem toho, že Randoop vie fungovať samostatne, generuje testy ako samostatný súbor, ktorý je použiteľný pre ostatné testovacie nástroje a tým sa dá odhaliť viacej chýb a dosiahnuť tak lepší výsledok testovania.\cite{Pacheco2007}
+		\paragraph{Randoop.NET} je framework, ktorý náhodne generuje testy, ale je riadený spätnou väzbou. Testy vytvára inkrementálne, teda každý ďalší je rozšírením predchádzajúceho. Pred rozšírením testu sa daný vygenerovaný test najprv vykoná a vyhodnotí a následne Randoop rozhodne, či má zmysel daný test rozširovať. To znamená, že ak vygeneruje test, ktorý obsahuje nejaké nezmyselné volanie funkcie (napr. nastavMesiac(-1)) tak test označí za nesprávny a už ho rozširovať nebude.
 		
-		\paragraph{Rhino.Mocks} je .NET mokovací framework veľmi užitočný na vytváranie falošných objektov tak, aby ste testovali len presne to čo chcete a dovoľuje kontrolovať prostredie a stavy v ktorých test prebieha.
+		Okrem toho, že Randoop vie fungovať samostatne, generuje testy ako samostatný súbor, ktorý je použiteľný pre ostatné testovacie nástroje a tým sa dá odhaliť viacej chýb a dosiahnuť tak lepší výsledok testovania.\cite{Pacheco2007}
+		Randoop spĺňa vlastnosti jednotkového testovania a okrem toho ešte aj mimo nich prispieva ku skráteniu doby potrebnej na testovanie tým, že sám vygeneruje testy a nemusí ich vytvárať všetky programátor.
+		
+		\paragraph{Rhino.Mocks} je .NET mokovací framework veľmi užitočný na vytváranie falošných objektov tak, aby sme testovali len presne to čo chceme a dovoľuje kontrolovať prostredie a stavy v ktorých test prebieha.
 		Poskutuje tri druhy mokov:
 		\begin{itemize}
 			\item \textbf{Presný (strict) mok} Vyžaduje alternatívnu implementáciu pre každú metódu/vlastnosť. Ak nejaká chýba tak vyvolá výnimku.
 			\item \textbf{Dynamický mok} Ak neexistuje alternatívna implementácia pre metódu alebo vlastnosť tak vráti predvolenú hodnotu daného typu.
 			\item \textbf{Čiastočný (partial) mok} Ak neexistuje alternatívna implementácia tak sa použije implementácia pôvodného (underlying) objektu.
 		\end{itemize}
-		Mockovať je však možné iba virtuálne členov reálnych tried alebo mockovať celé rozhrania. \footnote{http://www.wrightfully.com/using-rhino-mocks-quick-guide-to-generating-mocks-and-stubs/}
+		Mokovať je však možné iba virtuálnych členov reálnych tried alebo celé rozhrania. \footnote{http://www.wrightfully.com/using-rhino-mocks-quick-guide-to-generating-mocks-and-stubs/}
 		
 		\paragraph{xUnit.net} je voľný, rozšíriteľný, open-source framework dizajnovaný pre programátorov \footnote{https://www.pluralsight.com/courses/xunitdotnet-test-framework}.
 		Výhodou je aj, že je veľmi dobre integrovaný do .NET ekosystému a preto sa netreba báť vážnejšieho problému s kompatibilitou \footnote{http://www.codeproject.com/Articles/1011753/Moving-to-xUnit-net}.
@@ -260,7 +300,7 @@
 			\item Test môže bežať s rôznymi skupinami vstupných dát.
 			\item Každý test má vlastnú inštanciu.
 			\item Model behu je úplne asynchrónny.
-			\item HavaRunner je spúšťač JUnit, to znamená že je jednoduché použiť ho tam, kde už sú JUnit testy.
+			\item HavaRunner je spúšťač JUnit, to znamená že je jednoduché použiť ho tam, kde sa už používajú JUnit testy.
 		\end{itemize}
 		
 		\paragraph{JExample} je testovací framework na písanie jednotkových testov, ktoré sú stavané jeden na druhý. Predstavuje vzťah producent-konzument v jednotkových testoch. Producent je testovacia metóda, ktorej test vracia nejakú hodnotu. Konzument je metóda, ktorá závisí od jedného alebo viacerých producentov \footnote{http://scg.unibe.ch/research/jexample}.
@@ -269,11 +309,11 @@
 		
 		JExample je tvorený ako rozšírenie JUnit a je bezproblémovo integrovaný v JUnite aj plugine do Eclipse.
 		
-		\paragraph{JUnit} je jednotuchý testovací framework a zároveň základ mnohých ďalších frameworkov, z ktorých sú niektoré spomínané aj v tejto práci. Okrem vlastností vyplývajúcich z toho, že patrí do skupiny xUnit frameworkov umožňuje nastaviť čas pre každý test, po ktorého uplynutí test končí neúspechom, ignorovať testy, spúšťam testy s rôznymi parametrami (parametrizované testy), nastaviť testu očakávanú výnimku a ak vznikne test je akceptovaný, možnosť nastaviť poradie testov a aj testovanie viacvláknových programov \footnote{http://junit.org/}. 
+		\paragraph{JUnit} je jednoduchý testovací framework a zároveň základ mnohých ďalších frameworkov, z ktorých sú niektoré spomínané aj v tejto práci. Okrem vlastností vyplývajúcich z toho, že patrí do skupiny xUnit frameworkov umožňuje nastaviť čas pre každý test, po ktorého uplynutí test končí neúspechom, ignorovať testy, spúšťam testy s rôznymi parametrami (parametrizované testy), nastaviť testu očakávanú výnimku a ak vznikne test je akceptovaný, možnosť nastaviť poradie testov a aj testovanie viacvláknových programov \footnote{http://junit.org/}. 
 		
 		\paragraph{Randoop} je testovací framework, ktorý automaticky generuje testy v rovnakom formáte ako JUnit. Má rovnaké funkcie ako .NET verzia, o ktorej sa môžete dočítať v predchádzajúcej časti práce.
 		
-		\paragraph{Sprytest} je komerčný nástroj založený na používatľskom rozhraní a výrazne ovplyvňuje tvorbu jednotkových testov. Tvorba testov a nastavovanie mockov, nastavovanie asercií (assertions) môžu trvať len zlomok času. Taktiež pomáha zistiť mimovoľné zmeny správania a zjednodušuje izoláciu a opravu chýb \footnote{https://marketplace.eclipse.org/content/sprytest}.
+		\paragraph{Sprytest} je komerčný nástroj založený na používateľskom rozhraní a výrazne ovplyvňuje tvorbu jednotkových testov. Tvorba testov a nastavovanie mockov, nastavovanie asercií (assertions) sú v ňom rýchle vďaka jednoduchému rozhraniu. Taktiež pomáha zistiť mimovoľné zmeny správania a zjednodušuje izoláciu a opravu chýb \footnote{https://marketplace.eclipse.org/content/sprytest}.
 		
 		Niektoré z kľúčových vlastností:
 		\begin{itemize}
@@ -295,21 +335,32 @@
 		\end{itemize}
 		
 		Je navrhnutý tak, aby pokryl všetky kategórie testov: jednotkové, funkcionálne, integračné, end-to-end. atď.\footnote{http://testng.org/doc/index.html}
- 
 		
-		
-		
-		
-			
-			
-					
-			
+	\subsection{Porovnanie vlastností frameworkov patriacich do skupiny xUnit s ideálnym frameworkom}
+	
+	Všetky frameworky testujú funkčnosť a sú písané v jazyku podobnom alebo rovnakom ako aj zdrový kód okrem frameworku Nbi, ktorý je písaný v jazyku XML. Frameworky v skupine xUnit musia vedieť rozdeľovať testy do kategórií tak táto vlastnoť je splnená pri všetkých, aj keď v praxi sa môžu vyskytnúť rôzne aplikácie tejto vlastnosti.
+	Okrem MbUnit, Pex, Randoop a Randoop.NET frameworky nie sú generatívne a teda treba všetky testy písať manuálne.
+	JExample používa v testovaní vzťah viacerých tried a preto by sa už je možné ho zaradiť niekam na hranu medzi jednotkovým a integračným testovaním.
+	
+	K časovej réžií nie je možné sa vyjadriť bez praktického testovania a preto túto vlastnosť frameworkov pri tomto hodnotení zanedbávame.
+	
+	Podľa podobnosti s ideálnym frameworkom by som za najlepší označil Randoop(resp. Randoop.NET), pretože patrí ku generatívnym frameworkom, stále sa vyvíja a venujú sa mu aj rôzne vedecké práce. Hneď za neho by som zaradil frameworky TestNG, JUnit, NUnit, xUnit.net pretože sú populárne, každý z nich priniesol niečo nové do jednotkového testovania. Na základe zatiaľ získaných informácií ich podľa mňa nie je zatiaľ možné objektívne zoradiť a určiť, ktorý je lepší alebo horší.
+	
+	\section{Záver}
+	V práci som analyzoval testovanie softvéru a následne som sa zameral na analýzu jednotkového testovania. Analyzovaním a zhrnutím vlastností jednotkového testovania som dospel k opisu vlastností ideálneho frameworku na jednotkové testovanie. Tieto vlastnosti som porovnal s informáciami o vlastnostiach existujúcich frameworkov. Na základe podobnosti týchto vlastností som určil tie, ktoré sa podobajú na ideálny framework najviac.
 
-			
-			
-			
+	\section{Cieľ práce}
+	Cieľom mojej práce je vytvoriť projekt v rozsahu, ktorý bude postačovať na komplexné zhodnotenie jedného automatického testovacieho frameworku pre C\# a jedného pre Javu. Mojim cieľom je otestovať rôzne vlastnosti frameworkov (aspoň všetky základné), zhodnotiť ich a porovnať výsledky frameworkov pre oba jazyky.
 	
-	
+	\section{Časový plán do odovzdania práce v letnom semestri}
+	\begin{itemize}
+		\item \textbf{december 2015} - špecifikácia projektu, na ktorom budem implementovať testovanie
+		\item \textbf{január a február 2016} - implementácia projektu, implementácia testov vo vybraných frameworkoch
+		\item \textbf{marec 2016} - testovanie a zbieranie dát pre zhodnotenie
+		\item \textbf{apríl 2016} - zhodnotenie a porovnávanie frameworkov
+		\item \textbf{máj 2016} - dokončovanie práce a odovzdanie do 10.5.2016
+	\end{itemize}
+ 	
 	\bibliography{literatura}
 	\bibliographystyle{plain}
 \end{document}

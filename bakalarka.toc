@@ -16,24 +16,30 @@
 \contentsline {subsubsection}{\numberline {2.3.5}Akcepta\IeC {\v c}n\IeC {\'e} testovanie}{4}{subsubsection.2.3.5}
 \contentsline {section}{\numberline {3}K\IeC {\v l}\IeC {\'u}\IeC {\v c}ov\IeC {\'e} vlastnosti jednotkov\IeC {\'e}ho testovania}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Zhrnutie vlastnost\IeC {\'\i } jednotkov\IeC {\'e}ho testovania}{5}{subsection.3.1}
-\contentsline {section}{\numberline {4}xUnit}{6}{section.4}
-\contentsline {subsection}{\numberline {4.1}N\IeC {\'a}stroje patriace do skupiny xUnit pre .NET}{6}{subsection.4.1}
-\contentsline {paragraph}{Fixie}{6}{section*.2}
-\contentsline {paragraph}{MbUnit}{7}{section*.3}
-\contentsline {paragraph}{Mock}{7}{section*.4}
-\contentsline {paragraph}{Moq}{7}{section*.5}
-\contentsline {paragraph}{Nunit}{8}{section*.6}
-\contentsline {paragraph}{Nbi}{8}{section*.7}
-\contentsline {paragraph}{Pex}{8}{section*.8}
-\contentsline {paragraph}{Randoop.NET}{9}{section*.9}
-\contentsline {paragraph}{Rhino.Mocks}{9}{section*.10}
-\contentsline {paragraph}{xUnit.net}{9}{section*.11}
-\contentsline {subsection}{\numberline {4.2}N\IeC {\'a}stroje patriace do skupiny xUnit pre Javu}{10}{subsection.4.2}
-\contentsline {paragraph}{Arquillian}{10}{section*.12}
-\contentsline {paragraph}{HavaRunner}{10}{section*.13}
-\contentsline {paragraph}{JExample}{10}{section*.14}
-\contentsline {paragraph}{JUnit}{11}{section*.15}
-\contentsline {paragraph}{Randoop}{11}{section*.16}
-\contentsline {paragraph}{Sprytest}{11}{section*.17}
-\contentsline {paragraph}{TestNG}{11}{section*.18}
-\contentsline {section}{Literat\'ura}{12}{section*.19}
+\contentsline {subsection}{\numberline {3.2}Vlastnosti ide\IeC {\'a}lneho frameworku pre jednotkov\IeC {\'e} testovanie na z\IeC {\'a}klade vlastnost\IeC {\'\i } jednotkov\IeC {\'e}ho testovania}{6}{subsection.3.2}
+\contentsline {section}{\numberline {4}Definovanie d\IeC {\^o}le\IeC {\v z}it\IeC {\'y}ch pojmov}{7}{section.4}
+\contentsline {paragraph}{Mok}{7}{section*.4}
+\contentsline {section}{\numberline {5}xUnit}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}N\IeC {\'a}stroje patriace do skupiny xUnit pre .NET}{8}{subsection.5.1}
+\contentsline {paragraph}{Fixie}{8}{section*.5}
+\contentsline {paragraph}{MbUnit}{8}{section*.6}
+\contentsline {paragraph}{Moq}{8}{section*.7}
+\contentsline {paragraph}{NUnit}{9}{section*.8}
+\contentsline {paragraph}{Nbi}{10}{section*.9}
+\contentsline {paragraph}{Pex}{10}{section*.10}
+\contentsline {paragraph}{Randoop.NET}{10}{section*.11}
+\contentsline {paragraph}{Rhino.Mocks}{10}{section*.12}
+\contentsline {paragraph}{xUnit.net}{11}{section*.13}
+\contentsline {subsection}{\numberline {5.2}N\IeC {\'a}stroje patriace do skupiny xUnit pre Javu}{11}{subsection.5.2}
+\contentsline {paragraph}{Arquillian}{11}{section*.14}
+\contentsline {paragraph}{HavaRunner}{11}{section*.15}
+\contentsline {paragraph}{JExample}{12}{section*.16}
+\contentsline {paragraph}{JUnit}{12}{section*.17}
+\contentsline {paragraph}{Randoop}{12}{section*.18}
+\contentsline {paragraph}{Sprytest}{12}{section*.19}
+\contentsline {paragraph}{TestNG}{13}{section*.20}
+\contentsline {subsection}{\numberline {5.3}Porovnanie vlastnost\IeC {\'\i } frameworkov patriacich do skupiny xUnit s ide\IeC {\'a}lnym frameworkom}{13}{subsection.5.3}
+\contentsline {section}{\numberline {6}Z\IeC {\'a}ver}{14}{section.6}
+\contentsline {section}{\numberline {7}Cie\IeC {\v l} pr\IeC {\'a}ce}{14}{section.7}
+\contentsline {section}{\numberline {8}\IeC {\v C}asov\IeC {\'y} pl\IeC {\'a}n do odovzdania pr\IeC {\'a}ce v letnom semestri}{14}{section.8}
+\contentsline {section}{Literat\'ura}{14}{section*.21}
