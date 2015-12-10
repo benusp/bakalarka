@@ -39,7 +39,7 @@
 		\addtolength{\myind}{57mm}
 		
 		\newlength{\myrulelength}
-		\addtolength{\myrulelength}{.6\marginparwidth}
+		%\addtolength{\myrulelength}{.6\marginparwidth}
 		\addtolength{\myrulelength}{\textwidth}
 		\newcommand{\myrule}{\parbox{\myrulelength}{\hrulefill}}
 		%\newcommand{\mybox}[1]{\hspace{.5\marginparwidth}\parbox{\myrulelength}{#1}}
@@ -47,10 +47,12 @@
 		\newcommand{\mybox}[1]{\parbox{\myrulelength}{#1}}
 		\newcommand{\mycbox}[1]{\parbox{\myrulelength}{\centering #1}}
 		
-		\centering
-		\large 		Slovenská technická univerzita v Bratislave\\
-		Fakulta informatiky a informačných technológií\\
-		Študijný program: Informatika
+		\begin{center}
+			\large 		Slovenská technická univerzita v Bratislave\\
+			Fakulta informatiky a informačných technológií	
+			%\hrulefill		
+		\end{center}
+
 		
 		\vspace{4mm}
 		\myrule
@@ -69,6 +71,7 @@
 		
 		\vfill
 		\begin{flushleft}
+			Študijný program: Informatika\\
 			Vedúci bakalárskeho projektu: Ing. Karol Rástočný\\
 			December 2015
 		\end{flushleft}
@@ -101,7 +104,7 @@
 		\section*{Annotation}
 		Degree Course: Informatics\\
 		Author: Peter Beňuš \\
-		Title of bachelor thesis: Automatic Software Testing
+		Title of bachelor thesis: Automatic Software Testing\\
 		Supervisor: Ing. Karol Rástočný \\
 		december 2015 \\
 		This work devotes to unit testing of software. It includes analysis of unit testing characteristics from which emerge features of unit testing frameworks. Features of ideal unit testing framework are derived from unit testing characteristics. Several of unit testing frameworks for C\# and Java was chosen and  all of these frameworks, belong to the xUnit group, so they have common features, but also they used different ways how to test units. Every of this testing frameworks have prons and cons compared to the others. Because of this, framework are compared with ideal framework. One for C\# and one for Java which is most similar to the ideal is chosen.
@@ -346,21 +349,24 @@
 	
 	Podľa podobnosti s ideálnym frameworkom by som za najlepší označil Randoop(resp. Randoop.NET), pretože patrí ku generatívnym frameworkom, stále sa vyvíja a venujú sa mu aj rôzne vedecké práce. Hneď za neho by som zaradil frameworky TestNG, JUnit, NUnit, xUnit.net pretože sú populárne, každý z nich priniesol niečo nové do jednotkového testovania. Na základe zatiaľ získaných informácií ich podľa mňa nie je zatiaľ možné objektívne zoradiť a určiť, ktorý je lepší alebo horší.
 	
-	\section{Záver}
-	V práci som analyzoval testovanie softvéru a následne som sa zameral na analýzu jednotkového testovania. Analyzovaním a zhrnutím vlastností jednotkového testovania som dospel k opisu vlastností ideálneho frameworku na jednotkové testovanie. Tieto vlastnosti som porovnal s informáciami o vlastnostiach existujúcich frameworkov. Na základe podobnosti týchto vlastností som určil tie, ktoré sa podobajú na ideálny framework najviac.
-
-	\section{Cieľ práce}
-	Cieľom mojej práce je vytvoriť projekt v rozsahu, ktorý bude postačovať na komplexné zhodnotenie jedného automatického testovacieho frameworku pre C\# a jedného pre Javu. Mojim cieľom je otestovať rôzne vlastnosti frameworkov (aspoň všetky základné), zhodnotiť ich a porovnať výsledky frameworkov pre oba jazyky.
+	\section{Ciele a záver práce}
+	
+	V práci sme analyzovali testovanie softvéru a zamerali sme sa na analyzovanie jednotkového testovania. Analýzou vlastností jednotkového testovania sa nám podarilo vytvoriť teoretický koncept ideálneho pracovného rámca pre jednotkové testovanie. Snažili sme sa vlastnosti určovať tak, aby sme hovorili o uskutočniteľných vlastnostiach, resp. už skutočných vlastnostiach, ale zatiaľ nie spojených do jedného pracovného rámca, a nebolo to niečo nemožné v realite. Tieto vlastnosti sme porovnali s dostupnými informáciami o vlastnostiach niekoľkých existujúcich pracovných rámcov zo skupiny xUnit. Vybrali sme viacero pracovných rámcov pre jazyk C\# a aj viacero pre jazyk Java. Vlastnosti týchto pracovných rámcov sme porovnali s vlastnosťami ideálne pracovného rámca. Zhodnotili sme, ktoré vlastnosti pracovné rámce implementujú a ktoré naopak ešte nie alebo ich implementujú len čiastočne. Na základe zhodnotenia sme potom vedeli určiť, ktorý pracovný rámec má najviac spoločných vlastností s ideálnym a teda má k nemu najbližšie. Aj pre jazyk C\# aj pre jazyk Java bol najlepší pracovný rámec Randoop, resp. Randoop.NET.
+	
+	Cieľom našej práce je vytvoriť projekt v takom rozsahu, aby sme mohli otestovať a zhodnotiť tento pracovný rámec aj v skutočnosti. Našim cieľom je vyskúšať vlastnosti tie vlastnosti pracovného rámca, o ktorých sa v práci diskutuje. Na jednom projekte sa nám pravdepodobne nepodarí do hĺbky otestovať všetky jeho vlastnosti, ale chceme otestovať každú aspoň čiastočne a tie pri ktorých to bude možné aj do hĺbky. Vzhľadom na to, že projekt ešte nemáme špecifikovaný nevieme konkretizovať ktoré vlastnosti a ako bude možné otestovať. Testovať budem pracovné rámce Randoop a Randoop.NET a projekt bude implementovaný v oboch jazykoch (C\#, Java).
 	
 	\section{Časový plán do odovzdania práce v letnom semestri}
 	\begin{itemize}
 		\item \textbf{december 2015} - špecifikácia projektu, na ktorom budem implementovať testovanie
 		\item \textbf{január a február 2016} - implementácia projektu, implementácia testov vo vybraných frameworkoch
-		\item \textbf{marec 2016} - testovanie a zbieranie dát pre zhodnotenie
+		\item \textbf{marec 2016} - testovanie projektu pracovnými rámcami a zhromažďovanie výsledkov testov pre účely zhodnotenia
 		\item \textbf{apríl 2016} - zhodnotenie a porovnávanie frameworkov
 		\item \textbf{máj 2016} - dokončovanie práce a odovzdanie do 10.5.2016
 	\end{itemize}
  	
-	\bibliography{literatura}
-	\bibliographystyle{plain}
+ 	\begin{titlepage}
+ 		\bibliography{literatura}
+ 		\bibliographystyle{plain}
+ 	\end{titlepage}
+	
 \end{document}
