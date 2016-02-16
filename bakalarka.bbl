@@ -6,6 +6,13 @@ Enrique Alba and Francisco Chicano.
   algorithms for automatic software testing}.
 \newblock {\em Computers {\&} Operations Research}, 35(10):3161--3183, 2008.
 
+\bibitem{Bosu2015}
+Amiangshu Bosu, Michaela Greiler, and Christian Bird.
+\newblock {Characteristics of Useful Code Reviews: An Empirical Study at
+  Microsoft}.
+\newblock {\em 2015 IEEE/ACM 12th Working Conference on Mining Software
+  Repositories}, pages 146--156, 2015.
+
 \bibitem{Brauer}
 Johannes Brauer.
 \newblock {\em {Programming Smalltalk – Object-Orientation from the
@@ -30,6 +37,10 @@ Cem Kaner.
 A.A.~Omar;F.A. Moha.
 \newblock {A survey of software functional testing methods}.
 \newblock {\em Software Engineering Notes}, page~75, 1991.
+
+\bibitem{Myers}
+Glenford~J. Myers, Tom Badgett, and Corey Sandler.
+\newblock {\em {The Art of Software Testing}}.
 
 \bibitem{Pacheco2007}
 Carlos Pacheco, Shuvendu~K. Lahiri, Michael~D. Ernst, and Thomas Ball.
