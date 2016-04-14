@@ -29,6 +29,7 @@
 \usepackage{graphicx}
 
 \usepackage{etoolbox}
+\linespread{1}
 
 \pagestyle{myheadings}
 
@@ -167,7 +168,7 @@
 	\subsection{Podľa úrovne testu}
 		\subsubsection{Jednotkové testovanie} 
 		
-			Jednotkové testovanie je metóda testovania softvéru, pri ktorej sa testujú individuálne komponenty (jednotky) zdrojového kódu. Zvyčajne nie je testovacou fázou v zmysle nejakého obdobia na tvorbe projektu, ale skôr je to posledný krok písania časti zdrojového kódu\cite{Alba2008}. Programátori takmer vykonávajú jednotkové testovanie takmer stále, či už pri testovaní vlastného zdrojového kódu alebo kódu iného programátora\cite{Alba2008}. Kvalitné testovanie na tejto úrovni môže výrazne znížiť cenu a čas potrebný na vývoj celého softvéru\cite{EST2002}.
+			Jednotkové testovanie je metóda testovania softvéru, pri ktorej sa testujú individuálne komponenty (jednotky) zdrojového kódu. Zvyčajne nie je testovacou fázou v zmysle nejakého obdobia na tvorbe projektu (okrem testom riadeného vývoja, kde sa najprv píšu testy a až potom program), ale skôr je to posledný krok písania časti zdrojového kódu. Programátori takmer vykonávajú jednotkové testovanie takmer stále, či už pri testovaní vlastného zdrojového kódu alebo kódu iného programátora\cite{Alba2008}. Kvalitné testovanie na tejto úrovni môže výrazne znížiť cenu a čas potrebný na vývoj celého softvéru\cite{EST2002}.
 		\subsubsection{Testovanie komponentov} 
 		
 			Počas testovania komponentov sa testeri zameriavajú na chyby v ucelených častiach systému. Vykonávanie testu zvyčajne začína, keď je už prvý komponent funkčný spolu so všetkým potrebným (napr. ovládače) na fungovanie tohto komponentu bez zbytku systému\cite{Alba2008}.
@@ -239,10 +240,10 @@
 		\item čas potrebný na napísanie testov a naučenie sa syntaxe pracovného rámca
 		\item prehľadnosť jazyka a prostredia
 		\item pomer času, ktorý jednotka potrebuje na vykonanie práce počas testovania v pracovnom rámci a času vykonanie mimo neho
-		\item univerzálnosť podporavaných testo (použiteľnosť testov v inom pracovnom rámci)
+		\item univerzálnosť podporovaných testov (použiteľnosť testov v inom pracovnom rámci)
 		\item využitie mockov pri testovaní
 		\item správa spúšťania testov (možnosť rozdelenia testov do skupín, automatické spúšťanie a pod.)
-		\item zobrazenie výsledkov testovania (prehľadnosť, ako rýchlo sa dá zistiť, ktorý test skončil s chyba a aká bola chyba a pod.)
+		\item zobrazenie výsledkov testovania (prehľadnosť, ako rýchlo sa dá zistiť, ktorý test skončil s chybou a aká bola chyba a pod.)
 		\item automatické generovanie testov
 	\end{itemize}
 	
@@ -396,6 +397,40 @@
 	
 	Podľa podobnosti s ideálnym pracovným rámcom by som za najlepší označil Randoop(resp. Randoop.NET), pretože patrí ku generatívnym pracovným rámcom, stále sa vyvíja a venujú sa mu aj rôzne vedecké práce. Hneď za neho by som zaradil pracovné rámce TestNG, JUnit, NUnit, xUnit.net pretože sú populárne, každý z nich priniesol niečo nové do jednotkového testovania. Na základe zatiaľ získaných informácií ich podľa mňa nie je zatiaľ možné objektívne zoradiť a určiť, ktorý je lepší alebo horší.
 	
+	\newpage
+	
+	\section{Testovanie}
+	
+	\subsection{Apache Maven}
+	
+	Celý java projekt, v ktorom prebiehala implementácia testov aj tried na testovanie využíva nástroj Apache Maven. Je to nástroj na spravovanie a porozumenie softvérových projektov\footnote{https://maven.apache.org/}. Je založený na POM (Project Object Model) a teda sumarizuje indormácie potrebné ku kompilácií, testom, dokumentácií a pod. na jednom mieste. Taktiež čiastočne automatizuje kompiláciu projektov, pretože pre každý podprojekt v rámci väčšieho projektu môže byť vytvorený vlastný POM súbor, ktorý stačí vytvoriť raz a pri ďalších spúšťaniach sa už o nič nemusí starať, lebo sa to automaticky vykoná za neho.
+	
+	POM súbor obsahuje informácie o závislostiach na rôznych knižniciach (knižnice môžu mať závislosť ja v obmedzenom rozsahu, napr. len na testovanie), použitých zásuvných moduloch a samozrejme základné informácie o projekt ako napr. názov, zaradenie v balíku a podobne.
+	
+	\subsection{Tvorba testov}
+	
+	Testy sme vytvárali generovaním pracovným rámcom Randoop. Pre objektívne porovnanie časovej náročnosti je potrebné, aby sme mali testy pre všetky pracovné rámce čo najpodobnejšie. Randoop je jediný, ktorý testy automaticky generuje a preto sme zvolili postup vygenerovať testy a následne z 59 vygenerovaných vybrať 15, ktoré pokrývajú všetky základné prípady. Triedy sú napísane tak, aby výpočet trval na testovacom zariadení niečo pod 1 sekundu. Dôvodom, prečo je výpočet taký dlhý je, aby sa lepšie ukázali časové rozdiely ak sa nejaké objavia. A z časového hľadiska sme preto zvolili 15 testov ako kompromis medzi rýchlosťou a čo najlepším otestovaním. Náš cieľ to nijako neovplyvňuje, pretože nie je naším cieľom otestovať triedy zdrojového kódu, ale slúžia nám ako prostriedok na porovnanie pracovných rámcov na testovanie.
+	
+	Testovacie triedy pre ostatné pracovné rámce, boli vytvorené skopírovaním tela metód (zachovávali sme aj názov testu) a všetko ostatné bolo prispôsobené potrebám daného pracovného rámca. Väčšina testovaných bola podobne ako aj Randoop iba rozšírením JUnit-u a preto sa zmeny týkali iba pridania vlastného spúšťača testov, prípadne vlastných anotácií. Pre TestNG testy bolo treba nahradiť importovanie príslušných tried. Pracovný rámec Arquillian má špeciálnu vlastnosť, že len s minimálnou zmenou dokáže byť spúšťaný ako JUnit alebo ako TestNG test. Pre spúšťanie ako TestNG test musí rozširovať triedu org.jboss.arquillian.testng.Arquillian.
+	
+	Do testov boli nakoniec ešte pridané v prípade JUnit testov anotácie, aby bežali testy v abecednom poradí podľa názvu metód a v prípade TestNG testov to bolo zabezpečené nastavením priority. Toto opatrenie nebolo nevyhnutné, ale na priebeh testov nemá žiaden vplyv a uľahčuje to následné vyhodnocovanie, keď vieme, že boli spúšťané vždy v tom istom poradí.
+	
+	\subsection{Priebeh testovania}
+	
+	\subsubsection{Sekvenčné testovanie}
+	Všetky triedy testov boli spúšťané 100-krát a volané z triedy pomocou príslušných metód podľa toho, ku ktorému pracovnému rámcu patrili. Do súboru boli zaznamenávané jednotlivo časy každej metódy a aj celkový čas.
+	
+	JExample pri opakovanom spúšťaní vždy končil s inicializačnou chybou, preto bol otestovaný len na 10 behoch, tak že sa vždy spúšťal iba raz.
+	
+	\subsubsection{Paralelné testovanie}
+	Pri paralelnom testovaní sme sledovali len časy celých tried, pretože časy metód zisťované rovnakým spôsobom ako pri sekvenčnom testovaní neboli relevantné.
+	
+	Triedy patriace k JUnit-u spúšťané triedou org.junit.experimental.ParallelComputer. Vzhľadom na to, že trieda neposkytuje možnosť nastaviť použitý počet vlákien, nie je úplne jasná konfigurácia, ale keďže boli testy púšťané na počítači so 4-vláknovým procesorom môžeme predpokladať, že boli použité práve 4 vlákna.
+	
+	Pri TestNG pracovných rámcoch je možné nastaviť konfiguráciu pri paralelnom spúšťaní testov. Použitá bola paralelizácia na úrovni metód (na úrovni tried by nemala význam, pretože sme testovali naraz vždy len jednu triedu). Testy boli spúšťané s počtami vlákien 2, 4 a 8. Pracovný rámec Arquillian mal problém pri spúšťaní TestNG testov paralelne. Výnimka nastávala v triede označenej anotáciou @BeforeClass a tá nebola nami implementovaná, preto bol z paralelných testov vylúčený.
+	
+	
+
 	\newpage
 
 	\section{Ciele a záver práce}
