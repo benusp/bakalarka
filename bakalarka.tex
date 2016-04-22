@@ -241,7 +241,6 @@
 		\item prehľadnosť jazyka a prostredia
 		\item pomer času, ktorý jednotka potrebuje na vykonanie práce počas testovania v pracovnom rámci a času vykonanie mimo neho
 		\item univerzálnosť podporovaných testov (použiteľnosť testov v inom pracovnom rámci)
-		\item využitie mockov pri testovaní
 		\item správa spúšťania testov (možnosť rozdelenia testov do skupín, automatické spúšťanie a pod.)
 		\item zobrazenie výsledkov testovania (prehľadnosť, ako rýchlo sa dá zistiť, ktorý test skončil s chybou a aká bola chyba a pod.)
 		\item automatické generovanie testov
@@ -407,6 +406,8 @@
 	
 	POM súbor obsahuje informácie o závislostiach na rôznych knižniciach (knižnice môžu mať závislosť ja v obmedzenom rozsahu, napr. len na testovanie), použitých zásuvných moduloch a samozrejme základné informácie o projekt ako napr. názov, zaradenie v balíku a podobne.
 	
+	Maven projekt sa dá vytvoriť buď vo vývojom prostredí alebo aj vygenerovať cez príkazový riadok.
+	
 	\subsection{Tvorba testov}
 	
 	Testy sme vytvárali generovaním pracovným rámcom Randoop. Pre objektívne porovnanie časovej náročnosti je potrebné, aby sme mali testy pre všetky pracovné rámce čo najpodobnejšie. Randoop je jediný, ktorý testy automaticky generuje a preto sme zvolili postup vygenerovať testy a následne z 59 vygenerovaných vybrať 15, ktoré pokrývajú všetky základné prípady. Triedy sú napísane tak, aby výpočet trval na testovacom zariadení niečo pod 1 sekundu. Dôvodom, prečo je výpočet taký dlhý je, aby sa lepšie ukázali časové rozdiely ak sa nejaké objavia. A z časového hľadiska sme preto zvolili 15 testov ako kompromis medzi rýchlosťou a čo najlepším otestovaním. Náš cieľ to nijako neovplyvňuje, pretože nie je naším cieľom otestovať triedy zdrojového kódu, ale slúžia nám ako prostriedok na porovnanie pracovných rámcov na testovanie.
@@ -429,6 +430,22 @@
 	
 	Pri TestNG pracovných rámcoch je možné nastaviť konfiguráciu pri paralelnom spúšťaní testov. Použitá bola paralelizácia na úrovni metód (na úrovni tried by nemala význam, pretože sme testovali naraz vždy len jednu triedu). Testy boli spúšťané s počtami vlákien 2, 4 a 8. Pracovný rámec Arquillian mal problém pri spúšťaní TestNG testov paralelne. Výnimka nastávala v triede označenej anotáciou @BeforeClass a tá nebola nami implementovaná, preto bol z paralelných testov vylúčený.
 	
+	\subsection{Náročnosť syntaxe pracovných rámcov}
+	Základnými pracovnými rámcami na jednotkové testovanie pre Javu sú JUnit a TestNG. Medzi testovanými sú tieto dva pracovné rámce a ostatné sú nejakým rozšírením aspoň jedného z nich. Vzhľadom na túto naviazanosť pracovných rámcov na dva základné je aj syntax všetkých testovaných pracovných rámcoch veľmi podobná alebo až identická.
+	
+	Výraznejšie rozdiely v zdrojovom kóde boli len pri Arquilliane, lebo sa tam vytvárala zostava (deployment). Nebolo to nevyhnutné, ale pokiaľ nebola vytvorená tak pri spúšťaní testov sa zobrazovalo upozornenie, že zostava nie je vytvorená. Okrem tohto Arquillian vyžaduje, aby bol súčasťou Maven projektu, pretože má veľa závislostí na iných knižniciach a spravovať ich manuálne by bolo nepraktické a natoľko náročné, že by ako pracovný rámec bol úplne nepoužiteľný. Keďže sa v podstate všetko potrebné vygeneruje a aj závislosti sa dajú pridávať cez vývojové prostredie, nie je potrebné učiť sa syntax súborov využívaných Maven projektom, aj keď poznať štruktúru pom.xml súboru je výhodou.
+	
+	Svoje špecifikum má aj Randoop. Je jediný z vybraných pracovných rámcov, ktorý dokáže automaticky generovať jednotkové testy. Je vytváraný ako program bez grafického používateľského rozhrania a preto je potrebné na jeho plnohodnotné používanie poznať príkazový riadok systému a aj prepínače Randoopu na prispôsobenie generovania testov a taktiež výber tried, ktoré majú byť týmito testami testované.
+	
+	Ak by sme to chceli zhrnúť tak môžeme povedať, že vo všetkých pracovných rámcoch je náročnosť na tvorbu testov rovnaká, okrem Arquillianu a Randoopu, ale náročnejšie funkcie na použitie sú také, ktoré nám ostatné pracovné rámce neposkytujú. Preto môžeme povedať, že v tomto aspekte sa nelíšia.
+	
+	\subsection{Prehľadnosť}
+	Prehľadnosť zdrojových kódov testov je veľmi podobná. Rozdiel je v niektorých špecifických nastaveniach, ktoré nemusia súvisieť priamo so zdrojovým kódom testov. Všetky rámce podporujú konfiguráciu rôznych aspektov testovanie na úrovni metód aj tried rôznymi anotáciami. Okrem toho TestNG testy dokážu využívať aj konfiguračný xml súbor a oddeliť tak konfiguráciu testovania od zdrojového kódu testov, čo môže pri komplikovanejších konfiguráciách výrazne sprehľadniť zdrojový kód testov. Okrem toho, keď je celá konfigurácia samostatne jednoduchšie sa v nej orientuje a ľahšie testy konfigurujú podľa predstáv testera, prípadne sa ľahšie upravujú zmeny pred novým behom testov.
+	
+	\subsection{Univerzálnosť}
+	Väčšina pracovných rámcov podporuje testy len z jedného z dvojice hlavných (JUnit alebo TestNG). Výnimkou je len Arqullian, ktorý dokáže len s minimálnou zmenou pracovať ako JUnit aj ako TestNG test. TestNG dokáže púšťať aj JUnit testy bez toho, aby sa na nich muselo čokoľvek meniť, ale je treba vytvoriť xml konfiguračný súbor s definovanými triedami, ktoré chceme spúšťať a musia byť označené ako JUnit testy. TestNG potom používa org.junit.runner.JUnitCore na spúšťanie týchto tried testov.
+	
+	\subsection{Správa spúšťania testov}
 	
 
 	\newpage
