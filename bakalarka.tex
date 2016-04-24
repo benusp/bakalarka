@@ -446,7 +446,18 @@
 	Väčšina pracovných rámcov podporuje testy len z jedného z dvojice hlavných (JUnit alebo TestNG). Výnimkou je len Arqullian, ktorý dokáže len s minimálnou zmenou pracovať ako JUnit aj ako TestNG test. TestNG dokáže púšťať aj JUnit testy bez toho, aby sa na nich muselo čokoľvek meniť, ale je treba vytvoriť xml konfiguračný súbor s definovanými triedami, ktoré chceme spúšťať a musia byť označené ako JUnit testy. TestNG potom používa org.junit.runner.JUnitCore na spúšťanie týchto tried testov.
 	
 	\subsection{Správa spúšťania testov}
+	Všetky pracovné rámce poskytujú možnosť vytvoriť si skupiny testov, z ktoré dokážu spúšťať spolu tie testy, ktoré chceme. Pracovné rámce založené na JUnite využívajú na to triedu, v ktorej sú vymenované triedy testov, ktoré sa majú spúšťať a okrem toho je možné ešte aj každú z týchto tried rozdeliť do kategórií a zahŕňať do testovania, resp. vynechať z testovania jednotlivé kategórie.
+	TestNG využíva na vytváranie skupín testov, ktoré sa majú spúšťať konfiguračný xml súbor, kde si môžeme takisto špecifikovať, ktoré testy chceme spúšťať presne podľa našich požiadaviek.
+	Treťou možnosťou ako ovplyvniť, čo všetko sa bude testovať je spúšťanie testov prostredníctvom Mavenu. V pom.xml súbore sa dajú vyberať jednotlivé skupiny testov a testy v zdrojovom kóde vieme pomocou anotácií jednoducho zadeliť do potrebných skupín. Obdobne vieme využívať aj kategórie pri testovaní JUnit.
 	
+	Automatická selekcia testov, ktoré sa budú spúšťať nie je implementovaná v žiadnom z testovaných pracovných rámcov.
+	
+	\subsection{Zobrazenie výsledkov}
+	Pracovné rámce nepoužívajú samostatné zobrazenie výsledkov a spoliehajú sa na zobrazovanie poskytované východiskovými. Grafické zobrazenie vo vývojom prostredí je na zrovnateľnej úrovni, s veľmi podobnou štruktúrou aj grafikou. Testovanie bolo vykonávané v prostredí Eclipse .Mars2 a použité boli zásuvné moduly pre JUnit a TestNG s odkazov na oficiálnych stránkach určené pre toto prostredie. Toto zobrazenie nie je priamo naviazané na pracovné rámce a ťažko preto objektívne zhodnotiť tieto zobrazenia, pretože sú závislé od pracovného prostredia, ktoré používa tester a nie až tak od konkrétneho pracovného rámca.
+	Rozdiel medzi TestNG a JUnit bol vo výpise výsledkov testov do konzoly. Kým TestNG poskytoval pomerne podrobné informácie aj v konzole, JUnit nevypisoval do konzoly nič. (neviem ako zistiť či je to pluginom alebo je to integrované priamo vo frameworku)
+	
+	\subsection{Automatické generovanie testov}
+	Jediný z vybraných pracovných rámcov poskytujúci automatické generovanie testov je Randoop. Sám o sebe nemá grafické prostredie, aj keď na internete sú dostupné zásuvné moduly umožňujúce spustiť generovanie testov aj priamo z vývojové prostredia. Avšak tieto zásuvné moduly sú staré už niekoľko rokov a novšie sa nám nepodarilo nájsť ani na stránkach vývojárov Randoop. Pre účely tejto práce boli preto testy generované z príkazového riadku, aby sme mohli použiť najnovšiu verziu pracovného rámca a nerobili štúdiu s použitím zastaralého softvéru. Tvorba testov je bližšie popísaná v časti \textit{Tvorba testov}.
 
 	\newpage
 
