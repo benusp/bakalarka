@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  26 APR 2016 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  26 APR 2016 21:42
 entering extended mode
 **./bakalarka.tex
 (bakalarka.tex
@@ -940,7 +940,10 @@ Overfull \hbox (1.66142pt too wide) in paragraph at lines 468--471
  []  
  []
 
-[29 <./sekvencne.jpg>] <paralelne.jpg, id=435, 520.19344pt x 403.5075pt>
+
+Underfull \vbox (badness 1466) has occurred while \output is active []
+
+ [29 <./sekvencne.jpg>] <paralelne.jpg, id=435, 520.19344pt x 403.5075pt>
 File: paralelne.jpg Graphic file (type jpg)
 
 <use paralelne.jpg>
@@ -985,7 +988,7 @@ m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on bakalarka.pdf (36 pages, 245087 bytes).
+Output written on bakalarka.pdf (36 pages, 245303 bytes).
 PDF statistics:
  495 PDF objects out of 1000 (max. 8388607)
  127 named destinations out of 1000 (max. 500000)
