@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  24 APR 2016 21:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  26 APR 2016 14:33
 entering extended mode
 **./bakalarka.tex
 (bakalarka.tex
@@ -794,16 +794,16 @@ l.114 	\end{titlepage}
                        [1] (bakalarka.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
-)
-\tf@toc=\write5
-\openout5 = `bakalarka.toc'.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.118 	\end{titlepage}
-                       [1] [2] [3]
+l.43 ....3}Priebeh testovania}{25}{subsection.6.3}
+                                                   [1])
+\tf@toc=\write5
+\openout5 = `bakalarka.toc'.
+
+ [2] [3] [4]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
@@ -814,29 +814,37 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 146.
 
-[4]
+[5]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 153.
 
+[6]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 168.
 
-[5]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 177.
 
 
+Underfull \vbox (badness 2556) has occurred while \output is active []
+
+ [8]
+
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 186.
 
-[6] [7]
+[9]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
@@ -847,7 +855,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 193.
 
-
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
@@ -859,8 +867,8 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 212.
- [8] [9]
-[10] [11]
+ [11] [12]
+[13] [14]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 257.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
@@ -872,7 +880,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[12] [13] [14] [15] [16] [17] [18] [19]
+[15] [16] [17] [18] [19] [20] [21] [22] [23] [24]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
@@ -884,6 +892,7 @@ Overfull \hbox (17.84315pt too wide) in paragraph at lines 429--430
 erimental.ParallelComputer. Vzh©a-
  []
 
+[25]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
@@ -894,7 +903,6 @@ Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 433.
 
-[20]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
@@ -905,6 +913,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 442.
 
+[26]
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
@@ -915,43 +924,70 @@ Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 448.
 
-[21] [22] [23]
+[27]
 
 Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 471.
+(hyperref)                removing `\textasciicaron' on input line 462.
 
-[24] (bakalarka.bbl)pdfTeX warning (ext4): destination with the same identifier
+[28] <sekvencne.jpg, id=430, 612.03656pt x 395.22656pt>
+File: sekvencne.jpg Graphic file (type jpg)
+ <use sekvencne.jpg>
+Package pdftex.def Info: sekvencne.jpg used on input line 468.
+(pdftex.def)             Requested size: 400.0pt x 258.29936pt.
+
+Overfull \hbox (1.66142pt too wide) in paragraph at lines 468--471
+ []  
+ []
+
+[29 <./sekvencne.jpg>] <paralelne.jpg, id=435, 520.19344pt x 403.5075pt>
+File: paralelne.jpg Graphic file (type jpg)
+
+<use paralelne.jpg>
+Package pdftex.def Info: paralelne.jpg used on input line 476.
+(pdftex.def)             Requested size: 400.0pt x 310.2769pt.
+
+Overfull \hbox (1.66142pt too wide) in paragraph at lines 476--479
+ []  
+ []
+
+[30 <./paralelne.jpg>] [31]
+
+Package hyperref Warning: Composite letter `\textasciicaron+C'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 491.
+
+[32] (bakalarka.bbl)pdfTeX warning (ext4): destination with the same identifier
  (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.483  	\end{titlepage}
+l.503  	\end{titlepage}
                         [1]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 485.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 485.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 505.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 505.
  (bakalarka.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 485.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 485.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 505.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 505.
 Package rerunfilecheck Info: File `bakalarka.out' has not changed.
-(rerunfilecheck)             Checksum: 9D580AD0838BBF3AE638C9474313C15A;2960.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 485.
+(rerunfilecheck)             Checksum: BBDDD2A081464721ADFC0B3FFA913BDF;3057.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 505.
  ) 
 Here is how much of TeX's memory you used:
- 9341 strings out of 493634
- 130887 string characters out of 3141317
- 236216 words of memory out of 3000000
- 12463 multiletter control sequences out of 15000+200000
- 53858 words of font info for 76 fonts, out of 3000000 for 9000
+ 9365 strings out of 493634
+ 131169 string characters out of 3141317
+ 233223 words of memory out of 3000000
+ 12473 multiletter control sequences out of 15000+200000
+ 56580 words of font info for 78 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 29i,10n,43p,1315b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,11n,43p,1315b,491s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on bakalarka.pdf (28 pages, 173666 bytes).
+Output written on bakalarka.pdf (36 pages, 245087 bytes).
 PDF statistics:
- 453 PDF objects out of 1000 (max. 8388607)
- 118 named destinations out of 1000 (max. 500000)
- 297 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 495 PDF objects out of 1000 (max. 8388607)
+ 127 named destinations out of 1000 (max. 500000)
+ 315 words of extra memory for PDF output out of 10000 (max. 10000000)
 

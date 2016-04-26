@@ -1,54 +1,55 @@
 \select@language {slovak}
 \contentsline {section}{\numberline {1}\IeC {\'U}vod}{3}{section.1}
-\contentsline {section}{\numberline {2}Testovanie softv\IeC {\'e}ru}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Pod\IeC {\v l}a postupu testovania}{4}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Testovanie formou \IeC {\v c}iernej skrinky}{4}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}Testovanie formou bielej skrinky}{4}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}Testovanie formou sivej skrinky}{4}{subsubsection.2.1.3}
-\contentsline {subsection}{\numberline {2.2}Pod\IeC {\v l}a sp\IeC {\^o}sobu testovania}{5}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Statick\IeC {\'e} testovanie}{5}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Dynamick\IeC {\'e} testovanie}{5}{subsubsection.2.2.2}
-\contentsline {subsection}{\numberline {2.3}Pod\IeC {\v l}a \IeC {\'u}rovne testu}{6}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Jednotkov\IeC {\'e} testovanie}{6}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Testovanie komponentov}{6}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Integra\IeC {\v c}n\IeC {\'e} testovanie}{6}{subsubsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.4}Syst\IeC {\'e}mov\IeC {\'e} testovanie}{6}{subsubsection.2.3.4}
-\contentsline {subsubsection}{\numberline {2.3.5}Akcepta\IeC {\v c}n\IeC {\'e} testovanie}{6}{subsubsection.2.3.5}
-\contentsline {section}{\numberline {3}K\IeC {\v l}\IeC {\'u}\IeC {\v c}ov\IeC {\'e} vlastnosti jednotkov\IeC {\'e}ho testovania}{8}{section.3}
-\contentsline {subsection}{\numberline {3.1}Vlastnosti ide\IeC {\'a}lneho pracovn\IeC {\'e}ho r\IeC {\'a}mca pre jednotkov\IeC {\'e} testovanie}{9}{subsection.3.1}
-\contentsline {section}{\numberline {4}Hodnotenie pracovn\IeC {\'y}ch r\IeC {\'a}mcov}{11}{section.4}
-\contentsline {section}{\numberline {5}xUnit}{12}{section.5}
-\contentsline {subsection}{\numberline {5.1}N\IeC {\'a}stroje patriace do skupiny xUnit pre Javu}{12}{subsection.5.1}
-\contentsline {paragraph}{Arquillian}{12}{section*.4}
-\contentsline {paragraph}{HavaRunner}{13}{section*.5}
-\contentsline {paragraph}{JExample}{13}{section*.6}
-\contentsline {paragraph}{JUnit}{13}{section*.7}
-\contentsline {paragraph}{Randoop}{13}{section*.8}
-\contentsline {paragraph}{Sprytest}{14}{section*.9}
-\contentsline {paragraph}{TestNG}{14}{section*.10}
-\contentsline {subsection}{\numberline {5.2}N\IeC {\'a}stroje patriace do skupiny xUnit pre .NET}{14}{subsection.5.2}
-\contentsline {paragraph}{Fixie}{14}{section*.11}
-\contentsline {paragraph}{MbUnit}{15}{section*.12}
-\contentsline {paragraph}{Moq}{15}{section*.13}
-\contentsline {paragraph}{NUnit}{16}{section*.14}
-\contentsline {paragraph}{Nbi}{16}{section*.15}
-\contentsline {paragraph}{Pex}{16}{section*.16}
-\contentsline {paragraph}{Randoop.NET}{17}{section*.17}
-\contentsline {paragraph}{Rhino.Mocks}{17}{section*.18}
-\contentsline {paragraph}{xUnit.net}{17}{section*.19}
-\contentsline {subsection}{\numberline {5.3}Porovnanie vlastnost\IeC {\'\i } pracovn\IeC {\'y}ch r\IeC {\'a}mcov patriacich do skupiny xUnit s ide\IeC {\'a}lnym pracovn\IeC {\'y}m r\IeC {\'a}mcom}{18}{subsection.5.3}
-\contentsline {section}{\numberline {6}Testovanie}{19}{section.6}
-\contentsline {subsection}{\numberline {6.1}Apache Maven}{19}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Tvorba testov}{19}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Priebeh testovania}{20}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Sekven\IeC {\v c}n\IeC {\'e} testovanie}{20}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Paraleln\IeC {\'e} testovanie}{20}{subsubsection.6.3.2}
-\contentsline {subsection}{\numberline {6.4}N\IeC {\'a}ro\IeC {\v c}nos\IeC {\v t} syntaxe pracovn\IeC {\'y}ch r\IeC {\'a}mcov}{20}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Preh\IeC {\v l}adnos\IeC {\v t}}{21}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Univerz\IeC {\'a}lnos\IeC {\v t}}{21}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}Spr\IeC {\'a}va sp\IeC {\'u}\IeC {\v s}\IeC {\v t}ania testov}{21}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}Zobrazenie v\IeC {\'y}sledkov}{21}{subsection.6.8}
-\contentsline {subsection}{\numberline {6.9}Automatick\IeC {\'e} generovanie testov}{22}{subsection.6.9}
-\contentsline {section}{\numberline {7}Ciele a z\IeC {\'a}ver pr\IeC {\'a}ce}{23}{section.7}
-\contentsline {section}{\numberline {8}\IeC {\v C}asov\IeC {\'y} pl\IeC {\'a}n do odovzdania pr\IeC {\'a}ce v letnom semestri}{24}{section.8}
+\contentsline {section}{\numberline {2}Testovanie softv\IeC {\'e}ru}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Pod\IeC {\v l}a postupu testovania}{5}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Testovanie formou \IeC {\v c}iernej skrinky}{5}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Testovanie formou bielej skrinky}{5}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Testovanie formou sivej skrinky}{6}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}Pod\IeC {\v l}a sp\IeC {\^o}sobu testovania}{6}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Statick\IeC {\'e} testovanie}{6}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Dynamick\IeC {\'e} testovanie}{7}{subsubsection.2.2.2}
+\contentsline {subsection}{\numberline {2.3}Pod\IeC {\v l}a \IeC {\'u}rovne testu}{8}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Jednotkov\IeC {\'e} testovanie}{8}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Testovanie komponentov}{8}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Integra\IeC {\v c}n\IeC {\'e} testovanie}{8}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Syst\IeC {\'e}mov\IeC {\'e} testovanie}{9}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}Akcepta\IeC {\v c}n\IeC {\'e} testovanie}{9}{subsubsection.2.3.5}
+\contentsline {section}{\numberline {3}K\IeC {\v l}\IeC {\'u}\IeC {\v c}ov\IeC {\'e} vlastnosti jednotkov\IeC {\'e}ho testovania}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Vlastnosti ide\IeC {\'a}lneho pracovn\IeC {\'e}ho r\IeC {\'a}mca pre jednotkov\IeC {\'e} testovanie}{11}{subsection.3.1}
+\contentsline {section}{\numberline {4}Hodnotenie pracovn\IeC {\'y}ch r\IeC {\'a}mcov}{14}{section.4}
+\contentsline {section}{\numberline {5}xUnit}{15}{section.5}
+\contentsline {subsection}{\numberline {5.1}N\IeC {\'a}stroje patriace do skupiny xUnit pre Javu}{16}{subsection.5.1}
+\contentsline {paragraph}{Arquillian}{16}{section*.4}
+\contentsline {paragraph}{HavaRunner}{16}{section*.5}
+\contentsline {paragraph}{JExample}{17}{section*.6}
+\contentsline {paragraph}{JUnit}{17}{section*.7}
+\contentsline {paragraph}{Randoop}{17}{section*.8}
+\contentsline {paragraph}{Sprytest}{17}{section*.9}
+\contentsline {paragraph}{TestNG}{18}{section*.10}
+\contentsline {subsection}{\numberline {5.2}N\IeC {\'a}stroje patriace do skupiny xUnit pre .NET}{18}{subsection.5.2}
+\contentsline {paragraph}{Fixie}{18}{section*.11}
+\contentsline {paragraph}{MbUnit}{19}{section*.12}
+\contentsline {paragraph}{Moq}{19}{section*.13}
+\contentsline {paragraph}{NUnit}{20}{section*.14}
+\contentsline {paragraph}{Nbi}{21}{section*.15}
+\contentsline {paragraph}{Pex}{21}{section*.16}
+\contentsline {paragraph}{Randoop.NET}{21}{section*.17}
+\contentsline {paragraph}{Rhino.Mocks}{22}{section*.18}
+\contentsline {paragraph}{xUnit.net}{22}{section*.19}
+\contentsline {subsection}{\numberline {5.3}Porovnanie vlastnost\IeC {\'\i } pracovn\IeC {\'y}ch r\IeC {\'a}mcov patriacich do skupiny xUnit s ide\IeC {\'a}lnym pracovn\IeC {\'y}m r\IeC {\'a}mcom}{23}{subsection.5.3}
+\contentsline {section}{\numberline {6}Testovanie}{24}{section.6}
+\contentsline {subsection}{\numberline {6.1}Apache Maven}{24}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Tvorba testov}{24}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Priebeh testovania}{25}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Sekven\IeC {\v c}n\IeC {\'e} testovanie}{25}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Paraleln\IeC {\'e} testovanie}{25}{subsubsection.6.3.2}
+\contentsline {subsection}{\numberline {6.4}N\IeC {\'a}ro\IeC {\v c}nos\IeC {\v t} syntaxe pracovn\IeC {\'y}ch r\IeC {\'a}mcov}{26}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Preh\IeC {\v l}adnos\IeC {\v t}}{27}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Univerz\IeC {\'a}lnos\IeC {\v t}}{27}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Spr\IeC {\'a}va sp\IeC {\'u}\IeC {\v s}\IeC {\v t}ania testov}{27}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}Zobrazenie v\IeC {\'y}sledkov}{28}{subsection.6.8}
+\contentsline {subsection}{\numberline {6.9}Automatick\IeC {\'e} generovanie testov}{28}{subsection.6.9}
+\contentsline {subsection}{\numberline {6.10}\IeC {\v C}asov\IeC {\'a} r\IeC {\'e}\IeC {\v z}ia pracovn\IeC {\'y}ch r\IeC {\'a}mcov}{28}{subsection.6.10}
+\contentsline {section}{\numberline {7}Ciele a z\IeC {\'a}ver pr\IeC {\'a}ce}{31}{section.7}
+\contentsline {section}{\numberline {8}\IeC {\v C}asov\IeC {\'y} pl\IeC {\'a}n do odovzdania pr\IeC {\'a}ce v letnom semestri}{32}{section.8}
 \contentsline {section}{Literat\'ura}{1}{section*.20}

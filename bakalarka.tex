@@ -29,7 +29,7 @@
 \usepackage{graphicx}
 
 \usepackage{etoolbox}
-\linespread{1}
+\linespread{1.5}
 
 \pagestyle{myheadings}
 
@@ -458,6 +458,26 @@
 	
 	\subsection{Automatické generovanie testov}
 	Jediný z vybraných pracovných rámcov poskytujúci automatické generovanie testov je Randoop. Sám o sebe nemá grafické prostredie, aj keď na internete sú dostupné zásuvné moduly umožňujúce spustiť generovanie testov aj priamo z vývojové prostredia. Avšak tieto zásuvné moduly sú staré už niekoľko rokov a novšie sa nám nepodarilo nájsť ani na stránkach vývojárov Randoop. Pre účely tejto práce boli preto testy generované z príkazového riadku, aby sme mohli použiť najnovšiu verziu pracovného rámca a nerobili štúdiu s použitím zastaralého softvéru. Tvorba testov je bližšie popísaná v časti \textit{Tvorba testov}.
+	
+	\subsection{Časová réžia pracovných rámcov}
+	Počas testovania boli merané časy jednotlivých metód, rozdiel času pred prvou a po poslednej testovacej metóde a aj rozdiel času pred a po zavolaní spúšťača testu na danú triedu. V grafoch nižšie je zobrazené porovnanie časov pred zavolaním spúšťača a po jeho ukončení. Tento čas bol vybraný preto, lebo zahŕňa všetku časovú réžiu okolo spúšťania testov a rozdiel oproti súčtu času jednotlivých metód a rozdielu času pred prvou a poslednou je minimálny (rozdiel v priemerných časoch aj mediáne bol do 20 ms, čo je pri dĺžke testu nad 10000 ms zanedbateľná hodnota). Vyššie rozdiely mali len pracovné rámce TestNG a Arquillian spúšťaný ako TestNG test. Z toho vyplýva, že TestNG spúšťač testov má väčšiu réžiu ako JUnit spúšťač.(môžno by bolo dobré ešte pridať graf na porovnanie rozdielu oproti ostatným)
+	
+	Pri sekvenčných testoch je evidentné, že testy sú čo sa týka času veľmi podobné (Obr. 1). Čisté JUnit test bez nejako rozšírenia sú na rovnakej úrovni ako vykonávanie tried mimo testu a dokonca aj o niečo rýchlejšie. To môže byť spôsobené chybou merania, pretože neviem zabezpečiť, aby operačný systém na počítači nevykonával aj iné úlohy na pozadí, ktoré môžu mať vplyv na výkon aj keď sme sa snažili tieto nežiadúce vplyvy čo najviac eliminovať. O niečo horšie, ale bez výrazného rozdielu, je na tom Arquillian spúšťaný oboma pracovnými rámcami a samotný TestNG.
+	
+	\begin{center}
+		\includegraphics[width = 400pt]{sekvencne}
+		\newline
+		\tiny Obr. 1. Výsledky sekvenčných testov
+	\end{center}
+	
+	Výsledky paralelných testov (Obr. 2) ukazujú presne tie isté výsledky a teda opäť sú na tom najlepšie JUnit pracovné rámce a o niečo horšie Arquillian a TestNG. Pri paralelných testoch je ešte dôležité si všimnúť, že najlepšie časy malo vykonávať testov v 8 a 16 vláknach (procesor počítača, na ktorom prebiehali testy má 2 jadrá a 4 vlákna). Pri iných počtoch jadier, na ktorých boli testy spúšťané boli časy horšie, čo naznačuje, že je okolo testov dosť réžie, pretože najlepšie využitie bolo až pri 8 vláknach. Keby tam táto réžia nebola a išlo by len o výpočet najlepšie časy by sme dosahovali pri 2, resp. 4 vláknach.
+	
+	\begin{center}
+		\includegraphics[width = 400pt]{paralelne}
+		\newline
+		\tiny Obr. 2. Výsledky paralelných testov
+	\end{center}
+	
 
 	\newpage
 
