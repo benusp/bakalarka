@@ -20,19 +20,24 @@
 \BOOKMARK [2][-]{subsection.5.1}{N\341stroje patriace do skupiny xUnit pre Javu}{section.5}% 20
 \BOOKMARK [2][-]{subsection.5.2}{N\341stroje patriace do skupiny xUnit pre .NET}{section.5}% 21
 \BOOKMARK [2][-]{subsection.5.3}{Porovnanie vlastnost\355 pracovn\375ch r\341mcov patriacich do skupiny xUnit s ide\341lnym pracovn\375m r\341mcom}{section.5}% 22
-\BOOKMARK [1][-]{section.6}{Testovanie}{}% 23
+\BOOKMARK [1][-]{section.6}{Konfigur\341cia testovania}{}% 23
 \BOOKMARK [2][-]{subsection.6.1}{Apache Maven}{section.6}% 24
 \BOOKMARK [2][-]{subsection.6.2}{Tvorba testov}{section.6}% 25
-\BOOKMARK [2][-]{subsection.6.3}{Priebeh testovania}{section.6}% 26
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Sekvencn\351 testovanie}{subsection.6.3}% 27
-\BOOKMARK [3][-]{subsubsection.6.3.2}{Paraleln\351 testovanie}{subsection.6.3}% 28
-\BOOKMARK [2][-]{subsection.6.4}{N\341rocnost syntaxe pracovn\375ch r\341mcov}{section.6}% 29
-\BOOKMARK [2][-]{subsection.6.5}{Prehladnost}{section.6}% 30
-\BOOKMARK [2][-]{subsection.6.6}{Univerz\341lnost}{section.6}% 31
-\BOOKMARK [2][-]{subsection.6.7}{Spr\341va sp\372\235tania testov}{section.6}% 32
-\BOOKMARK [2][-]{subsection.6.8}{Zobrazenie v\375sledkov}{section.6}% 33
-\BOOKMARK [2][-]{subsection.6.9}{Automatick\351 generovanie testov}{section.6}% 34
-\BOOKMARK [2][-]{subsection.6.10}{Casov\341 r\351\236ia pracovn\375ch r\341mcov}{section.6}% 35
-\BOOKMARK [1][-]{section.7}{Ciele a z\341ver pr\341ce}{}% 36
-\BOOKMARK [1][-]{section.8}{Casov\375 pl\341n do odovzdania pr\341ce v letnom semestri}{}% 37
-\BOOKMARK [1][-]{section*.20}{Literat\372ra}{}% 38
+\BOOKMARK [2][-]{subsection.6.3}{Opis testovac\355ch tried a met\363d}{section.6}% 26
+\BOOKMARK [2][-]{subsection.6.4}{Sekvencn\351 testovanie}{section.6}% 27
+\BOOKMARK [2][-]{subsection.6.5}{Paraleln\351 testovanie}{section.6}% 28
+\BOOKMARK [2][-]{subsection.6.6}{Konfigur\341cia poc\355taca}{section.6}% 29
+\BOOKMARK [2][-]{subsection.6.7}{V\375ber pracovn\375ch r\341mcov na testovanie}{section.6}% 30
+\BOOKMARK [1][-]{section.7}{Hodnotenie vlastnost\355 pracovn\375ch r\341mcov}{}% 31
+\BOOKMARK [2][-]{subsection.7.1}{N\341rocnost syntaxe pracovn\375ch r\341mcov}{section.7}% 32
+\BOOKMARK [2][-]{subsection.7.2}{Prehladnost}{section.7}% 33
+\BOOKMARK [2][-]{subsection.7.3}{Univerz\341lnost}{section.7}% 34
+\BOOKMARK [2][-]{subsection.7.4}{Spr\341va sp\372\235tania testov}{section.7}% 35
+\BOOKMARK [2][-]{subsection.7.5}{Zobrazenie v\375sledkov}{section.7}% 36
+\BOOKMARK [2][-]{subsection.7.6}{Automatick\351 generovanie testov}{section.7}% 37
+\BOOKMARK [2][-]{subsection.7.7}{Casov\341 r\351\236ia pracovn\375ch r\341mcov}{section.7}% 38
+\BOOKMARK [2][-]{subsection.7.8}{Po\236iadavky na \372roven sk\372senosti program\341tora}{section.7}% 39
+\BOOKMARK [1][-]{section.8}{Vyhodnotenie v\375sledkov testovania}{}% 40
+\BOOKMARK [2][-]{subsection.8.1}{Vhodnost pou\236itia pracovn\375ch r\341mcov podla charakteristiky projektu}{section.8}% 41
+\BOOKMARK [1][-]{section.9}{Z\341ver}{}% 42
+\BOOKMARK [1][-]{section*.20}{Literat\372ra}{}% 43

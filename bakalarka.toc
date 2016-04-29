@@ -12,7 +12,7 @@
 \contentsline {subsubsection}{\numberline {2.3.1}Jednotkov\IeC {\'e} testovanie}{8}{subsubsection.2.3.1}
 \contentsline {subsubsection}{\numberline {2.3.2}Testovanie komponentov}{8}{subsubsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}Integra\IeC {\v c}n\IeC {\'e} testovanie}{8}{subsubsection.2.3.3}
-\contentsline {subsubsection}{\numberline {2.3.4}Syst\IeC {\'e}mov\IeC {\'e} testovanie}{9}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.4}Syst\IeC {\'e}mov\IeC {\'e} testovanie}{8}{subsubsection.2.3.4}
 \contentsline {subsubsection}{\numberline {2.3.5}Akcepta\IeC {\v c}n\IeC {\'e} testovanie}{9}{subsubsection.2.3.5}
 \contentsline {section}{\numberline {3}K\IeC {\v l}\IeC {\'u}\IeC {\v c}ov\IeC {\'e} vlastnosti jednotkov\IeC {\'e}ho testovania}{10}{section.3}
 \contentsline {subsection}{\numberline {3.1}Vlastnosti ide\IeC {\'a}lneho pracovn\IeC {\'e}ho r\IeC {\'a}mca pre jednotkov\IeC {\'e} testovanie}{11}{subsection.3.1}
@@ -37,19 +37,24 @@
 \contentsline {paragraph}{Rhino.Mocks}{22}{section*.18}
 \contentsline {paragraph}{xUnit.net}{22}{section*.19}
 \contentsline {subsection}{\numberline {5.3}Porovnanie vlastnost\IeC {\'\i } pracovn\IeC {\'y}ch r\IeC {\'a}mcov patriacich do skupiny xUnit s ide\IeC {\'a}lnym pracovn\IeC {\'y}m r\IeC {\'a}mcom}{23}{subsection.5.3}
-\contentsline {section}{\numberline {6}Testovanie}{24}{section.6}
+\contentsline {section}{\numberline {6}Konfigur\IeC {\'a}cia testovania}{24}{section.6}
 \contentsline {subsection}{\numberline {6.1}Apache Maven}{24}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Tvorba testov}{24}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Priebeh testovania}{25}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Sekven\IeC {\v c}n\IeC {\'e} testovanie}{25}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Paraleln\IeC {\'e} testovanie}{25}{subsubsection.6.3.2}
-\contentsline {subsection}{\numberline {6.4}N\IeC {\'a}ro\IeC {\v c}nos\IeC {\v t} syntaxe pracovn\IeC {\'y}ch r\IeC {\'a}mcov}{26}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Preh\IeC {\v l}adnos\IeC {\v t}}{27}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Univerz\IeC {\'a}lnos\IeC {\v t}}{27}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}Spr\IeC {\'a}va sp\IeC {\'u}\IeC {\v s}\IeC {\v t}ania testov}{27}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}Zobrazenie v\IeC {\'y}sledkov}{28}{subsection.6.8}
-\contentsline {subsection}{\numberline {6.9}Automatick\IeC {\'e} generovanie testov}{28}{subsection.6.9}
-\contentsline {subsection}{\numberline {6.10}\IeC {\v C}asov\IeC {\'a} r\IeC {\'e}\IeC {\v z}ia pracovn\IeC {\'y}ch r\IeC {\'a}mcov}{28}{subsection.6.10}
-\contentsline {section}{\numberline {7}Ciele a z\IeC {\'a}ver pr\IeC {\'a}ce}{31}{section.7}
-\contentsline {section}{\numberline {8}\IeC {\v C}asov\IeC {\'y} pl\IeC {\'a}n do odovzdania pr\IeC {\'a}ce v letnom semestri}{32}{section.8}
-\contentsline {section}{Literat\'ura}{1}{section*.20}
+\contentsline {subsection}{\numberline {6.3}Opis testovac\IeC {\'\i }ch tried a met\IeC {\'o}d}{25}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Sekven\IeC {\v c}n\IeC {\'e} testovanie}{25}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Paraleln\IeC {\'e} testovanie}{26}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Konfigur\IeC {\'a}cia po\IeC {\v c}\IeC {\'\i }ta\IeC {\v c}a}{26}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}V\IeC {\'y}ber pracovn\IeC {\'y}ch r\IeC {\'a}mcov na testovanie}{26}{subsection.6.7}
+\contentsline {section}{\numberline {7}Hodnotenie vlastnost\IeC {\'\i } pracovn\IeC {\'y}ch r\IeC {\'a}mcov}{28}{section.7}
+\contentsline {subsection}{\numberline {7.1}N\IeC {\'a}ro\IeC {\v c}nos\IeC {\v t} syntaxe pracovn\IeC {\'y}ch r\IeC {\'a}mcov}{28}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Preh\IeC {\v l}adnos\IeC {\v t}}{28}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Univerz\IeC {\'a}lnos\IeC {\v t}}{29}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Spr\IeC {\'a}va sp\IeC {\'u}\IeC {\v s}\IeC {\v t}ania testov}{29}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Zobrazenie v\IeC {\'y}sledkov}{30}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Automatick\IeC {\'e} generovanie testov}{30}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}\IeC {\v C}asov\IeC {\'a} r\IeC {\'e}\IeC {\v z}ia pracovn\IeC {\'y}ch r\IeC {\'a}mcov}{31}{subsection.7.7}
+\contentsline {subsection}{\numberline {7.8}Po\IeC {\v z}iadavky na \IeC {\'u}rove\IeC {\v n} sk\IeC {\'u}senosti program\IeC {\'a}tora}{33}{subsection.7.8}
+\contentsline {section}{\numberline {8}Vyhodnotenie v\IeC {\'y}sledkov testovania}{35}{section.8}
+\contentsline {subsection}{\numberline {8.1}Vhodnos\IeC {\v t} pou\IeC {\v z}itia pracovn\IeC {\'y}ch r\IeC {\'a}mcov pod\IeC {\v l}a charakteristiky projektu}{37}{subsection.8.1}
+\contentsline {section}{\numberline {9}Z\IeC {\'a}ver}{38}{section.9}
+\contentsline {section}{Literat\'ura}{39}{section*.20}

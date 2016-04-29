@@ -1,0 +1,17 @@
+deployment (strana 26, kapitola 6.4)
+listener (zobrazenie vysledkov a vyhodnotenie)
+assertion preklad (xUnit)
+Fixie poznamka
+
+
+
+
+----dopisane----
+časová nárocnost arquillian - vyhoda zostavy
+zobrazenie vysledkov - doplneny pristup k vysledkom zo zdrojoveho kodu.	
+zmeneny sposob hodnotenia testov
+
+
+
+prehlad dokumentu po uvode
+pridat graf do 6.10

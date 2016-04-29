@@ -19,6 +19,7 @@
 \hypersetup{
 	hidelinks = true
 }
+\raggedbottom
 
 \usepackage{cite}
 \usepackage{times}
@@ -129,18 +130,18 @@
 	
 	Testovanie môže prebiehať (a často aj prebieha) počas celej doby životného cyklu programu. Čím skôr je chyba odhalená a opravená tým menšie negatívne následky bude mať na výsledný produkt. Preto je dôležité testovať softvér od začiatku tvorby, od najmenších jednotiek, cez integráciu viacerých jednotiek a komponentov až po celé systémy, ktoré môžu byť zložené z viacerých programov.
 	
-	Preto, že je dôležité odhaliť chybu čo najskôr a medzi pracovnými rámcami nie je doteraz vytvorené žiadne porovnanie, tak sme sa rozhodli porovnať viacero pracovných rámcov na jednotkové testovanie a vytvoriť ich porovnanie čo najobjektívnejšie a nezohľadňovať len subjektívne pocity, ktoré vznikajú pri práci s každým pracovným rámcom.
+	Medzi pracovnými rámcami nie sú porovnania vo vlastnostiach, ale zväčša ide len každý obhajuje svoj obľúbený pracovný rámec a preto sme sa rozhodli porovnať viacero pracovných rámcov na jednotkové testovanie a vytvoriť ich porovnanie čo najobjektívnejšie a nezohľadňovať len subjektívne pocity, ktoré vznikajú pri práci s každým pracovným rámcom.
 		
 	Tak ako sa v rôznych častiach životného cyklu softvéru testujú rôzne aspekty produktu, používajú sa aj rôzne prístupy testovania a softvér testujú rôzny ľudia. Jednotkové testovanie vykonávajú typicky programátori a testujú jednotlivé jednotky nezávisle od seba. Integračné a systémové testovanie majú na starosti testeri a ich úlohou je odhaliť chyby v komunikácií medzi komponentami, resp. programom a konkrétnym systémom. Akceptačné testovanie vykonáva už objednávateľ alebo cieľová skupina používateľov a jeho výsledkom je akceptovanie výsledného produktu, resp. neakceptovanie a nutnosť opravy\cite{Myers}.
 	
-	Jednotkové testovanie je typ testovania, ktorým sa musel zaoberať každý, kto už niečo programoval, pretože vždy začíname tým, že vytvoríme nejakú jednotku programu a postupne sa k tomu pridávajú ďaľšie. Dokonca je tento postup úplne nezávislý od toho či sa iba učíme programovať alebo už programovať vieme a vytvárame nejaký program na konkrétny účel. Výrazný rozdiel, ale môže byť v tom, že začiatočníci budú testovať svoje jednotky programu opakovaným spúšťaním, zadávaním rôznych vstupov a sledovaním výsledkov, ale skúsený programátor použije nejaký pracovný rámec, ktorý dokáže otestovať to čo treba za neho a upozorniť ho keď sa niekde nájde chyba.
+	Jednotkové testovanie je typ testovania, ktorým sa musel zaoberať každý, kto už niečo programoval, pretože vždy začíname tým, že vytvoríme nejakú jednotku programu a postupne sa k tomu pridávajú ďaľšie. Dokonca je tento postup úplne nezávislý od toho či sa iba učíme programovať alebo už programovať vieme a vytvárame program na konkrétny účel. Výrazný rozdiel, ale môže byť v tom, že začiatočníci budú testovať svoje jednotky programu opakovaným spúšťaním, zadávaním rôznych vstupov a sledovaním výsledkov, ale skúsený programátor použije nejaký pracovný rámec, ktorý dokáže otestovať to čo treba za neho a upozorniť ho keď sa niekde nájde chyba.
 	
 	Pracovný rámec, ktorý by dokázal automaticky vykonávať jednotkové testovanie by bol preto veľkým prínosom pre programátorov, pretože by im zrýchlil a zjednodušil prácu. 
 	
 	
 	\newpage
 	\section{Testovanie softvéru}
-	Testovanie softvéru je empirická činnosť, ktorá skúma kvalitu testovaného produktu alebo služby vykonávaná na podanie informácií o kvalite všetkým zainteresovaným osobám\cite{Kaner2006}. V súčastnosti existuje veľa spôsobov testovania a veľa častí životného cyklu softvéru, v ktorých sa aplikujú iné typy testov. Testovanie softvéru môžeme rozdeliť na kategórie podľa postupu, ktorý sa používa pri testovaní, podľa spôsobu testovania a podľa úrovne testu.
+	Testovanie softvéru je empirická činnosť, ktorá skúma kvalitu testovaného softvérového produktu vykonávaná na podanie informácií o kvalite všetkým zainteresovaným osobám\cite{Kaner2006}. V súčastnosti existuje veľa spôsobov testovania a veľa častí životného cyklu softvéru, v ktorých sa aplikujú iné typy testov. Testovanie softvéru môžeme rozdeliť na kategórie podľa postupu, ktorý sa používa pri testovaní, podľa spôsobu testovania a podľa úrovne testu.
 	
 	\subsection{Podľa postupu testovania}
 		\subsubsection{Testovanie formou čiernej skrinky} 
@@ -160,7 +161,7 @@
 			Nevýhodou je, že nedokáže zistiť, či sa počas behu vyskytne nejaká chyba, pretože prebieha len na základe zdrojového kódu a pri testovaní sa program nespúšťa.
 			
 		\subsubsection{Dynamické testovanie}
-			Dynamické testovanie prebiaha už na spustiteľnom programe. Program nemusí byť ešte kompletný, ale podmienkou je, že musí byť skompilovateľný a spustiteľný na stroji, na ktorom chceme testovať. Do dynamického testovania spadá buď testovanie formou čiernej skrinky (spustíme program, dáme mu potrebné vstupné dáta a skontrolujeme čo je na výstupe) alebo aj formou bielej skrinky pri \textbf{(debuggingu)}. Pri debuggingu môžeme sledovať správanie programu a hodnoty premenných na každom riadku zdrojového kódu. K dynamickému testovaniu sa viaže validácia.
+			Dynamické testovanie prebiaha už na spustiteľnom programe. Program nemusí byť ešte kompletný, ale podmienkou je, že musí byť skompilovateľný a spustiteľný na stroji, na ktorom chceme testovať. Do dynamického testovania spadá buď testovanie formou čiernej skrinky (spustíme program, dáme mu potrebné vstupné dáta a skontrolujeme čo je na výstupe) alebo aj formou bielej skrinky pri ladení. Pri ladení môžeme sledovať správanie programu a hodnoty premenných na každom riadku zdrojového kódu. K dynamickému testovaniu sa viaže validácia.
 			
 			Výhodou dynamického testovania je, že vieme zistiť rýchlo a jednodycho ako sa program naozaj správa, keď je už spustený a odhaliť tak chyby, ktoré nemusia byť alebo sú len veľmi ťažko viditeľné zo zdrojového kódu.
 			Nevýhodou je, že niektoré funkcie programov sú závislé od konfigurácie stroja a my vieme jednoznačne otestovať funkčnosť len na stroji, ktorý máme dostupný. Keďže testovať program na všetkých možných konfiguráciach je nereálne vznikajú v praxi problémy s kompatibilitou.
@@ -168,12 +169,12 @@
 	\subsection{Podľa úrovne testu}
 		\subsubsection{Jednotkové testovanie} 
 		
-			Jednotkové testovanie je metóda testovania softvéru, pri ktorej sa testujú individuálne komponenty (jednotky) zdrojového kódu. Zvyčajne nie je testovacou fázou v zmysle nejakého obdobia na tvorbe projektu (okrem testom riadeného vývoja, kde sa najprv píšu testy a až potom program), ale skôr je to posledný krok písania časti zdrojového kódu. Programátori takmer vykonávajú jednotkové testovanie takmer stále, či už pri testovaní vlastného zdrojového kódu alebo kódu iného programátora\cite{Alba2008}. Kvalitné testovanie na tejto úrovni môže výrazne znížiť cenu a čas potrebný na vývoj celého softvéru\cite{EST2002}.
+			Jednotkové testovanie je metóda testovania softvéru, pri ktorej sa testujú individuálne komponenty (jednotky) zdrojového kódu. Zvyčajne nie je testovacou fázou v zmysle nejakého obdobia na tvorbe projektu (okrem testom riadeného vývoja, kde sa najprv píšu testy a až potom program), ale skôr je to posledný krok písania časti zdrojového kódu. Programátori vykonávajú jednotkové testovanie takmer stále, či už pri testovaní vlastného zdrojového kódu alebo kódu iného programátora\cite{Alba2008}. Kvalitné testovanie na tejto úrovni môže výrazne znížiť cenu a čas potrebný na vývoj celého softvéru\cite{EST2002}.
 		\subsubsection{Testovanie komponentov} 
 		
 			Počas testovania komponentov sa testeri zameriavajú na chyby v ucelených častiach systému. Vykonávanie testu zvyčajne začína, keď je už prvý komponent funkčný spolu so všetkým potrebným (napr. ovládače) na fungovanie tohto komponentu bez zbytku systému\cite{Alba2008}.
 			
-			Testovanie komponentov má sklon viezť k štrukturálnemu testovaniu alebo testovaniu formou bielej skrinky. Ak je komponent nezávislý môže sa použiť aj testovanie formou čiernej skrinky\cite{Alba2008}.
+			Testovanie komponentov má sklon viesť k testovaniu formou bielej skrinky. Ak je komponent nezávislý môže sa použiť aj testovanie formou čiernej skrinky\cite{Alba2008}.
 		\subsubsection{Integračné testovanie} 
 		
 			V integračnom testovaní sa testeri zameriavajú na hľadanie chýb vo vzťahoch a rozhraniach medzi pármi a skupinami komponentov. Integračné testovanie musí byť koordinované, aby sa správna množina komponentov spojila správnym spôsobom a v správnom čase	pre najskoršie možné odhalenie integračných chýb\cite{Alba2008}.
@@ -183,11 +184,12 @@
 				
 			Systémove testovanie je vykonávané na úplnom a integrovanom systéme za účelom vyhodnotenia súladu systému z jeho špecifikovanými požiadavkami\cite{Dictionary}. 
 			Niekedy, napríklad pri testovaní inštalácie a použiteľnosti, sa na tieto testy pozerajú na systém z pohľadu zákazníka alebo koncového používateľa. Inokedy sú testy zdôrazňujú konkrétne aspekty, ktoré môžu byť nepovšimnuté používateľom, ale kritické pre správne fungovanie systému \cite{Alba2008}.
+			
 	\subsubsection{Akceptačné testovanie}	
 	
-			Akceptačné testovanie je formálne testovanie zamerané na potreby používateľa, požiadavky a  biznis procesy vedúce k rozhodnutiu či systému vyhovuje alebo nevyhovuje akceptačným kritériám a umožniť používateľovi, zákazníkovi alebo inému splnomocnenému subjektu či má alebo nemá byť systém akceptovaný\cite{Veenendaal2010}. Narozdiel od predchádzajúcich foriem testovania, akceptačné testovanie demonštruje, že systém spĺňa požiadavky \cite{Alba2008}. 
+			Akceptačné testovanie je formálne testovanie zamerané na potreby používateľa, požiadavky a  biznis procesy vedúce k rozhodnutiu či systému vyhovuje alebo nevyhovuje akceptačným kritériám a umožniť používateľovi, zákazníkovi alebo inému splnomocnenému subjektu či má alebo nemá byť systém akceptovaný\cite{Veenendaal2010}. Akceptačné testovanie demonštruje, že systém spĺňa požiadavky \cite{Alba2008}. 
 			
-			V komerčnej sfére sú niekedy tieto testy nazývané aj podľa toho kým sú vykonávané \"alfa testy" (používateľmi vo firme) alebo "beta testy" (súčasnými alebo potenciálnymi zákazníkmi v prevádzke) \cite{Alba2008}.
+			V komerčnej sfére sú niekedy tieto testy nazývané aj podľa toho kým sú vykonávané ``alfa testy`` (používateľmi vo firme) alebo ``beta testy`` (súčasnými alebo potenciálnymi zákazníkmi v prevádzke) \cite{Alba2008}.
 	
 	\newpage
 	\section{Kľúčové vlastnosti jednotkového testovania}
@@ -196,7 +198,7 @@
 	
 	Jednotkové testovanie je podľa prieskumu testovanie najmenších samostatných jednotiek s vnútornými/vonkajšími parametrami. Takisto sa účastníci prieskumu zhodli na tom, že testovanie sa zameriava na samostatné funkcie avšak už v tom či má byť vykonávané samostatne do zbytku systému sa nezhodli.
 	
-	Testy by mali byť založené na štruktúre programu (to znamená testovanie formou bielej alebo sivej skrinky), vykonávané automaticky a vedené vývojármi, ktorí zároveň určujú ako by mali byť vykonávané. Toto neplatí pre testom riadený vývoj, ale tým sa nezaoberáme, pretože v ňom sa testy píšu ešte pred písaním zdrojového kódu a práca sa zameriava na testovanie už napísaných jednotiek. Silný nesúhlas bol s tým, že by malo viesť jednotkové testy oddelenie testovania alebo kvality. Špecifikované by mali byť v testovacom kóde a nemali by byť špecifikované v texte.
+	Testy by mali byť založené na štruktúre programu (to znamená testovanie formou bielej alebo sivej skrinky), vykonávané automaticky a vedené vývojármi, ktorí zároveň určujú ako by mali byť vykonávané. Toto neplatí pre testom riadený vývoj, ktorým sa nezaoberáme, pretože v ňom sa testy píšu ešte pred písaním zdrojového kódu a práca sa zameriava na testovanie už napísaných jednotiek. Silný nesúhlas bol s tým, že by malo viesť jednotkové testy oddelenie testovania alebo kvality. Špecifikované by mali byť v testovacom kóde a nemali by byť špecifikované v texte.
 	
 	Pri otázke ako často by mali byť vykonávané sa názory dosť líšili a podľa výsledkov si väčšina myslí, že by mali byť vykonávané niekoľkokrát denne a po každej kompilácii. U väčšiny firiem, ktoré sa zúčastnili prieskumu vykonávanie všetkých jednotkových testov trvá niekoľko minút.
 	
@@ -221,7 +223,7 @@
 	
 		Hlavnou úlohou jednotkového testovania je otestovať, či jedna alebo viac testovaných jednotiek plnia svoju funkciu správne. Zjednodušene môžeme povedať, že pri písaní programov používame dva typy operácií a to sú logické a výpočtové (zmeny dát v dátových typoch). Výpočtové môžeme považovať za správne, pretože počítač vykoná akúkoľvek výpočtovú operáciu s oveľa väčšou pravdepodobnosťou správne ako človek (je len minimálna šanca, že počítač sa môže "pomýliť") a keď sa už stane, že výsledok takejto operácie je nesprávny ide zväčša len o nejakú chybu programátora (napr. pretiekol dátový typ alebo práca s rôznymi typmi v jednej operácií a počítač pri pretypovaní zmenil hodnotu inak ako predpokladal programátor a pod.). Teda môžeme povedať, že ťažisko správnej funkcionality je v logických operáciach a správnom použití výpočtových operácií. Ideálny pracovný rámec na testovanie by preto mal ponúkať možnosti na kontrolu hodnoty premenných, aby sme vedeli skontrolovať či jednotka robí to čo má robiť.
 		
-		Môže sa zdať, že druhý bod v zhrnutí vlastností s pracovným rámcom nijako nesúvisí a ide len o to, aby programátor poznal zdrojový kód, ku ktorému píše test, ale neplatí to až tak úplne. Správne jednotkové testovanie pokrýva 100\% zdrojového kódu a teda každá vetva je vykonaná počas testovania aspoň raz. Framework by preto mal aspoň vedieť zistiť, koľko percent zdrojového kódu je daným testovaním pokrytých, prípadne určiť, ktoré vetvy pokryté nie sú. Pri predstavách o ideálnom pracovnom rámci, ale môžeme ísť ešte ďalej, pretože ideálny pracovný rámec by dokázala sám napísať testy, ktoré by mali 100\% pokrytie kódu. Toto zatiaľ síce nie je úplne reálne, ale už teraz existujú pracovné rámce, ktoré dokážu aj samé generovať testy a preto ak by sme uvažovali o ideálnom a v súčasnosti vytvoriteľnom pracovnom rámci tak by mal vedieť generovať testy aspoň do takej miery, aby programátorovi stačilo skontrolovať, resp. prispôsobiť si ich.
+		Môže sa zdať, že druhý bod v zhrnutí vlastností s pracovným rámcom nijako nesúvisí a ide len o to, aby programátor poznal zdrojový kód, ku ktorému píše test, ale neplatí to až tak úplne. Správne jednotkové testovanie pokrýva 100\% zdrojového kódu a teda každá vetva je vykonaná počas testovania aspoň raz. Framework by preto mal aspoň vedieť zistiť, koľko percent zdrojového kódu je daným testovaním pokrytých, prípadne určiť, ktoré vetvy pokryté nie sú. Pri predstavách o ideálnom pracovnom rámci, ale môžeme ísť ešte ďalej, pretože ideálny pracovný rámec by dokázal sám napísať testy, ktoré by mali 100\% pokrytie kódu. Toto zatiaľ síce nie je úplne reálne, ale už teraz existujú pracovné rámce, ktoré dokážu aj samé generovať testy a preto ak by sme uvažovali o ideálnom a v súčasnosti vytvoriteľnom pracovnom rámci tak by mal vedieť generovať testy aspoň do takej miery, aby programátorovi stačilo skontrolovať, resp. prispôsobiť si ich.
 		
 		Špecifikácia testov by v ideálnom pracovnom rámci mala byť v zdrojovom kóde. Z toho vyplýva, že forma, v ktorej sú testy špecifikované je rovnaká v akej je napísaný aj zdrojový kód testovanej jednotky. Teda aj jazyk by mal byť rovnaký (prípadne s drobnými odchýlkami ak si to špecifikovanie testov vyžaduje), ale jednoznačne by to nemal byť iný programovací jazyk. Vzhľadom na blízkosť testov k zdrojovému kódu je ideálne ak sú testy a zdrojový kód programu prístupné z toho istého vývojového prostredia.
 		
@@ -237,12 +239,13 @@
 	
 	Hodnotené vlastnosti pracovných rámcov:
 	\begin{itemize}
-		\item čas potrebný na napísanie testov a naučenie sa syntaxe pracovného rámca
+		\item náročnosť syntaxe pracovného rámca
 		\item prehľadnosť jazyka a prostredia
 		\item pomer času, ktorý jednotka potrebuje na vykonanie práce počas testovania v pracovnom rámci a času vykonanie mimo neho
-		\item univerzálnosť podporovaných testov (použiteľnosť testov v inom pracovnom rámci)
+		\item univerzálnosť testov (použiteľnosť testov v inom pracovnom rámci, resp. vlastnosť pracovného rámca spúšťať testy napísané pre iný)
 		\item správa spúšťania testov (možnosť rozdelenia testov do skupín, automatické spúšťanie a pod.)
 		\item zobrazenie výsledkov testovania (prehľadnosť, ako rýchlo sa dá zistiť, ktorý test skončil s chybou a aká bola chyba a pod.)
+		\item požiadavky na úroveň skúsenosti programátora
 		\item automatické generovanie testov
 	\end{itemize}
 	
@@ -264,11 +267,11 @@
 			\item \textbf{Zostavy testov (Test suites)} - Množina testov, ktoré zdieľajú podmienky potrebné pre spustenie testu. Je to množina niekoľkých testovacích prípadov.
 			\item \textbf{Vykonanie testu} - Vykonanie individuálneho jednotkového testu.
 			\item \textbf{Výsledok testu} - Obsahuje informácie o výsledkoch testu ako napríklad počet úspešných testov, počet neúspešných testov a počet zastavených testov, kvôli chybe programu.
-			\item \textbf{Assertion} - Je to funkcia alebo makro, ktorá definuje stav testovanej jednotky. Zvyčajne je to logická podmienka, ktorá pravdivá ak je výsledok testu správny. Zlyhanie väčšinou končí volaním výnimky, ktorá ukončí vykonávanie testu. 
+			\item \textbf{Assertion} - Je to funkcia alebo makro, ktorá definuje stav testovanej jednotky. Zvyčajne je to logická podmienka, ktorá je pravdivá ak je výsledok testu správny. Zlyhanie väčšinou končí volaním výnimky, ktorá ukončí vykonávanie testu. 
 		\end{itemize}
 		
 	\subsection{Nástroje patriace do skupiny xUnit pre Javu}
-	\paragraph{Arquillian} je inovatívna a rozšíriteľná testovacia platforma pre JVM (Java virtual machine), ktorá umožnuje vytvárať integračné, akceptačné a funkcionálne testy. \footnote{http://arquillian.org/invasion/} Arquillian nevyužíva mocky, ale testy spúšťa za behu programu (brings tour test to the runtime), je možné testy debugovať a obsahuje množstvo pluginov pre rôzne iné nástroje. \footnote{http://arquillian.org/invasion/}
+	\paragraph{Arquillian} je inovatívna a rozšíriteľná testovacia platforma pre JVM (Java virtual machine), ktorá umožnuje vytvárať integračné, akceptačné a funkcionálne testy. \footnote{http://arquillian.org/invasion/} Arquillian nevyužíva mocky, ale testy spúšťa za behu programu (brings tour test to the runtime), je možné testy ladiť a obsahuje množstvo pluginov pre rôzne iné nástroje. \footnote{http://arquillian.org/invasion/}
 	Projekty dodržiavajú tri základné princípy:
 	\begin{itemize}
 		\item Test by mal byť prenositeľný do akéhokoľvek podporovaného kontajneru.
@@ -306,7 +309,7 @@
 		\item Bezproblémová synchronizácia medzi testovacími prípadmi a zdrojovým kódom.
 	\end{itemize}
 	
-	\paragraph{TestNG} je testovací pracovný rámec inšpirovaný JUnit a NUnit ale prináša aj novú funkcionalitu ako napríklad:
+	\paragraph{TestNG} je testovací pracovný rámec inšpirovaný JUnit a NUnit, ale prináša aj novú funkcionalitu ako napríklad:
 	\begin{itemize}
 		\item Spúšťanie testov s rôznymi podmienkami pre vlákna (všetky metódy vo vlastnom vlákne, celá testovacia trieda v jednom vlákne a pod.).
 		\item Testovanie, či program správne funguje aj na viacerých vláknach.
@@ -321,7 +324,7 @@
 
 		\subsection{Nástroje patriace do skupiny xUnit pre .NET}
 			
-			\paragraph{Fixie} patrí k novším pracovný rámcom a umožňujem programátorovi vytvárať a vykonávať jednotkové testovanie. Výhoda, ktorú Fixie prináša, že rozlišovanie metód a tried je na konvencií. Preto programátor pri písaní testu nemusí používať atribúty na označovanie tried a metód. Keď je dodržaná konvencia tak Fixie vie podľa názvu zistiť či ide o metódu alebo triedu. Ak by predvolená konvencia nebola vyhovujúca, je možné vytvoriť si vlastnú a následne sa riadiť ňou. Rozšírenia nemá, ale existujú pluginy do vývojových prostredí.  \footnote{https://visualstudiomagazine.com/articles/2015/04/22/fixie-c-sharp-testing.aspx}
+			\paragraph{Fixie} patrí k novším pracovný rámcom a umožňujem programátorovi vytvárať a vykonávať jednotkové testovanie. Výhoda, ktorú Fixie prináša, že rozlišovanie metód a tried je na konvencií. Preto programátor pri písaní testu nemusí používať atribúty na označovanie tried a metód. Keď je dodržaná konvencia tak Fixie vie podľa názvu zistiť či ide o metódu alebo triedu. Ak by predvolená konvencia nebola vyhovujúca, je možné vytvoriť si vlastnú a následne sa riadiť ňou. Rozšírenie nemá existujú pluginy do vývojových prostredí.  \footnote{https://visualstudiomagazine.com/articles/2015/04/22/fixie-c-sharp-testing.aspx}
 			
 			\paragraph{MbUnit} je rozšíriteľný pracovný rámec, ktorý okrem toho, že prijíma vzory xUnit ide ešte ďalej a poskytuje programátorovi viac, ako napríklad:
 			\begin{itemize}
@@ -335,14 +338,13 @@
 			Funkcie a vlastnosti, ktoré Moq ponúka\footnote{https://github.com/Moq/moq4} :	
 			\begin{itemize}
 				\item Strong-typed: no strings for expectations, no object-typed return values or constraints.
-				\item Neprekonaná integrácia s intellisense vo Visual Studio: všetko je plne podporované intellisense vo Visual Studio.
-				\item Žiadne nahraj/prehraj idiómy(jazyk) (No Record/Replay idioms to learn.) na učenie. Stačí vytvoriť mok, nastaviť ho, použíť ho a voliteľne potvrdiť ich volania (netreba potvrdzovať mocky, keď vystupujú len ako stuby (stubs) alebo keď sa robí klasickejšie stavovo-založené (state-based) testovnie kontrolovaním navratových hodnôt testovaného objektu).
-				\item Veľmi nízka učiaca krivka (learning curve). Pre väčšinu častí ani netreba čítať dokumentáciu.
-				\item Granulovaná kontrola (granular control) nad správaním mocku s jednoduchou MockBehavior enumeráciou (netreba vedieť teoretické rozdiely medzi mokom, stubom, imitáciou (fake), dynamickým mokom a pod.).
+				\item Integrácia s intellisense vo Visual Studio: všetko je plne podporované intellisense vo Visual Studio.
+				\item Žiadne nahraj/prehraj idiómy na učenie. Stačí vytvoriť mok, nastaviť ho, použíť ho a voliteľne potvrdiť ich volania (netreba potvrdzovať mocky, keď vystupujú len ako procedúry alebo keď sa robí klasickejšie stavovo-založené (state-based) testovnie kontrolovaním navratových hodnôt testovaného objektu).
+				\item Veľmi nízka krivka učenia. Pre väčšinu častí ani netreba čítať dokumentáciu.
+				\item Hrubá kontrola nad správaním mocku s jednoduchou MockBehavior enumeráciou (netreba vedieť teoretické rozdiely medzi mokom, stubom, imitáciou, dynamickým mokom a pod.).
 				\item Je možne mokovať rozhrania aj triedy.
-				\item Override expectations: can set default expectations in a fixture setup, and override as needed on tests.
 				\item Posielať argumenty pre mokované triedy.
-				\item Ohraničiť (Intercept) a vyvolať (raise) akcie (events) na mokoch.
+				\item Zachytávať a vyvolávať udalosti na mokoch.
 				\item Intuitívna podpora pre out/ref argumenty. 
 			\end{itemize}
 			Vďaka mokom je test rýchlejší a nezávislý od prostredia alebo iných častí systému, lebo netreba komunikovať so skutočnými objektami a teda spĺňa vlastnosti jednotkového testovania.
@@ -350,7 +352,7 @@
 		\paragraph{NUnit} je testovací pracovný rámec pre C\# a je tým, čím je JUnit pre Javu.
 		Poskytuje tiež možnosť mať rôzne nastavenia pre test a rôzne pre tvorbu programu.
 		Vstupné hodnoty testov môžu byť zadané rôznymi spôsobmi. Buď jednoduchou množinou parametrov, náhodne alebo výberom z daného rozsahu alebo z nejakého externého zdroja pomocou metódy.
-		Pomocou atribútov môžeme ovplyvňovať testovacie prostredie. Môžeme tak deklarovať, že daný mest má bežať na samostatnom vlákne, nemá byť spustený, resp. spúšťať sa bude len manuálne alebo má byť len pre špecifickú platformu\footnote{http://www.slideshare.net/ShirBrass/nunit-features-presentation}.
+		Pomocou atribútov môžeme ovplyvňovať testovacie prostredie. Môžeme tak deklarovať, že daný test má bežať na samostatnom vlákne, nemá byť spustený, resp. spúšťať sa bude len manuálne alebo má byť len pre špecifickú platformu\footnote{http://www.slideshare.net/ShirBrass/nunit-features-presentation}.
 		Testy je možné spúšťať aj s obmedzeným časom na beh. Po uplynutí stanoveného času je test označený za neúspešný, ale je možné nastaviť, či sa má test okamžite ukončiť alebo sa má nechať dobehnúť \footnote{https://lukewickstead.wordpress.com/2013/02/09/howto-nunit-features/}.
 		
 		\paragraph{Nbi} je doplnok do Nunit pre Microsoft obchodné služby a prístup k dátam (Microsoft Business Intelligence platform and Data Access), ale čiastočne podporuje aj iné platformy\footnote{http://www.nbi.io/docs/home/}. Jeho výhodou je, že netreba vôbec poznať C\# alebo mať nainštalované Microsoft Visual Studio lebo testy sa píšu v Xml. Pomocou pracovného rámca sa potom dajú spúšťať aj bez C\# kompilátora. Dokáže pracovať s databázovými dotazmi, Etl (Extract, transform, load) balíčkami a aj s viacrozmernými a tabuľkovými modelmi.
@@ -363,7 +365,7 @@
 		
 		\paragraph{Randoop.NET} je pracovný rámec, ktorý náhodne generuje testy, ale je riadený spätnou väzbou. Testy vytvára inkrementálne, teda každý ďalší je rozšírením predchádzajúceho. Pred rozšírením testu sa daný vygenerovaný test najprv vykoná a vyhodnotí a následne Randoop rozhodne, či má zmysel daný test rozširovať. To znamená, že ak vygeneruje test, ktorý obsahuje nejaké nezmyselné volanie funkcie (napr. nastavMesiac(-1)) tak test označí za nesprávny a už ho rozširovať nebude.
 		
-		Okrem toho, že Randoop vie fungovať samostatne, generuje testy ako samostatný súbor, ktorý je použiteľný pre ostatné testovacie nástroje a tým sa dá odhaliť viacej chýb a dosiahnuť tak lepší výsledok testovania.\cite{Pacheco2007}
+		Okrem toho, že Randoop vie fungovať samostatne, generuje testy ako samostatný súbor, ktorý je použiteľný pre ostatné testovacie nástroje a tým sa dá odhaliť viacej chýb a dosiahnuť tak lepší výsledok testovania\cite{Pacheco2007}.
 		Randoop spĺňa vlastnosti jednotkového testovania a okrem toho ešte aj mimo nich prispieva ku skráteniu doby potrebnej na testovanie tým, že sám vygeneruje testy a nemusí ich vytvárať všetky programátor.
 		
 		\paragraph{Rhino.Mocks} je .NET mokovací pracovný rámec veľmi užitočný na vytváranie falošných objektov tak, aby sme testovali len presne to čo chceme a dovoľuje kontrolovať prostredie a stavy v ktorých test prebieha.
@@ -394,11 +396,11 @@
 	
 	K časovej réžií nie je možné sa vyjadriť bez praktického testovania a preto túto vlastnosť pracovných rámcov pri tomto hodnotení zanedbávame.
 	
-	Podľa podobnosti s ideálnym pracovným rámcom by som za najlepší označil Randoop(resp. Randoop.NET), pretože patrí ku generatívnym pracovným rámcom, stále sa vyvíja a venujú sa mu aj rôzne vedecké práce. Hneď za neho by som zaradil pracovné rámce TestNG, JUnit, NUnit, xUnit.net pretože sú populárne, každý z nich priniesol niečo nové do jednotkového testovania. Na základe zatiaľ získaných informácií ich podľa mňa nie je zatiaľ možné objektívne zoradiť a určiť, ktorý je lepší alebo horší.
+	Podľa podobnosti s ideálnym pracovným rámcom by sme za najlepší označili Randoop (resp. Randoop.NET), pretože patrí ku generatívnym pracovným rámcom, stále sa vyvíja a venujú sa mu aj rôzne vedecké práce. Hneď za neho by sme zaradil pracovné rámce TestNG, JUnit, NUnit, xUnit.net pretože sú populárne, každý z nich priniesol niečo nové do jednotkového testovania. Na základe zatiaľ získaných informácií ich podľa nás nie je zatiaľ možné objektívne zoradiť a určiť, ktorý je lepší alebo horší.
 	
 	\newpage
 	
-	\section{Testovanie}
+	\section{Konfigurácia testovania}
 	
 	\subsection{Apache Maven}
 	
@@ -412,23 +414,39 @@
 	
 	Testy sme vytvárali generovaním pracovným rámcom Randoop. Pre objektívne porovnanie časovej náročnosti je potrebné, aby sme mali testy pre všetky pracovné rámce čo najpodobnejšie. Randoop je jediný, ktorý testy automaticky generuje a preto sme zvolili postup vygenerovať testy a následne z 59 vygenerovaných vybrať 15, ktoré pokrývajú všetky základné prípady. Triedy sú napísane tak, aby jedno vykonanie všetkých 15 testov trvalo na testovacom zariadení niečo nad 10 sekúnd. Dôvodom, prečo je výpočet taký dlhý je, aby sa lepšie ukázali časové rozdiely ak sa nejaké objavia. A z časového hľadiska sme preto zvolili 15 testov ako kompromis medzi rýchlosťou a čo najlepším otestovaním. Náš cieľ to nijako neovplyvňuje, pretože nie je naším cieľom otestovať triedy zdrojového kódu, ale slúžia nám ako prostriedok na porovnanie pracovných rámcov na testovanie.
 	
-	Testovacie triedy pre ostatné pracovné rámce, boli vytvorené skopírovaním tela metód (zachovávali sme aj názov testu) a všetko ostatné bolo prispôsobené potrebám daného pracovného rámca. Väčšina testovaných bola podobne ako aj Randoop iba rozšírením JUnit-u a preto sa zmeny týkali iba pridania vlastného spúšťača testov, prípadne vlastných anotácií. Pre TestNG testy bolo treba nahradiť importovanie (pripojenie, neviem čo je vhodnejšie slovo) príslušných knižníc. Pracovný rámec Arquillian má špeciálnu vlastnosť, že len s minimálnou zmenou dokáže byť spúšťaný ako JUnit alebo ako TestNG test. Pre spúšťanie ako TestNG test musí rozširovať triedu org.jboss.arquillian.testng.Arquillian.
+	Testovacie triedy pre ostatné pracovné rámce, boli vytvorené skopírovaním tela metód (zachovávali sme aj názov testu) a všetko ostatné bolo prispôsobené potrebám daného pracovného rámca. Väčšina testovaných bola podobne ako aj Randoop iba rozšírením JUnit-u a preto sa zmeny týkali iba pridania vlastného spúšťača testov, prípadne vlastných anotácií. Pre TestNG testy bolo treba nahradiť pripojenie príslušných knižníc. Pracovný rámec Arquillian má špeciálnu vlastnosť, že len s minimálnou zmenou dokáže byť spúšťaný ako JUnit alebo ako TestNG test. Pre spúšťanie ako TestNG test musí rozširovať triedu org.jboss.arquillian.testng.Arquillian.
 	
 	Do testov boli nakoniec ešte pridané v prípade JUnit testov anotácie, aby boli testy spúšťané v abecednom poradí podľa názvu metód a v prípade TestNG testov bolo poradie zabezpečené nastavením priority. Toto opatrenie nebolo nevyhnutné, ale na priebeh testov nemá žiaden vplyv a uľahčuje to následné vyhodnocovanie, keď vieme, že boli spúšťané vždy v tom istom poradí.
 	
-	\subsection{Priebeh testovania}
+	\subsection{Opis testovacích tried a metód}
+	Testovacie triedy a metódy boli vytvorené na testovanie programu na počítanie prvočísel. Program sa skladá z dvoch tried. Jedna trieda počíta prvočísla a obsahuje metódy na výpočet priemeru týchto čísel a vrátenie čísla na konkrétnej pozícii. Druhá trieda vypisuje tieto informácie do konzoly. V programe je preto, aby sme vedeli otestovať, či pri automatickom generovaní testov bude pracovný rámec pracovať s oboma triedami správne.
 	
-	\subsubsection{Sekvenčné testovanie}
+	Testovacie triedy boli vytvorené pre každý pracovný rámec najpodobnejšie ako sa dalo. Testovacie metódy vždy vytvoria objekt jednej z tried, ktoré testujeme a následne volajú metódy tejto triedy. Metódy sú volané v rámci jednej testovacej metódy niekedy aj opakovane, buď s rôznymi alebo s rovnakými argumentami. Testuje sa tým, či vracia program vždy správne hodnoty aj po viacnásobnom opakovaní volania tej istej metódy.
+	
+	
+	\subsection{Sekvenčné testovanie}
 	Všetky triedy testov boli spúšťané 100-krát a volané z triedy pomocou príslušných metód podľa toho, ku ktorému pracovnému rámcu patrili. Do súboru boli zaznamenávané jednotlivo časy každej metódy a aj celkový čas.
 	
 	JExample pri opakovanom spúšťaní vždy končil s inicializačnou chybou, preto bol otestovaný len na 10 behoch, tak že sa vždy spúšťal iba raz.
 	
-	\subsubsection{Paralelné testovanie}
+	\subsection{Paralelné testovanie}
 	Pri paralelnom testovaní sme sledovali len časy celých tried, pretože časy metód zisťované rovnakým spôsobom ako pri sekvenčnom testovaní neboli relevantné.
 	
-	Triedy patriace k JUnit-u spúšťané triedou org.junit.experimental.ParallelComputer. Vzhľadom na to, že trieda neposkytuje možnosť nastaviť použitý počet vlákien, nie je úplne jasná konfigurácia, ale keďže boli testy púšťané na počítači so 4-vláknovým procesorom môžeme predpokladať, že boli použité práve 4 vlákna. (Pri porovnaní s TestNG boli časy podobné skôr s 8 vlaknámi, takže neviem čo je lepšie sem napísať k tomu)
+	Triedy patriace k JUnit sú spúšťané triedou org.junit.experimental.ParallelComputer. Vzhľadom na to, že trieda neposkytuje možnosť nastaviť použitý počet vlákien, nie je úplne jasná konfigurácia.
 	
 	Pri TestNG pracovných rámcoch je možné nastaviť konfiguráciu pri paralelnom spúšťaní testov. Použitá bola paralelizácia na úrovni metód (na úrovni tried by nemala význam, pretože sme testovali naraz vždy len jednu triedu). Testy boli spúšťané s počtami vlákien 2, 4, 8, 10 a 16. Pracovný rámec Arquillian mal problém pri spúšťaní TestNG testov paralelne. Výnimka nastávala v triede označenej anotáciou @BeforeClass a tá nebola nami implementovaná, preto bol z paralelných testov vylúčený.
+	
+	\subsection{Konfigurácia počítača}
+	Všetky testy prebiehali na počítači s 2 jadrovým procesorom so 4 vláknami. Na projekt bolo použité prostredie Eclipse Mars.2 a bola nainštalovaná Java verzie 7, update 80.
+	
+	\subsection{Výber pracovných rámcov na testovanie}
+	Záver analytickej časti nás doviedol k predpokladu, že pracovný rámec Randoop je najpodobnejší ideálnemu pracovnému rámcu špecifikovanému v jednej z predchádzajúcich kapitol. Preto sme sa rozhodli, že tento pracovný rámec musí byť otestovaný aj prakticky a keďže vetva vývoja pre jazyk C\# časom zanikla rozhodli sme sa zamerať na jazyk Java, pre ktorý je pracovný rámec Randoop stále vyvíjaný. 
+	
+	Z testovania boli ďalej vylúčené ešte ďalšie 3 pracovné rámce analyzované v predchádzajúcej časti práce. Ide konkrétne o pracovné rámce HavaRunner, JExample a Sprytest. Prvé dva menované sa už nevyvíjajú a pracovný rámec HavaRunner mal aj problém s kompatibilitou a nepodarilo sa nám ho na použitej verzií virtuálne Java stroja spustiť. JExample sa spustiť dal, ale pri opakovanom spúšťaní mal problém s inicializáciou a vzhľadom na to, že posledná dostupná verzia je z roku 2011 je pre nás nezaujímavý lebo je neaktuálny. Posledný z menovaných je komerčný nástroj, ktorý nemáme k dispozícií a z tohto dôvodu bol vylúčený z testovania.
+	
+	\newpage
+	
+	\section{Hodnotenie vlastností pracovných rámcov}
 	
 	\subsection{Náročnosť syntaxe pracovných rámcov}
 	Základnými pracovnými rámcami na jednotkové testovanie pre Javu sú JUnit a TestNG. Medzi testovanými sú tieto dva pracovné rámce a ostatné sú nejakým rozšírením aspoň jedného z nich. Vzhľadom na túto naviazanosť pracovných rámcov na dva základné je aj syntax všetkých testovaných pracovných rámcoch veľmi podobná alebo až identická.
@@ -437,13 +455,13 @@
 	
 	Svoje špecifikum má aj Randoop. Je jediný z vybraných pracovných rámcov, ktorý dokáže automaticky generovať jednotkové testy. Je vytváraný ako program bez grafického používateľského rozhrania a preto je potrebné na jeho plnohodnotné používanie poznať príkazový riadok systému a aj prepínače Randoopu na prispôsobenie generovania testov a taktiež výber tried, ktoré majú byť týmito testami testované.
 	
-	Ak by sme to chceli zhrnúť tak môžeme povedať, že vo všetkých pracovných rámcoch je náročnosť na tvorbu testov rovnaká, okrem Arquillianu a Randoopu, ale náročnejšie funkcie na použitie sú také, ktoré nám ostatné pracovné rámce neposkytujú. Preto môžeme povedať, že v tomto aspekte sa nelíšia.
+	Ak by sme to chceli zhrnúť tak môžeme povedať, že vo všetkých pracovných rámcoch je náročnosť na tvorbu testov rovnaká, okrem Arquillianu a Randoopu, ale náročnejšie funkcie na použitie sú také, ktoré nám ostatné pracovné rámce neposkytujú. Preto môžeme povedať, pre účely našeho porovnania, že v tomto aspekte sa nelíšia.
 	
 	\subsection{Prehľadnosť}
-	Prehľadnosť zdrojových kódov testov je veľmi podobná. Rozdiel je v niektorých špecifických nastaveniach, ktoré nemusia súvisieť priamo so zdrojovým kódom testov. Všetky rámce podporujú konfiguráciu rôznych aspektov testovanie na úrovni metód aj tried rôznymi anotáciami. Okrem toho TestNG testy dokážu využívať aj konfiguračný xml súbor a oddeliť tak konfiguráciu testovania od zdrojového kódu testov, čo môže pri komplikovanejších konfiguráciách výrazne sprehľadniť zdrojový kód testov. Okrem toho, keď je celá konfigurácia samostatne jednoduchšie sa v nej orientuje a ľahšie testy konfigurujú podľa predstáv testera, prípadne sa ľahšie upravujú zmeny pred novým behom testov.
+	Prehľadnosť zdrojových kódov testov je veľmi podobná. Rozdiel je v niektorých špecifických nastaveniach, ktoré nemusia súvisieť priamo so zdrojovým kódom testov. Všetky rámce podporujú konfiguráciu rôznych aspektov testovanias na úrovni metód aj tried rôznymi anotáciami. TestNG testy dokážu využívať aj konfiguračný xml súbor a oddeliť tak konfiguráciu testovania od zdrojového kódu testov, čo môže pri komplikovanejších konfiguráciách výrazne sprehľadniť zdrojový kód testov. Okrem toho, keď je celá konfigurácia samostatne, jednoduchšie sa v nej orientuje a ľahšie sa konfigurujú testy podľa predstáv testera, prípadne sa ľahšie upravujú zmeny pred novým behom testov.
 	
 	\subsection{Univerzálnosť}
-	Väčšina pracovných rámcov podporuje testy len z jedného z dvojice hlavných (JUnit alebo TestNG). Výnimkou je len Arqullian, ktorý dokáže len s minimálnou zmenou pracovať ako JUnit aj ako TestNG test. TestNG dokáže púšťať aj JUnit testy bez toho, aby sa na nich muselo čokoľvek meniť, ale je treba vytvoriť xml konfiguračný súbor s definovanými triedami, ktoré chceme spúšťať a musia byť označené ako JUnit testy. TestNG potom používa org.junit.runner.JUnitCore na spúšťanie týchto tried testov.
+	Väčšina pracovných rámcov podporuje testy len z jedného z dvojice hlavných (JUnit alebo TestNG). Výnimkou je len Arqullian, ktorý dokáže len s minimálnou zmenou pracovať ako JUnit aj ako TestNG test. TestNG dokáže púšťať aj JUnit testy bez toho, aby sa na nich muselo čokoľvek meniť, ale je treba vytvoriť xml konfiguračný súbor s definovanými triedami, ktoré chceme spúšťať a musia byť označené ako JUnit testy. TestNG potom používa org.junit.runner.JUnitCore na spúšťanie týchto tried testov. 
 	
 	\subsection{Správa spúšťania testov}
 	Všetky pracovné rámce poskytujú možnosť vytvoriť si skupiny testov, z ktoré dokážu spúšťať spolu tie testy, ktoré chceme. Pracovné rámce založené na JUnite využívajú na to triedu, v ktorej sú vymenované triedy testov, ktoré sa majú spúšťať a okrem toho je možné ešte aj každú z týchto tried rozdeliť do kategórií a zahŕňať do testovania, resp. vynechať z testovania jednotlivé kategórie.
@@ -453,16 +471,18 @@
 	Automatická selekcia testov, ktoré sa budú spúšťať nie je implementovaná v žiadnom z testovaných pracovných rámcov.
 	
 	\subsection{Zobrazenie výsledkov}
-	Pracovné rámce nepoužívajú samostatné zobrazenie výsledkov a spoliehajú sa na zobrazovanie poskytované východiskovými. Grafické zobrazenie vo vývojom prostredí je na zrovnateľnej úrovni, s veľmi podobnou štruktúrou aj grafikou. Testovanie bolo vykonávané v prostredí Eclipse .Mars2 a použité boli zásuvné moduly pre JUnit a TestNG s odkazov na oficiálnych stránkach určené pre toto prostredie. Toto zobrazenie nie je priamo naviazané na pracovné rámce a ťažko preto objektívne zhodnotiť tieto zobrazenia, pretože sú závislé od pracovného prostredia, ktoré používa tester a nie až tak od konkrétneho pracovného rámca.
+	Pracovné rámce nepoužívajú samostatné zobrazenie výsledkov a spoliehajú sa na zobrazovanie poskytované východiskovými. Grafické zobrazenie vo vývojom prostredí je na zrovnateľnej úrovni, s veľmi podobnou štruktúrou aj grafikou. Testovanie bolo vykonávané v prostredí Eclipse .Mars2 a použité boli zásuvné moduly pre JUnit a TestNG s odkazov na oficiálnych stránkach určené pre toto prostredie. Toto zobrazenie nie je priamo naviazané na pracovné rámce a ťažko preto objektívne zhodnotiť tieto zobrazenia, pretože sú závislé od pracovného prostredia a použitého zásuvného modulu, ktoré používa tester a nie až tak od konkrétneho pracovného rámca.
 	Rozdiel medzi TestNG a JUnit bol vo výpise výsledkov testov do konzoly. Kým TestNG poskytoval pomerne podrobné informácie aj v konzole, JUnit nevypisoval do konzoly nič. Je to vlastnosť implementovaná priamo v pracovnom rámci nesúvisiaca so zásuvným modulom, pretože výpisy boli zaznamená aj počas testovania spúšťaného zo zdrojového kódu.
 	
+	Okrem grafického zobrazenia výsledkov sem môžeme zaradiť aj všetky informácie, ku ktorým sa vieme dostať zo zdrojového kódu a zobraziť si ich podľa vlastných potrieb. Každý z pracovných rámcov ponúka možnosť použiť pri testovaní vlastný počúvač (listener), v ktorých sa dá vykonávať kód pre a po metódach, celej triede, po zlyhaniach, ignorovaných testoch a podobne. Zároveň cez príslušné rozhrania viem kontrolovať stav testov.
+	
 	\subsection{Automatické generovanie testov}
-	Jediný z vybraných pracovných rámcov poskytujúci automatické generovanie testov je Randoop. Sám o sebe nemá grafické prostredie, aj keď na internete sú dostupné zásuvné moduly umožňujúce spustiť generovanie testov aj priamo z vývojové prostredia. Avšak tieto zásuvné moduly sú staré už niekoľko rokov a novšie sa nám nepodarilo nájsť ani na stránkach vývojárov Randoop. Pre účely tejto práce boli preto testy generované z príkazového riadku, aby sme mohli použiť najnovšiu verziu pracovného rámca a nerobili štúdiu s použitím zastaralého softvéru. Tvorba testov je bližšie popísaná v časti \textit{Tvorba testov}.
+	Jediný z vybraných pracovných rámcov poskytujúci automatické generovanie testov je Randoop. Sám o sebe nemá grafické prostredie, aj keď na internete sú dostupné zásuvné moduly umožňujúce spustiť generovanie testov aj priamo z vývojové prostredia. Avšak tieto zásuvné moduly sú staré už niekoľko rokov a novšie sa nám nepodarilo nájsť ani na stránkach vývojárov Randoop. Pre účely tejto práce boli preto testy generované z príkazového riadku, aby sme mohli použiť najnovšiu verziu pracovného rámca a nerobili štúdiu s použitím zastaralého softvéru. Tvorba testov je bližšie popísaná v časti \textit{Tvorba testov}.	
 	
 	\subsection{Časová réžia pracovných rámcov}
 	Počas testovania boli merané časy jednotlivých metód, rozdiel času pred prvou a po poslednej testovacej metóde a aj rozdiel času pred a po zavolaní spúšťača testu na danú triedu. V grafoch nižšie je zobrazené porovnanie časov pred zavolaním spúšťača a po jeho ukončení. Tento čas bol vybraný preto, lebo zahŕňa všetku časovú réžiu okolo spúšťania testov a rozdiel oproti súčtu času jednotlivých metód a rozdielu času pred prvou a poslednou je minimálny (rozdiel v priemerných časoch aj mediáne bol do 20 ms, čo je pri dĺžke testu nad 10000 ms zanedbateľná hodnota). Vyššie rozdiely mali len pracovné rámce TestNG a Arquillian spúšťaný ako TestNG test. Z toho vyplýva, že TestNG spúšťač testov má väčšiu réžiu ako JUnit spúšťač.(môžno by bolo dobré ešte pridať graf na porovnanie rozdielu oproti ostatným)
 	
-	Pri sekvenčných testoch je evidentné, že testy sú čo sa týka času veľmi podobné (Obr. 1). Čisté JUnit test bez nejako rozšírenia sú na rovnakej úrovni ako vykonávanie tried mimo testu a dokonca aj o niečo rýchlejšie. To môže byť spôsobené chybou merania, pretože neviem zabezpečiť, aby operačný systém na počítači nevykonával aj iné úlohy na pozadí, ktoré môžu mať vplyv na výkon aj keď sme sa snažili tieto nežiadúce vplyvy čo najviac eliminovať. O niečo horšie, ale bez výrazného rozdielu, je na tom Arquillian spúšťaný oboma pracovnými rámcami a samotný TestNG.
+	Pri sekvenčných testoch je evidentné, že testy sú čo sa týka času veľmi podobné (Obr. 1). Čisté JUnit test bez rozšírenia sú na rovnakej úrovni ako vykonávanie tried mimo testu a dokonca aj o niečo rýchlejšie. To môže byť spôsobené chybou merania, pretože neviem zabezpečiť, aby operačný systém na počítači nevykonával aj iné úlohy na pozadí, ktoré môžu mať vplyv na výkon aj keď sme sa snažili tieto nežiadúce vplyvy čo najviac eliminovať. O niečo horšie, ale bez výrazného rozdielu, je na tom Arquillian spúšťaný oboma pracovnými rámcami a samotný TestNG.
 	
 	\begin{center}
 		\includegraphics[width = 400pt]{sekvencne}
@@ -470,7 +490,7 @@
 		\tiny Obr. 1. Výsledky sekvenčných testov
 	\end{center}
 	
-	Výsledky paralelných testov (Obr. 2) ukazujú presne tie isté výsledky a teda opäť sú na tom najlepšie JUnit pracovné rámce a o niečo horšie Arquillian a TestNG. Pri paralelných testoch je ešte dôležité si všimnúť, že najlepšie časy malo vykonávať testov v 8 a 16 vláknach (procesor počítača, na ktorom prebiehali testy má 2 jadrá a 4 vlákna). Pri iných počtoch jadier, na ktorých boli testy spúšťané boli časy horšie, čo naznačuje, že je okolo testov dosť réžie, pretože najlepšie využitie bolo až pri 8 vláknach. Keby tam táto réžia nebola a išlo by len o výpočet najlepšie časy by sme dosahovali pri 2, resp. 4 vláknach.
+	Výsledky paralelných testov (Obr. 2) ukazujú presne tie isté výsledky a teda opäť sú na tom najlepšie JUnit pracovné rámce a o niečo horšie Arquillian a TestNG. Pri paralelných testoch je ešte dôležité si všimnúť, že najlepšie časy malo vykonávanie testov v 8 a 16 vláknach (procesor počítača, na ktorom prebiehali testy má 2 jadrá a 4 vlákna). Pri iných počtoch jadier, na ktorých boli testy spúšťané boli časy horšie, čo naznačuje, že je okolo testov dosť réžie, pretože najlepšie využitie bolo až pri 8 vláknach. Keby tam táto réžia nebola a išlo by len o výpočet najlepšie časy by sme dosahovali pri 2, resp. 4 vláknach.
 	
 	\begin{center}
 		\includegraphics[width = 400pt]{paralelne}
@@ -478,28 +498,73 @@
 		\tiny Obr. 2. Výsledky paralelných testov
 	\end{center}
 	
+	Treba ešte dodať k už spomínanej vlastnosti Arquillianu, vytvárať vlastné zostavy, že pri väčších projektoch môže táto vlastnosť urýchliť priebeh testov, pretože v zostave si vieme definovať, ktoré triedu sú pre nás v teste dôležité a ostatné nemusia byť pripojené. Tým pádom by sme vedeli ušetriť čas pri inicializácií testu, najmä ak používame v programe veľa tried s rôznou mierou vzájomnej spolupráce. V našich výsledkoch vplyv tejto vlastnosti nie je vidieť, pretože rozsah nami testovaných tried nebol veľký.
+	
+	\subsection{Požiadavky na úroveň skúsenosti programátora}
+	Využitie základných funkcií testovaných pracovných rámcov si nevyžaduje špecifické skúsenosti programátora, ale pri viacerých funkciách sú určite výhodou skúsenosti, dokonca aj nie priamo súvisiace s programovaním. Najjednoduchším na používanie je JUnit, pretože používa anotácie, ku ktorým sú na internete dostupné návody ako ich používať aj s príkladmi, prípadne triedy na vytvorenie zostáv spúšťaných testov. Teda netreba sa poznať syntax ničoho okrem programovacieho jazyka a potrebné anotácie. O niečo viac skúseností treba na používanie Randoop kvôli absencií grafického prostredia. Vyžaduje si skúsenosti s prácou v príkazovom riadku. Stačí aj základná úroveň, ale v súčasnosti to už nie je nevyhnutnosť ovládať, ak chce človek programovať. TestNG tiež nevyžaduje žiadne skúsenosti okrem programovania pre využitie základných funkcií, ale na plnohodnotné používanie treba vedieť písať konfiguračné xml súbory. Pre programátora by nemali tieto súbory spôsobovať problém, ale treba skúsenosti na to, aby v nich vedel čítať a písať ich. Najnáročnejším na skúsenosti z vybraných pracovných nástrojov je Arquillian, pretože vyžaduje orientáciu v Maven projekte a aj poznanie špecifík JUnit, resp. TestNG podľa toho ako ho chceme používať.
+	
 
 	\newpage
+	
+	\section{Vyhodnotenie výsledkov testovania}
+	Vyhodnetie robíme vždy najprv pre JUnit a TestNG, v ktorom budeme hodnotiť ich pre a proti a následne budú ostatné vybrané pracovné rámce porovnané s nimi. Za každú kategóriu hodnotenia je maximálny počet bodov 5. Vzhľadom na zistenú veľkú podobnosť vo všetkých vlastnostiach prispôsobíme tomu aj systém hodnotenia. Hodnotenie by prebiehalo tak, že základné pracovné rámce by dostávali z každej kategórie 2 a 4 body (lepší z nich 4 a horší 2). A ostatné pracovné rámce by následne dostávali 1 bod ak by boli horšie ako horší zo základných, 3 body ak by boli niekde medzi nimi, 5 bodov ak by boli lepšie ako lepší zo základných a rovnaký počet ako niektorý zo základných ak v danej vlastnosti nebude pozorovateľný rozdiel.
+	
+	Jediná objektívne merateľná vlastnosť v našom testovaní je čas testovania všetkých testovacích metód v testovacích triedach. Podľa výsledkov môžeme jednoznačne za čas prideliť 4 body JUnitu, pretože jednoznačne dosahoval lepšie časy ako TestNG ako to možno vidieť aj v grafoch v predchádzajúcej kapitole. Randoop dostáva 4 body rovnako ako JUnit, lebo aj pri sekvenčných aj pri paralelných mali veľmi podobné výsledné časy. Arquillian je ťažšie zaradiť na správne miesto, keďže je zároveň medzi JUnit a TestNG aj horší ako TestNG (podľa toho pod akým pracovným rámcom sa spúšťa) a v paralelných testoch bol testovaný len ako JUnit. Vzhľadom na fakt, že pri väčších projektoch dokáže šetriť čas pomocou zostáv sme sa rozhodli udeliť mu 3 body.
+	
+	Ostatné vlastnosti sa už nedajú hodnotiť do takej miery objektívne ako čas, ale máme snahu hodnotiť ich podľa toho, čo sa v praxi medzi programátormi javí ako lepšia voľba.
+	
+	V prehľadnosti dostáva 4 body TestNG preto, že poskytuje možnosť anotácií v kóde, ale aj použitie konfiguračného xml súboru, ktoré sú v súčasnosti považované za štandard v oblasti konfigurácie v informatike a sú aj prehľadné. JUnit teda dostáva 2 body a rovnako aj Randoop, pretože konfigurácia je možná len cez anotácie. Arquillian sa opäť dostáva medzi tieto pracovné rámce, pretože kombinuje v sebe vlastnosti oboch pracovných rámcov, ale nedokáže využiť výhody oboch súčasne.
+	
+	V univerzálnosti je jednoznačne lepším pracovným rámcom TestNG, pretože dokáže spúšťať rovnako svoje triedy testov, ale bez nevyhnutnosti zmeny aj JUnit testy. Naopak JUnit vie spúšťať len svoje testy a preto dostáva 2 body. Arquillian dostáva 4 body rovnako ako TestNG pretože sa dokáže byť spustený aj ako JUnit test aj ako TestNG test. Ostal nám Randoop, ktorý generuje len JUnit testy a preto dostáva 2 body rovnako ako JUnit.
+	
+	Pri správe spúšťania testov v možnostiach v podstate nie sú rozdiely. Všetky pracovné rámce umožňujú vytvoriť vlastné triedy a aj skupiny testov, ktoré môžu byť spúšťané tak ako chceme. Rozdiel je len v tom ako sa tieto triedy a skupiny špecifikujú, ale to patrí do hodnotenia inej kategórie. Vzhľadom na takúto situáciu sme v tejto kategórií urobili výnimku a všetky pracovné rámce dostanú zhodne po 5 bodov.
+	
+	Bez zásahu do zobrazovania výsledkov a odhliadnutia od zobrazenia výsledkov prostredníctvom zásuvného modulu je jediný rozdiel medzi pracovnými rámcami v tom, že TestNG vypisuje výsledky na konzolu. Výpis na konzolu môže byť žiaduci aj nie takže sa nedá jednoznačne určiť čo je lepšie. Výraznejší rozdiel môžeme vidieť pri listeneroch. TestNG listener poskytuje viac metód a pomocou používaného rozhrania aj podrobnejšie informácie. Aby sme teda ostali pri dohodnutom hodnotení tak všetky pracovné rámce používajúce TestNG dostanú 4 body a JUnit 2 body.
+	
+	Body za potrebné programátorské skúsenosti pridelíme podľa toho ako sme zoradili pracovné rámce v predchádzajúcej kapitole. Najjednoduchší je JUnit a získava teda podľa nášho bodovania 4 body. Po ňom nasleduje Randoop s 3 bodmi, TestNG s 2 a nakoniec Arquillian s 1 bodom.	
+	
+	Pretože jediný pracovný rámec, ktorý vie generovať testy automaticky je Randoop dostáva za túto kategóriu 5 bodov. Ostatné pracovné rámce dostávajú 0, pretože je to veľmi užitočná vlastnosť, ale oni ňou nedisponujú.
 
-	\section{Ciele a záver práce}
+	\begin{center}
+		\includegraphics[width = 400pt, trim = 0pt 700pt 0pt 0pt]{tabulka}
+		\newline
+		\tiny Tab. 1. Výsledok hodnotenia
+	\end{center}
+		
+	\subsection{Vhodnosť použitia pracovných rámcov podľa charakteristiky projektu}
+	Vyhodnotením sme získali porovnanie pracovných rámcov podľa rôznych kritérií, ale každý projekt má iné potreby a preto treba doplniť, že ten ktorý z nášho testu vyplýva ako najlepší, nemusí byť najlepšia voľba vždy. Randoop vďaka tomu, že vie generovať testy je podľa hodnotenia najlepší, ale pri projektoch veľkého rozsahu by vygeneroval obrovské množstvo testov, z ktorých väčšina by bola zbytočná lebo by sa v nich opakovane testovalo viackrát to isté. Vo veľkých projektoch by bolo potom treba kontrolovať a vylúčiť zbytočné testy a od istej hranice je vhodnejšie napísať si ich ručne.
 	
-	V práci sme analyzovali testovanie softvéru a zamerali sme sa na analyzovanie jednotkového testovania. Analýzou vlastností jednotkového testovania sa nám podarilo vytvoriť teoretický koncept ideálneho pracovného rámca pre jednotkové testovanie. Snažili sme sa vlastnosti určovať tak, aby sme hovorili o uskutočniteľných vlastnostiach, resp. už skutočných vlastnostiach, ale zatiaľ nie spojených do jedného pracovného rámca, a nebolo to niečo nemožné v realite. Tieto vlastnosti sme porovnali s dostupnými informáciami o vlastnostiach niekoľkých existujúcich pracovných rámcov zo skupiny xUnit. Vybrali sme viacero pracovných rámcov pre jazyk C\# a aj viacero pre jazyk Java. Vlastnosti týchto pracovných rámcov sme porovnali s vlastnosťami ideálne pracovného rámca. Zhodnotili sme, ktoré vlastnosti pracovné rámce implementujú a ktoré naopak ešte nie alebo ich implementujú len čiastočne. Na základe zhodnotenia sme potom vedeli určiť, ktorý pracovný rámec má najviac spoločných vlastností s ideálnym a teda má k nemu najbližšie. Aj pre jazyk C\# aj pre jazyk Java bol najlepší pracovný rámec Randoop, resp. Randoop.NET.
+	Druhým v našom poradí je TestNG, ktorý umožňuje písať testy a zároveň má veľmi dobre rozpracovanú možnosť konfigurácie testov rôznymi spôsobmi. Je vhodný pre malé, ale aj väčšie projekty. Pri väčších projektoch si vyžaduje viac skúseností programátora, pretože vytvoriť správnu konfiguráciu pre veľký projekt nie je jednoduché.
 	
-	Cieľom našej práce je vytvoriť projekt v takom rozsahu, aby sme mohli otestovať a zhodnotiť tento pracovný rámec aj v skutočnosti. Našim cieľom je vyskúšať vlastnosti tie vlastnosti pracovného rámca, o ktorých sa v práci diskutuje. Na jednom projekte sa nám pravdepodobne nepodarí do hĺbky otestovať všetky jeho vlastnosti, ale chceme otestovať každú aspoň čiastočne a tie pri ktorých to bude možné aj do hĺbky. Vzhľadom na to, že projekt ešte nemáme špecifikovaný nevieme konkretizovať ktoré vlastnosti a ako bude možné otestovať. Testovať budem pracovné rámce Randoop a Randoop.NET a projekt bude implementovaný v oboch jazykoch (C\#, Java).
+	Arquillian je výborným nástrojom pre veľké projekty, pretože dokáže rozdeliť testovanie na menšie časti a tým ušetriť čas. Jeho nevýhodou pri malých projektoch je závislosť na veľa knižniciach čo čiastočne komplikuje jeho používanie, aj keď vďaka integrácií v Maven projekte to nie je náročné. Vo veľkých projektoch by sa aj réžia, ktorú má mala odstrániť a mal by mať oproti ostatným nástrojom v tomto smere výhodu, ale to už nebolo súčasťou nášho testovanie a preto to ostáva len v rovine predpokladu.
+	
+	JUnit vyšiel z nášho hodnotenia najhoršie, ale je to dobrý nástroj pre začiatočníkov v jednotkovom testovaní. Je jednoduchší na používanie, pretože nepoužíva žiadne externé súbory a všetko sa dá nastaviť a prispôsobiť z vývojového prostredia. Čo sa týka rozsahu projektu je na tom rovnako ako TestNG.
 	
 	\newpage
-	\section{Časový plán do odovzdania práce v letnom semestri}
-	\begin{itemize}
-		\item \textbf{december 2015} - špecifikácia projektu, na ktorom budem implementovať testovanie
-		\item \textbf{január a február 2016} - implementácia projektu, implementácia testov vo vybraných pracovných rámcoch
-		\item \textbf{marec 2016} - testovanie projektu pracovnými rámcami a zhromažďovanie výsledkov testov pre účely zhodnotenia
-		\item \textbf{apríl 2016} - zhodnotenie a porovnávanie pracovných rámcov
-		\item \textbf{máj 2016} - dokončovanie práce a odovzdanie do 10.5.2016
-	\end{itemize}
+	\section{Záver}
+	V práci sme analyzovali testovanie softvéru a zamerali sme sa na analyzovanie jednotkového testovania. Analýzou vlastností jednotkového testovania sa nám podarilo vytvoriť teoretický koncept ideálneho pracovného rámca pre jednotkové testovanie. Snažili sme sa vlastnosti určovať tak, aby sme hovorili o uskutočniteľných vlastnostiach, resp. už skutočných vlastnostiach, ale zatiaľ nie spojených do jedného pracovného rámca, a nebolo to niečo nemožné v realite. Tieto vlastnosti sme porovnali s dostupnými informáciami o vlastnostiach niekoľkých existujúcich pracovných rámcov zo skupiny xUnit. Vybrali sme viacero pracovných rámcov pre jazyk Java. Vlastnosti týchto pracovných rámcov sme porovnali s vlastnosťami ideálneho pracovného rámca. Zhodnotili sme, ktoré vlastnosti pracovné rámce implementujú a ktoré naopak ešte nie alebo ich implementujú len čiastočne. Na základe predbežného hodnotenia, nepotvrdeného testami sa javil najlepší pracovný rámec Randoop. Po testoch na vybraných pracovných rámcoch sa tento predpoklad potvrdil a podarilo sa nám zoradiť vybrané pracovné rámce podľa kvality a zároveň určiť, na ktoré typy projektov sú jednotlivé pracovné rámce vhodné.
+
+%	\section{Ciele a záver práce}
+	
+%	V práci sme analyzovali testovanie softvéru a zamerali sme sa na analyzovanie jednotkového testovania. Analýzou vlastností jednotkového testovania sa nám podarilo vytvoriť teoretický koncept ideálneho pracovného rámca pre jednotkové testovanie. Snažili sme sa vlastnosti určovať tak, aby sme hovorili o uskutočniteľných vlastnostiach, resp. už skutočných vlastnostiach, ale zatiaľ nie spojených do jedného pracovného rámca, a nebolo to niečo nemožné v realite. Tieto vlastnosti sme porovnali s dostupnými informáciami o vlastnostiach niekoľkých existujúcich pracovných rámcov zo skupiny xUnit. Vybrali sme viacero pracovných rámcov pre jazyk C\# a aj viacero pre jazyk Java. Vlastnosti týchto pracovných rámcov sme porovnali s vlastnosťami ideálne pracovného rámca. Zhodnotili sme, ktoré vlastnosti pracovné rámce implementujú a ktoré naopak ešte nie alebo ich implementujú len čiastočne. Na základe zhodnotenia sme potom vedeli určiť, ktorý pracovný rámec má najviac spoločných vlastností s ideálnym a teda má k nemu najbližšie. Aj pre jazyk C\# aj pre jazyk Java bol najlepší pracovný rámec Randoop, resp. Randoop.NET.
+	
+%	Cieľom našej práce je vytvoriť projekt v takom rozsahu, aby sme mohli otestovať a zhodnotiť tento pracovný rámec aj v skutočnosti. Našim cieľom je vyskúšať vlastnosti tie vlastnosti pracovného rámca, o ktorých sa v práci diskutuje. Na jednom projekte sa nám pravdepodobne nepodarí do hĺbky otestovať všetky jeho vlastnosti, ale chceme otestovať každú aspoň čiastočne a tie pri ktorých to bude možné aj do hĺbky. Vzhľadom na to, že projekt ešte nemáme špecifikovaný nevieme konkretizovať ktoré vlastnosti a ako bude možné otestovať. Testovať budem pracovné rámce Randoop a Randoop.NET a projekt bude implementovaný v oboch jazykoch (C\#, Java).
+	
+%	\newpage
+%	\section{Časový plán do odovzdania práce v letnom semestri}
+%	\begin{itemize}
+%		\item \textbf{december 2015} - špecifikácia projektu, na ktorom budem implementovať testovanie
+%		\item \textbf{január a február 2016} - implementácia projektu, implementácia testov vo vybraných pracovných rámcoch
+%		\item \textbf{marec 2016} - testovanie projektu pracovnými rámcami a zhromažďovanie výsledkov testov pre účely zhodnotenia
+%		\item \textbf{apríl 2016} - zhodnotenie a porovnávanie pracovných rámcov
+%		\item \textbf{máj 2016} - dokončovanie práce a odovzdanie do 10.5.2016
+%	\end{itemize}
+    \newpage
+ 	\pagestyle{fancy}
+ 	\fancyhf{}
+ 	\fancyfoot[CE,CO]{\thepage}
+ 	\bibliography{literatura}
+ 	\bibliographystyle{plain}
  	
- 	\begin{titlepage}
- 		\bibliography{literatura}
- 		\bibliographystyle{plain}
- 	\end{titlepage}
 	
 \end{document}
