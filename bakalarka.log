@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  29 APR 2016 23:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  30 APR 2016 11:13
 entering extended mode
 **./bakalarka.tex
 (bakalarka.tex
@@ -929,93 +929,113 @@ Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 482.
 
-[30] <sekvencne.jpg, id=459, 612.03656pt x 395.22656pt>
-File: sekvencne.jpg Graphic file (type jpg)
- <use sekvencne.jpg>
-Package pdftex.def Info: sekvencne.jpg used on input line 488.
-(pdftex.def)             Requested size: 400.0pt x 258.29936pt.
+[30] <graf_rezia.pdf, id=473, 844.83629pt x 597.432pt>
+File: graf_rezia.pdf Graphic file (type pdf)
+ <use graf_rezia.pdf>
+Package pdftex.def Info: graf_rezia.pdf used on input line 486.
+(pdftex.def)             Requested size: 400.0pt x 282.86243pt.
 
-Overfull \hbox (1.66142pt too wide) in paragraph at lines 488--491
+Overfull \hbox (1.66142pt too wide) in paragraph at lines 486--489
  []  
  []
 
-[31] <paralelne.jpg, id=464, 520.19344pt x 403.5075pt>
-File: paralelne.jpg Graphic file (type jpg)
- <use paralelne.jpg>
-Package pdftex.def Info: paralelne.jpg used on input line 496.
-(pdftex.def)             Requested size: 400.0pt x 310.2769pt.
+[31 <./graf_rezia.pdf>] <graf_sekvencne.pdf, id=482, 844.83629pt x 597.432pt>
+File: graf_sekvencne.pdf Graphic file (type pdf)
 
-Overfull \hbox (1.66142pt too wide) in paragraph at lines 496--499
+<use graf_sekvencne.pdf>
+Package pdftex.def Info: graf_sekvencne.pdf used on input line 494.
+(pdftex.def)             Requested size: 400.0pt x 282.86243pt.
+
+Overfull \hbox (1.66142pt too wide) in paragraph at lines 494--497
  []  
  []
 
-[32 <./sekvencne.jpg>]
+<graf_paralelne.pdf, id=483, 844.83629pt x 597.432pt>
+File: graf_paralelne.pdf Graphic file (type pdf)
+ <use graf_paralelne.pdf>
+Package pdftex.def Info: graf_paralelne.pdf used on input line 502.
+(pdftex.def)             Requested size: 400.0pt x 282.86243pt.
+
+Overfull \hbox (1.66142pt too wide) in paragraph at lines 502--505
+ []  
+ []
+
+[32 <./graf_sekvencne.pdf>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+n'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 503.
+(hyperref)                removing `\textasciicaron' on input line 509.
 
-[33 <./paralelne.jpg>] [34] [35]
-<tabulka.pdf, id=482, 597.432pt x 844.83629pt>
+[33 <./graf_paralelne.pdf>] [34] [35]
+<tabulka.pdf, id=509, 597.432pt x 844.83629pt>
 File: tabulka.pdf Graphic file (type pdf)
  <use tabulka.pdf>
-Package pdftex.def Info: tabulka.pdf used on input line 529.
+Package pdftex.def Info: tabulka.pdf used on input line 535.
 (pdftex.def)             Requested size: 400.0pt x 96.97571pt.
 
-Overfull \hbox (1.66142pt too wide) in paragraph at lines 529--532
+Overfull \hbox (1.66142pt too wide) in paragraph at lines 535--538
  []  
  []
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 534.
+(hyperref)                removing `\textasciicaron' on input line 540.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 534.
+(hyperref)                removing `\textasciicaron' on input line 540.
 
 
-Overfull \hbox (0.53429pt too wide) in paragraph at lines 535--536
+Overfull \hbox (0.53429pt too wide) in paragraph at lines 541--542
 \T1/ptm/m/n/10.95 Vyhodnotením sme zís-kali po-rov-na-nie pra-cov-ných rám-cov 
 pod©a rôz-nych kri-té-rií, ale kaºdý
  []
 
-[36 <./tabulka.pdf>] [37] [38] (bakalarka.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 570.
- [39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 570.
+[36 <./tabulka.pdf>] [37] [38] (bakalarka.bbl) [39]
+Overfull \hbox (3.62268pt too wide) in paragraph at lines 592--593
+[]\T1/ptm/b/n/10.95 Spustite©né sú-bory pra-cov-ných rám-cov \T1/ptm/m/n/10.95 
+- Ran-doop 2.1.4, JU-nit 4.12, TestNG 6.9.10,
+ []
+
+[40] [41]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 597.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 597.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 608.
+[42]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 608.
  (bakalarka.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 570.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 570.
-
-
-Package rerunfilecheck Warning: File `bakalarka.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `bakalarka.out':
-(rerunfilecheck)             Before: F4803097C62534BCC3A38AAFFDA31AD7;3427
-(rerunfilecheck)             After:  90E02F41BC3E02A8817A6B5ADB44E4E3;3524.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 570.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 608.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 608.
+Package rerunfilecheck Info: File `bakalarka.out' has not changed.
+(rerunfilecheck)             Checksum: 8D947BA9C493384FB0A05B41F34E1FCE;3662.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 608.
  ) 
 Here is how much of TeX's memory you used:
- 9385 strings out of 493634
- 131374 string characters out of 3141317
+ 9397 strings out of 493634
+ 131590 string characters out of 3141317
  234239 words of memory out of 3000000
- 12480 multiletter control sequences out of 15000+200000
+ 12487 multiletter control sequences out of 15000+200000
  56580 words of font info for 78 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 29i,11n,43p,1385b,491s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,11n,43p,1531b,491s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on bakalarka.pdf (42 pages, 377998 bytes).
+Output written on bakalarka.pdf (45 pages, 563922 bytes).
 PDF statistics:
- 562 PDF objects out of 1000 (max. 8388607)
- 139 named destinations out of 1000 (max. 500000)
- 352 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 144 named destinations out of 1000 (max. 500000)
+ 381 words of extra memory for PDF output out of 10000 (max. 10000000)
 

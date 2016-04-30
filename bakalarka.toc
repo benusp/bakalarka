@@ -58,3 +58,5 @@
 \contentsline {subsection}{\numberline {8.1}Vhodnos\IeC {\v t} pou\IeC {\v z}itia pracovn\IeC {\'y}ch r\IeC {\'a}mcov pod\IeC {\v l}a charakteristiky projektu}{37}{subsection.8.1}
 \contentsline {section}{\numberline {9}Z\IeC {\'a}ver}{38}{section.9}
 \contentsline {section}{Literat\'ura}{39}{section*.20}
+\contentsline {section}{\numberline {10}Technick\IeC {\'a} dokument\IeC {\'a}cia}{40}{section.10}
+\contentsline {section}{\numberline {11}Pou\IeC {\v z}\IeC {\'\i }vate\IeC {\v l}sk\IeC {\'a} pr\IeC {\'\i }ru\IeC {\v c}ka}{42}{section.11}

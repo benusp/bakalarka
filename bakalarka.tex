@@ -480,22 +480,28 @@
 	Jediný z vybraných pracovných rámcov poskytujúci automatické generovanie testov je Randoop. Sám o sebe nemá grafické prostredie, aj keď na internete sú dostupné zásuvné moduly umožňujúce spustiť generovanie testov aj priamo z vývojové prostredia. Avšak tieto zásuvné moduly sú staré už niekoľko rokov a novšie sa nám nepodarilo nájsť ani na stránkach vývojárov Randoop. Pre účely tejto práce boli preto testy generované z príkazového riadku, aby sme mohli použiť najnovšiu verziu pracovného rámca a nerobili štúdiu s použitím zastaralého softvéru. Tvorba testov je bližšie popísaná v časti \textit{Tvorba testov}.	
 	
 	\subsection{Časová réžia pracovných rámcov}
-	Počas testovania boli merané časy jednotlivých metód, rozdiel času pred prvou a po poslednej testovacej metóde a aj rozdiel času pred a po zavolaní spúšťača testu na danú triedu. V grafoch nižšie je zobrazené porovnanie časov pred zavolaním spúšťača a po jeho ukončení. Tento čas bol vybraný preto, lebo zahŕňa všetku časovú réžiu okolo spúšťania testov a rozdiel oproti súčtu času jednotlivých metód a rozdielu času pred prvou a poslednou je minimálny (rozdiel v priemerných časoch aj mediáne bol do 20 ms, čo je pri dĺžke testu nad 10000 ms zanedbateľná hodnota). Vyššie rozdiely mali len pracovné rámce TestNG a Arquillian spúšťaný ako TestNG test. Z toho vyplýva, že TestNG spúšťač testov má väčšiu réžiu ako JUnit spúšťač.(môžno by bolo dobré ešte pridať graf na porovnanie rozdielu oproti ostatným)
-	
-	Pri sekvenčných testoch je evidentné, že testy sú čo sa týka času veľmi podobné (Obr. 1). Čisté JUnit test bez rozšírenia sú na rovnakej úrovni ako vykonávanie tried mimo testu a dokonca aj o niečo rýchlejšie. To môže byť spôsobené chybou merania, pretože neviem zabezpečiť, aby operačný systém na počítači nevykonával aj iné úlohy na pozadí, ktoré môžu mať vplyv na výkon aj keď sme sa snažili tieto nežiadúce vplyvy čo najviac eliminovať. O niečo horšie, ale bez výrazného rozdielu, je na tom Arquillian spúšťaný oboma pracovnými rámcami a samotný TestNG.
+	Počas testovania boli merané časy jednotlivých metód, rozdiel času pred prvou a po poslednej testovacej metóde a aj rozdiel času pred a po zavolaní spúšťača testu na danú triedu. V grafoch nižšie je zobrazené porovnanie časov pred zavolaním spúšťača a po jeho ukončení. Tento čas bol vybraný preto, lebo zahŕňa všetku časovú réžiu okolo spúšťania testov a rozdiel oproti súčtu času jednotlivých metód a rozdielu času pred prvou a poslednou je minimálny (rozdiel v priemerných časoch aj mediáne bol do 20 ms, čo je pri dĺžke testu nad 10000 ms zanedbateľná hodnota). Vyššie rozdiely mali len pracovné rámce TestNG a Arquillian spúšťaný ako TestNG test (viď Obr. 1). Z toho vyplýva, že TestNG spúšťač testov má väčšiu réžiu ako JUnit spúšťač.
 	
 	\begin{center}
-		\includegraphics[width = 400pt]{sekvencne}
+		\includegraphics[width = 400pt]{graf_rezia}
 		\newline
-		\tiny Obr. 1. Výsledky sekvenčných testov
+		\tiny Obr. 1. Porovnanie súčtu času metód pri testovaní a celkového času testu aj s inicializáciou.
 	\end{center}
 	
-	Výsledky paralelných testov (Obr. 2) ukazujú presne tie isté výsledky a teda opäť sú na tom najlepšie JUnit pracovné rámce a o niečo horšie Arquillian a TestNG. Pri paralelných testoch je ešte dôležité si všimnúť, že najlepšie časy malo vykonávanie testov v 8 a 16 vláknach (procesor počítača, na ktorom prebiehali testy má 2 jadrá a 4 vlákna). Pri iných počtoch jadier, na ktorých boli testy spúšťané boli časy horšie, čo naznačuje, že je okolo testov dosť réžie, pretože najlepšie využitie bolo až pri 8 vláknach. Keby tam táto réžia nebola a išlo by len o výpočet najlepšie časy by sme dosahovali pri 2, resp. 4 vláknach.
+	Pri sekvenčných testoch je evidentné, že testy sú čo sa týka času veľmi podobné (Obr. 2). Čisté JUnit test bez rozšírenia sú na rovnakej úrovni ako vykonávanie tried mimo testu a dokonca aj o niečo rýchlejšie. To môže byť spôsobené chybou merania, pretože neviem zabezpečiť, aby operačný systém na počítači nevykonával aj iné úlohy na pozadí, ktoré môžu mať vplyv na výkon aj keď sme sa snažili tieto nežiadúce vplyvy čo najviac eliminovať. O niečo horšie, ale bez výrazného rozdielu, je na tom Arquillian spúšťaný oboma pracovnými rámcami a samotný TestNG.
 	
 	\begin{center}
-		\includegraphics[width = 400pt]{paralelne}
+		\includegraphics[width = 400pt]{graf_sekvencne}
 		\newline
-		\tiny Obr. 2. Výsledky paralelných testov
+		\tiny Obr. 2. Výsledky sekvenčných testov
+	\end{center}
+	
+	Výsledky paralelných testov (Obr. 3) ukazujú presne tie isté výsledky a teda opäť sú na tom najlepšie JUnit pracovné rámce a o niečo horšie Arquillian a TestNG. Pri paralelných testoch je ešte dôležité si všimnúť, že najlepšie časy malo vykonávanie testov v 8 a 16 vláknach (procesor počítača, na ktorom prebiehali testy má 2 jadrá a 4 vlákna). Pri iných počtoch jadier, na ktorých boli testy spúšťané boli časy horšie, čo naznačuje, že je okolo testov dosť réžie, pretože najlepšie využitie bolo až pri 8 vláknach. Keby tam táto réžia nebola a išlo by len o výpočet najlepšie časy by sme dosahovali pri 2, resp. 4 vláknach.
+	
+	\begin{center}
+		\includegraphics[width = 400pt]{graf_paralelne}
+		\newline
+		\tiny Obr. 3. Výsledky paralelných testov
 	\end{center}
 	
 	Treba ešte dodať k už spomínanej vlastnosti Arquillianu, vytvárať vlastné zostavy, že pri väčších projektoch môže táto vlastnosť urýchliť priebeh testov, pretože v zostave si vieme definovať, ktoré triedu sú pre nás v teste dôležité a ostatné nemusia byť pripojené. Tým pádom by sme vedeli ušetriť čas pri inicializácií testu, najmä ak používame v programe veľa tried s rôznou mierou vzájomnej spolupráce. V našich výsledkoch vplyv tejto vlastnosti nie je vidieť, pretože rozsah nami testovaných tried nebol veľký.
@@ -566,5 +572,37 @@
  	\bibliography{literatura}
  	\bibliographystyle{plain}
  	
+ 	\newpage
+ 	\section{Technická dokumentácia}
+ 	
+ 	Na začiatku práce sme zúžili okruh, na ktorý sa v rámci témy budeme zameriavať na jednotkové testovanie. Tým začínala analytická časť práce, v ktorej sme hľadali dostupné pracovné rámce pre jazyky C\# a Java. Po analytickej časti sme sa rozhodli zamerať na jazyk Java a implementovali sme jednotkové testy pre viacero pracovných rámcov. Testy boli implementované pomocou generatívneho pracovného rámca Randoop a vývojového prostredia Eclipse Mars.2. Používali sme Java virtuálny stroj verzie 7, update 80. Testy boli po implementácií opakovane spúšťané v cykle volaním zo zdrojového kódu programu. Zaznamenávali sme čas, ktorý testy potrebovali na vykonanie a následne sme získané dáta vyhodnotili. Okrem vyhodnocovania času sme vyhodnocovali aj iné vlastnosti pracovných rámcov, ktoré priamo ovplyvňujú prácu s nimi. Na základe tohto hodnotenia sme zostavili rebríček pracovných rámcov podľa ich vlastností. Prílohou k práci sú aj zdrojové kódy testov a testovaných tried a aj výsledky v xlsx súbore s presnými časmi testov. Aby sme zabezpečili čo najmenšie odchýlky počas testovania, počas testov neboli na počítači spustené žiadne aplikácie okrem Eclipse, bol napojený na zdroj elektrickej energie, odpojený od internetu(aby sme zabránili operačnému systému alebo aplikácií bežiacej na pozadí sťahovať a inštalovať aktualizácia a pod.) a v možnostiach napájania bol nastavený maximálny výkon.
+ 	
+ 	Technické parametre počítača, na ktorom boli vykonávané testy:
+ 	\begin{itemize}
+		\item \textbf{Procesor} - Intel i5-3230M 2.6GHz
+		\item \textbf{Operačná pamäť} - 8 GB
+		\item \textbf{HDD} - 750 GB
+	\end{itemize}
 	
+	Softvérové vybavenie počítača, súvisiace s testovaním:
+	\begin{itemize}
+		\item \textbf{Operačný systém} - Windows 10 Education
+		\item \textbf{Vývojové prostredie} - Eclipse Mars.2 (4.5.2)
+		\item \textbf{Java} - verzia 7, update 80
+		\item \textbf{Spustiteľné súbory pracovných rámcov} - Randoop 2.1.4, JUnit 4.12, TestNG 6.9.10, Arquillian (veľa rôznych súborov, nemá jednoznačné označenie verzie, )
+		
+	\end{itemize}
+ 	
+ 	\newpage
+ 	\section{Používateľská príručka}
+ 	
+ 	V zdrojových kódov v balíčku benus.peter.bakalarka a v zložke src/main/java sa nachádzajú zdrojové súbory testovaných tried (PrimeNumbers, PrimesPrint). Okrem nich sú tam ďalšie dva súbory, slúžiace na meranie času vykonávania tých istých operácií ako pri testovaní, ale bez kontroly toho či sú výstupy správne. Trieda Methods obsahuje metódy korešpondujúce s testovacími a metódu, ktorá zavolá všetky tieto metódy a zároveň zistí čas potrebný na ich vykonanie. 
+ 	
+ 	V tom istom balíčku v zložke src/test/java sa nachádzajú zdrojové súbory testovacích tried, listenery, súbor test.xml a triedy na opakované spúšťanie, ktorými sme získavali údaje pre vyhodnotenie. Názvy tried sú vždy odvodené od názvu pracovného rámca, okrem Randoopu, ktorý triedy generuje. Trieda z názvom RegressionTest je vlastne skupina testov vygenerovaných Randoopom, aby bolo možné ich naraz spúšťať. Trieda RegressionTest0 obsahuje vygenerované testovacie metódy pracovným rámcom a trieda RegressionTest0Short je výberom metód z tých, ktoré Randoop vygeneroval.
+ 	
+ 	Dva listenery nachádzajúce sa tiež v tejto zložke zabezpečujú zaznamenávanie času do textového súboru počas opakovaného vykonávania. Zaznamenávajú čas pred a po vykonaní celej triedy a aj pred a po každej metóde.
+ 	
+ 	Triedy RunTests a RunTests2 slúžia na opakované spúšťanie testovacích tried. Rozdiel medzi nimi je v tom, že RunTests2 zaznamenáva čas aj pred a po volaní testovacej triedy z nej, narozdiel od RunTests, ktorá spracováva iba čas z listenerov. RunTests bola použitá na prvé testovanie, podľa ktorého sa potom do RunTests2 pridali a pozmenili trochu volania testovacích tried.
+ 	
+ 	Súbor test.xml je konfiguračným súborom pracovného rámca TestNG a slúži na demonštráciu spúšťania JUnit testov prostredníctvom TestNG.	
 \end{document}

@@ -14,4 +14,3 @@ zmeneny sposob hodnotenia testov
 
 
 prehlad dokumentu po uvode
-pridat graf do 6.10
