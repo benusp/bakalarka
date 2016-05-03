@@ -20,7 +20,7 @@
 \BOOKMARK [2][-]{subsection.5.1}{N\341stroje patriace do skupiny xUnit pre Javu}{section.5}% 20
 \BOOKMARK [2][-]{subsection.5.2}{N\341stroje patriace do skupiny xUnit pre .NET}{section.5}% 21
 \BOOKMARK [2][-]{subsection.5.3}{Porovnanie vlastnost\355 pracovn\375ch r\341mcov patriacich do skupiny xUnit s ide\341lnym pracovn\375m r\341mcom}{section.5}% 22
-\BOOKMARK [1][-]{section.6}{Konfigur\341cia testovania}{}% 23
+\BOOKMARK [1][-]{section.6}{Met\363da vyhodnotenia vlastnost\355 pracovn\375ch r\341mcov}{}% 23
 \BOOKMARK [2][-]{subsection.6.1}{Apache Maven}{section.6}% 24
 \BOOKMARK [2][-]{subsection.6.2}{Tvorba testov}{section.6}% 25
 \BOOKMARK [2][-]{subsection.6.3}{Opis testovac\355ch tried a met\363d}{section.6}% 26
@@ -40,6 +40,6 @@
 \BOOKMARK [1][-]{section.8}{Vyhodnotenie v\375sledkov testovania}{}% 40
 \BOOKMARK [2][-]{subsection.8.1}{Vhodnost pou\236itia pracovn\375ch r\341mcov podla charakteristiky projektu}{section.8}% 41
 \BOOKMARK [1][-]{section.9}{Z\341ver}{}% 42
-\BOOKMARK [1][-]{section*.20}{Literat\372ra}{}% 43
-\BOOKMARK [1][-]{section.10}{Technick\341 dokument\341cia}{}% 44
-\BOOKMARK [1][-]{section.11}{Pou\236\355vatelsk\341 pr\355rucka}{}% 45
+\BOOKMARK [1][-]{section.9}{Literat\372ra}{}% 43
+\BOOKMARK [1][-]{section.1}{Technick\341 dokument\341cia}{}% 44
+\BOOKMARK [1][-]{section.2}{Pou\236\355vatelsk\341 pr\355rucka}{}% 45

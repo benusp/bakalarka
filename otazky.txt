@@ -1,16 +1,17 @@
-deployment (strana 26, kapitola 6.4)
-listener (zobrazenie vysledkov a vyhodnotenie)
-assertion preklad (xUnit)
-Fixie poznamka
+﻿testovanie -> vyhodnotenie vlastnosti
+technicka dokumentacia a pouzivatelska prirucka
+6 a 7 kapitola - pridat uvod pred prvu subsection
 
-
-
-
-----dopisane----
-časová nárocnost arquillian - vyhoda zostavy
-zobrazenie vysledkov - doplneny pristup k vysledkom zo zdrojoveho kodu.	
-zmeneny sposob hodnotenia testov
-
-
-
-prehlad dokumentu po uvode
+//Tvrdenie, vyrok = assertion
+//oramovanie obrazkov
+//6 kapitola - Metoda vyhodnotenia vlastnosti pracovnych ramcov
+//priklad na testovanie bielou skrinkou
+//zmenit cislovanie az od uvodu
+//prva strana bez hlavicky
+//cislovanie priloh
+//kvalita -> vhodnost pouzitia (v zavere)
+//listener (zobrazenie vysledkov a vyhodnotenie)
+//assertion preklad (xUnit)
+//Fixie poznamka
+//prehlad dokumentu po uvode
+//uvod a zaver pozriet a dopisat
