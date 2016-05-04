@@ -76,7 +76,7 @@
 		\begin{flushleft}
 			Študijný program: Informatika\\
 			Vedúci bakalárskeho projektu: Ing. Karol Rástočný\\
-			December 2015
+			Máj 2016
 		\end{flushleft}
 	\end{titlepage}
 	
@@ -602,28 +602,14 @@
 	\setcounter{section}{0}
  	\section{Technická dokumentácia}
  	
- 	Na začiatku práce sme zúžili okruh, na ktorý sa v rámci témy budeme zameriavať na jednotkové testovanie. Tým začínala analytická časť práce, v ktorej sme hľadali dostupné pracovné rámce pre jazyky C\# a Java. Po analytickej časti sme sa rozhodli zamerať na jazyk Java a implementovali sme jednotkové testy pre viacero pracovných rámcov. Testy boli implementované pomocou generatívneho pracovného rámca Randoop a vývojového prostredia Eclipse Mars.2. Používali sme Java virtuálny stroj verzie 7, update 80. Testy boli po implementácií opakovane spúšťané v cykle volaním zo zdrojového kódu programu. Zaznamenávali sme čas, ktorý testy potrebovali na vykonanie a následne sme získané dáta vyhodnotili. Okrem vyhodnocovania času sme vyhodnocovali aj iné vlastnosti pracovných rámcov, ktoré priamo ovplyvňujú prácu s nimi. Na základe tohto hodnotenia sme zostavili rebríček pracovných rámcov podľa ich vlastností. Prílohou k práci sú aj zdrojové kódy testov a testovaných tried a aj výsledky v xlsx súbore s presnými časmi testov. Aby sme zabezpečili čo najmenšie odchýlky počas testovania, počas testov neboli na počítači spustené žiadne aplikácie okrem Eclipse, bol napojený na zdroj elektrickej energie, odpojený od internetu(aby sme zabránili operačnému systému alebo aplikácií bežiacej na pozadí sťahovať a inštalovať aktualizácia a pod.) a v možnostiach napájania bol nastavený maximálny výkon.
  	
- 	Technické parametre počítača, na ktorom boli vykonávané testy:
- 	\begin{itemize}
-		\item \textbf{Procesor} - Intel i5-3230M 2.6GHz
-		\item \textbf{Operačná pamäť} - 8 GB
-		\item \textbf{HDD} - 750 GB
-	\end{itemize}
-	
-	Softvérové vybavenie počítača, súvisiace s testovaním:
-	\begin{itemize}
-		\item \textbf{Operačný systém} - Windows 10 Education
-		\item \textbf{Vývojové prostredie} - Eclipse Mars.2 (4.5.2)
-		\item \textbf{Java} - verzia 7, update 80
-		\item \textbf{Spustiteľné súbory pracovných rámcov} - Randoop 2.1.4, JUnit 4.12, TestNG 6.9.10, Arquillian (veľa rôznych súborov, nemá jednoznačné označenie verzie, )
-		
-	\end{itemize}
+ 	
+ 	%Na začiatku práce sme zúžili okruh, na ktorý sa v rámci témy budeme zameriavať na jednotkové testovanie. Tým začínala analytická časť práce, v ktorej sme hľadali dostupné pracovné rámce pre jazyky C\# a Java. Po analytickej časti sme sa rozhodli zamerať na jazyk Java a implementovali sme jednotkové testy pre viacero pracovných rámcov. Testy boli implementované pomocou generatívneho pracovného rámca Randoop a vývojového prostredia Eclipse Mars.2. Používali sme Java virtuálny stroj verzie 7, update 80. Testy boli po implementácií opakovane spúšťané v cykle volaním zo zdrojového kódu programu. Zaznamenávali sme čas, ktorý testy potrebovali na vykonanie a následne sme získané dáta vyhodnotili. Okrem vyhodnocovania času sme vyhodnocovali aj iné vlastnosti pracovných rámcov, ktoré priamo ovplyvňujú prácu s nimi. Na základe tohto hodnotenia sme zostavili rebríček pracovných rámcov podľa ich vlastností. Prílohou k práci sú aj zdrojové kódy testov a testovaných tried a aj výsledky v xlsx súbore s presnými časmi testov. Aby sme zabezpečili čo najmenšie odchýlky počas testovania, počas testov neboli na počítači spustené žiadne aplikácie okrem Eclipse, bol napojený na zdroj elektrickej energie, odpojený od internetu(aby sme zabránili operačnému systému alebo aplikácií bežiacej na pozadí sťahovať a inštalovať aktualizácia a pod.) a v možnostiach napájania bol nastavený maximálny výkon.
  	
  	\newpage
  	\section{Používateľská príručka}
  	
- 	Pre zopakovanie testovania je potrebné zopakovať tieto kroky:
+ 	Pre zopakovanie výsledkov testovania je potrebné zopakovať tieto kroky:
  	
  	\begin{enumerate}
  		\item Stiahnuť a nainštalovať virtuálny Java stroj. My sme používali verziu 7, update 80, ale možnosť spustenia by nemala ovplyvniť ani iná verzia. Je možné ju stiahnuť tu: \url{http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html}.
@@ -633,8 +619,18 @@
  		\item Pridať do závislostí projektu pracovné rámce JUnit, TestNG a Arquillian, aby Maven posťahoval všetky potrebné súbory k ich používaniu. Závislosti sa dajú po kliknutí na pom.xml súbor na záložke "Dependencies" alebo aj vložením značiek do pom.xml súboru na záložke "pom.xml". Údaje, ktoré treba vložiť pre JUnit sú tu: \url{http://mvnrepository.com/artifact/junit/junit/4.12}, pre TestNG tu: \url{http://mvnrepository.com/artifact/org.testng/testng/6.9.10} a pre Arquillian na odkaze z predchádzajúceho bodu.
  		\item Stiahnuť Randoop-2.1.4.jar z \url{https://github.com/randoop/randoop/releases/tag/v2.1.4}.
  		\item Vytvoriť v projekte triedy, ktoré budeme testovať. My sme vytvorili triedu, ktorá hľadá prvočísla a triedu, ktorá vypíše prvočísla, ktoré od nej dostane pomocou metód.
- 		\item Vygenerovať testy pomocou Randoop. Použili sme tento príkaz v príkazovom riadku {C:\textbackslash Users\textbackslash Peto\textbackslash workspace\textbackslash bakalarka>java -ea -classpath randoop-2.1.4.jar;target\textbackslash classes\ randoop.main.Main gentests --classlist=classes.txt --outputlimit=100}. Súbor classes.txt, ktorý používame obsahuje názvy tried, pre ktoré sa majú generovať testy. Podrobnejší návod je možné nájsť na \url{https://randoop.github.io/randoop/manual/index.html}.
- 		\item 
+ 		\item Vygenerovať testy pomocou Randoop. Použili sme tento príkaz v príkazovom riadku {C:\textbackslash Users\textbackslash Peto\textbackslash workspace\textbackslash bakalarka>java -ea -classpath randoop-2.1.4.jar;target\textbackslash classes\ randoop.main.Main gentests --classlist=classes.txt --outputlimit=100}. Súbor classes.txt, ktorý používame obsahuje názvy tried, pre ktoré sa majú generovať testy. Podrobnejší návod na použitie Randoop je možné nájsť na \url{https://randoop.github.io/randoop/manual/index.html}.
+ 		\item Veberieme 15 testov z vygenerovaných a upravíme v nich všetko potrebné jednotlivo pre každý pracovný rámec tak, aby boli pomocou daného rámca spustiteľné. Pridáme ešte na anotáciu, aby sa testy spúšťali v abecednom poradí podľa názvu, resp. pri TestNG rámcoch nastavím prioritu tak, aby boli spúšťané v takomto poradí. Nie je to nevyhnutné, ale uľahčí to následné vyhodnocovanie.
+ 		\item Keď už máme vytvorené testy pre všetky pracovné rámce, ktoré chceme používať, vytvoríme si triedu, z ktorej budeme tieto testy opakovane spúšťať a zapisovať si výsledky do súboru. V súbore si časy ukladáme vo formáte "názov metódy";"čas metódy" a na konci aj celkový čas.
+ 		\item Aby sme vedeli zistiť čas behu každej metódy potrebujeme si ešte vytvoriť listenery jeden pre TestNG a jeden pre JUnit pracovné rámce a následne spúšťaču testov povedať, aby ich použil.
+ 		\item Pri paralelných testoch použijeme pre JUnit pripojenie knižnice org.junit.experimental.ParallelComputer. TestNG spúšťač umožňuje paralelné testovanie implicitne, ale treba nastaviť počet vlákien, ktoré má použiť metódou setThreadCount a metódou setParallel nastaviť paralelizáciu na úrovni metód.
+ 		\item Spustíme testy so želaným počtom opakovaní (používali sme 100) a potom si údaje uložené v textovom súbore prekopírujeme do tabuľkového editora (napr. Microsoft Excel). Keďže textový súbor je vo formáte csv pri jeho otvorení sa automaticky načítajú dáta do buniek.
+ 		\item Pre overenie správnosti údajov, spočítame, či sa každá metóda nachádza v súbore pre každý rámec požadovaný počet krát (pre nás 100). Keďže ich máme v stĺpcoch pod sebou dá sa to spraviť jednoducho funkciou countif(). 
+ 		\item Prekopírujeme názvy metód nad stĺpce s časmi a vymažeme všetky stĺpce, v ktorých máme len názvy metód. 
+ 		\item Sčítame časy metód pre každý beh testu funkciu sum().
+ 		\item Vylúčime všetky testy s veľkou časovou odchýlkou a aj tie, pri ktorých sa podľa výsledkov jednoznačne vyskytla chyba (napr. namiesto času je v bunke null alebo chýba nejaká metóda z daného behu).
+ 		\item Označíme stĺpec s časmi, ktorý chceme zobraziť v grafe a nájdeme medzi grafmi škatuľový graf.
+ 		\item Pri paralelných testoch nevieme zabezpečiť poradie časov metód v súbore, takže prípadnú kontrolu treba zabezpečiť iným spôsobom. Časy metód sú pri týchto testoch nie sú relevantné a preto ďalej spracovávame len celkové časy pre celé triedy. 
  	\end{enumerate}
  	
  	

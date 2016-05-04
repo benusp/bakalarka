@@ -1,6 +1,5 @@
 ﻿testovanie -> vyhodnotenie vlastnosti
 technicka dokumentacia a pouzivatelska prirucka
-6 a 7 kapitola - pridat uvod pred prvu subsection
 
 //Tvrdenie, vyrok = assertion
 //oramovanie obrazkov
@@ -15,3 +14,4 @@ technicka dokumentacia a pouzivatelska prirucka
 //Fixie poznamka
 //prehlad dokumentu po uvode
 //uvod a zaver pozriet a dopisat
+//6 a 7 kapitola - pridat uvod pred prvu subsection

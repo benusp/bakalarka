@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  3 MAY 2016 19:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  4 MAY 2016 12:22
 entering extended mode
 **./bakalarka.tex
 (bakalarka.tex
@@ -1029,113 +1029,108 @@ as been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.603  	\section{TechnickÃ¡ dokumentÃ¡cia}
-                                           [38]
-Overfull \hbox (3.62268pt too wide) in paragraph at lines 619--620
-[]\T1/ptm/b/n/10.95 Spustite©né sú-bory pra-cov-ných rám-cov \T1/ptm/m/n/10.95 
-- Ran-doop 2.1.4, JU-nit 4.12, TestNG 6.9.10,
- []
-
-[39]pdfTeX warning (ext4): destination with the same identifier (name{section.2
-}) has been already used, duplicate ignored
+                                           [38]pdfTeX warning (ext4): destinati
+on with the same identifier (name{section.2}) has been already used, duplicate 
+ignored
 <to be read again> 
                    \relax 
-l.624  	\section{PouÅ¾Ã­vateÄ¾skÃ¡ prÃ­ruÄka}
+l.610  	\section{PouÅ¾Ã­vateÄ¾skÃ¡ prÃ­ruÄka}
                                               
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 624.
+(hyperref)                removing `\textasciicaron' on input line 610.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 624.
+(hyperref)                removing `\textasciicaron' on input line 610.
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 629.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 615.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (149.06586pt too wide) in paragraph at lines 629--630
+Overfull \hbox (149.06586pt too wide) in paragraph at lines 615--616
 []$\T1/pcr/m/n/10.95 http : / / www . oracle . com / technetwork / java / javas
 e / downloads / jre7-[]downloads-[]1880261 .$
  []
 
 
-Overfull \hbox (2.2753pt too wide) in paragraph at lines 630--631
+Overfull \hbox (2.2753pt too wide) in paragraph at lines 616--617
 []\T1/ptm/m/n/10.95 Stiahnu´ a na-in-²ta-lo-va´ vý-vo-jové pro-stre-die Ec-lips
 e Mars.2 z []$\T1/pcr/m/n/10.95 https : / / eclipse .$
  []
 
 
-Overfull \hbox (32.72827pt too wide) in paragraph at lines 631--632
+Overfull \hbox (32.72827pt too wide) in paragraph at lines 617--618
 []\T1/ptm/m/n/10.95 Stiahnu´ a na-in-²ta-lo-va´ Apa-che Ma-ven z []$\T1/pcr/m/n
 /10.95 https : / / maven . apache . org / download .$
  []
 
 
-Overfull \hbox (1.30464pt too wide) in paragraph at lines 632--633
+Overfull \hbox (1.30464pt too wide) in paragraph at lines 618--619
 []\T1/ptm/m/n/10.95 Vygenerova´ Apa-che Ma-ven pro-jekt. Po-u-ºili sme ná-vod z
 o stránky pra-cov-ného rámca
  []
 
 
-Overfull \hbox (10.09602pt too wide) in paragraph at lines 633--634
+Overfull \hbox (10.09602pt too wide) in paragraph at lines 619--620
 []$\T1/pcr/m/n/10.95 http : / / mvnrepository . com / artifact / org . testng /
  testng / 6 . 9 . 10$[]
  []
 
 
-Overfull \hbox (47.92735pt too wide) in paragraph at lines 634--635
+Overfull \hbox (47.92735pt too wide) in paragraph at lines 620--621
 []\T1/ptm/m/n/10.95 Stiahnu´ Randoop-2.1.4.jar z []$\T1/pcr/m/n/10.95 https : /
  / github . com / randoop / randoop / releases /$
  []
 
 
-Overfull \hbox (9.5108pt too wide) in paragraph at lines 636--638
+Overfull \hbox (9.5108pt too wide) in paragraph at lines 622--623
 \T1/ptm/m/n/10.95 C:\Users\Peto\workspace\bakalarka>java -ea -classpath randoop
 -2.1.4.jar;target\classes
  []
 
 
-Overfull \hbox (5.2331pt too wide) in paragraph at lines 636--638
+Overfull \hbox (5.2331pt too wide) in paragraph at lines 622--623
 \T1/ptm/m/n/10.95 ran-doop.main.Main gen-tests --classlist=classes.txt --output
 limit=100. Sú-bor clas-ses.txt,
  []
 
-
-Overfull \hbox (6.2956pt too wide) in paragraph at lines 636--638
-\T1/ptm/m/n/10.95 ná-vod je moºné nájs´ na []$\T1/pcr/m/n/10.95 https : / / ran
-doop . github . io / randoop / manual /$
+[39]
+Overfull \hbox (84.31003pt too wide) in paragraph at lines 626--627
+[]\T1/ptm/m/n/10.95 Pri pa-ra-lel-ných tes-toch po-u-ºi-jeme pre JU-nit pri-po-
+je-nie kniº-nice org.junit.experimental.ParallelComputer.
  []
 
 [40]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 650.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 646.
  [41]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 650.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 646.
  (bakalarka.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 650.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 650.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 646.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 646.
 Package rerunfilecheck Info: File `bakalarka.out' has not changed.
 (rerunfilecheck)             Checksum: 90CF247DFC22B4629D490D6D6D1CD3EC;3692.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 650.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 646.
  ) 
 Here is how much of TeX's memory you used:
- 9704 strings out of 493634
- 135638 string characters out of 3141317
+ 9717 strings out of 493634
+ 135750 string characters out of 3141317
  239372 words of memory out of 3000000
- 12781 multiletter control sequences out of 15000+200000
+ 12784 multiletter control sequences out of 15000+200000
  61648 words of font info for 83 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 29i,11n,43p,1531b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,11n,43p,1524b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on bakalarka.pdf (46 pages, 582633 bytes).
+Output written on bakalarka.pdf (46 pages, 584109 bytes).
 PDF statistics:
- 628 PDF objects out of 1000 (max. 8388607)
- 147 named destinations out of 1000 (max. 500000)
+ 640 PDF objects out of 1000 (max. 8388607)
+ 157 named destinations out of 1000 (max. 500000)
  381 words of extra memory for PDF output out of 10000 (max. 10000000)
 
