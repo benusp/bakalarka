@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  4 MAY 2016 12:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  4 MAY 2016 18:43
 entering extended mode
 **./bakalarka.tex
 (bakalarka.tex
@@ -957,7 +957,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 499.
 
-<graf_rezia.pdf, id=464, 844.83629pt x 597.432pt>
+<graf_rezia.pdf, id=468, 844.83629pt x 597.432pt>
 File: graf_rezia.pdf Graphic file (type pdf)
  <use graf_rezia.pdf>
 Package pdftex.def Info: graf_rezia.pdf used on input line 504.
@@ -967,7 +967,7 @@ Overfull \hbox (52.52689pt too wide) in paragraph at lines 503--507
  |  []  
  []
 
-[29 <./graf_rezia.pdf>] <graf_sekvencne.pdf, id=474, 844.83629pt x 597.432pt>
+[29 <./graf_rezia.pdf>] <graf_sekvencne.pdf, id=478, 844.83629pt x 597.432pt>
 File: graf_sekvencne.pdf Graphic file (type pdf)
 
 <use graf_sekvencne.pdf>
@@ -978,7 +978,7 @@ Overfull \hbox (52.52689pt too wide) in paragraph at lines 512--516
  |  []  
  []
 
-<graf_paralelne.pdf, id=475, 844.83629pt x 597.432pt>
+<graf_paralelne.pdf, id=479, 844.83629pt x 597.432pt>
 File: graf_paralelne.pdf Graphic file (type pdf)
  <use graf_paralelne.pdf>
 Package pdftex.def Info: graf_paralelne.pdf used on input line 522.
@@ -995,7 +995,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+n'
 (hyperref)                removing `\textasciicaron' on input line 529.
 
 [31 <./graf_paralelne.pdf>] [32] [33]
-<tabulka.pdf, id=501, 597.432pt x 844.83629pt>
+<tabulka.pdf, id=505, 597.432pt x 844.83629pt>
 File: tabulka.pdf Graphic file (type pdf)
  <use tabulka.pdf>
 Package pdftex.def Info: tabulka.pdf used on input line 555.
@@ -1029,96 +1029,128 @@ as been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.603  	\section{TechnickÃ¡ dokumentÃ¡cia}
-                                           [38]pdfTeX warning (ext4): destinati
-on with the same identifier (name{section.2}) has been already used, duplicate 
-ignored
+                                          
+
+pdfTeX warning: pdflatex.exe (file ./test.pdf): PDF inclusion: found PDF versio
+n <1.7>, but at most version <1.5> allowed
+<test.pdf, id=537, 614.295pt x 794.97pt>
+File: test.pdf Graphic file (type pdf)
+ <use test.pdf>
+Package pdftex.def Info: test.pdf used on input line 609.
+(pdftex.def)             Requested size: 500.0pt x 272.64801pt.
+
+Overfull \hbox (32.61005pt too wide) in paragraph at lines 608--612
+ |  []  
+ []
+
+[38 <./test.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./listener.pdf): PDF inclusion: found PDF ve
+rsion <1.7>, but at most version <1.5> allowed
+<listener.pdf, id=549, 794.97pt x 614.295pt>
+File: listener.pdf Graphic file (type pdf)
+ <use listener.pdf>
+Package pdftex.def Info: listener.pdf used on input line 617.
+(pdftex.def)             Requested size: 500.0pt x 163.08768pt.
+
+Overfull \hbox (101.66142pt too wide) in paragraph at lines 617--620
+ []  
+ []
+
+[39 <./listener.pdf>]pdfTeX warning (ext4): destination with the same identifie
+r (name{section.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.610  	\section{PouÅ¾Ã­vateÄ¾skÃ¡ prÃ­ruÄka}
+l.629  	\section{PouÅ¾Ã­vateÄ¾skÃ¡ prÃ­ruÄka}
                                               
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 610.
+(hyperref)                removing `\textasciicaron' on input line 629.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 610.
+(hyperref)                removing `\textasciicaron' on input line 629.
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 615.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 634.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (149.06586pt too wide) in paragraph at lines 615--616
+Overfull \hbox (149.06586pt too wide) in paragraph at lines 634--635
 []$\T1/pcr/m/n/10.95 http : / / www . oracle . com / technetwork / java / javas
 e / downloads / jre7-[]downloads-[]1880261 .$
  []
 
 
-Overfull \hbox (2.2753pt too wide) in paragraph at lines 616--617
+Overfull \hbox (2.2753pt too wide) in paragraph at lines 635--636
 []\T1/ptm/m/n/10.95 Stiahnu´ a na-in-²ta-lo-va´ vý-vo-jové pro-stre-die Ec-lips
 e Mars.2 z []$\T1/pcr/m/n/10.95 https : / / eclipse .$
  []
 
 
-Overfull \hbox (32.72827pt too wide) in paragraph at lines 617--618
+Overfull \hbox (32.72827pt too wide) in paragraph at lines 636--637
 []\T1/ptm/m/n/10.95 Stiahnu´ a na-in-²ta-lo-va´ Apa-che Ma-ven z []$\T1/pcr/m/n
 /10.95 https : / / maven . apache . org / download .$
  []
 
 
-Overfull \hbox (1.30464pt too wide) in paragraph at lines 618--619
+Overfull \hbox (1.30464pt too wide) in paragraph at lines 637--638
 []\T1/ptm/m/n/10.95 Vygenerova´ Apa-che Ma-ven pro-jekt. Po-u-ºili sme ná-vod z
 o stránky pra-cov-ného rámca
  []
 
 
-Overfull \hbox (10.09602pt too wide) in paragraph at lines 619--620
+Overfull \hbox (10.09602pt too wide) in paragraph at lines 638--639
 []$\T1/pcr/m/n/10.95 http : / / mvnrepository . com / artifact / org . testng /
  testng / 6 . 9 . 10$[]
  []
 
 
-Overfull \hbox (47.92735pt too wide) in paragraph at lines 620--621
+Overfull \hbox (47.92735pt too wide) in paragraph at lines 639--640
 []\T1/ptm/m/n/10.95 Stiahnu´ Randoop-2.1.4.jar z []$\T1/pcr/m/n/10.95 https : /
  / github . com / randoop / randoop / releases /$
  []
 
 
-Overfull \hbox (9.5108pt too wide) in paragraph at lines 622--623
+Overfull \hbox (9.5108pt too wide) in paragraph at lines 641--642
 \T1/ptm/m/n/10.95 C:\Users\Peto\workspace\bakalarka>java -ea -classpath randoop
 -2.1.4.jar;target\classes
  []
 
 
-Overfull \hbox (5.2331pt too wide) in paragraph at lines 622--623
+Overfull \hbox (5.2331pt too wide) in paragraph at lines 641--642
 \T1/ptm/m/n/10.95 ran-doop.main.Main gen-tests --classlist=classes.txt --output
 limit=100. Sú-bor clas-ses.txt,
  []
 
-[39]
-Overfull \hbox (84.31003pt too wide) in paragraph at lines 626--627
+[40]
+Overfull \hbox (84.31003pt too wide) in paragraph at lines 645--646
 []\T1/ptm/m/n/10.95 Pri pa-ra-lel-ných tes-toch po-u-ºi-jeme pre JU-nit pri-po-
 je-nie kniº-nice org.junit.experimental.ParallelComputer.
  []
 
-[40]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 646.
- [41]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 646.
+[41] [42]pdfTeX warning (ext4): destination with the same identifier (name{sect
+ion.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.667 	\section{Obsah priloÅ¾enÃ©ho mÃ©dia}
+                                           
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 681.
+ [43]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 681.
  (bakalarka.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 646.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 646.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 681.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 681.
 Package rerunfilecheck Info: File `bakalarka.out' has not changed.
-(rerunfilecheck)             Checksum: 90CF247DFC22B4629D490D6D6D1CD3EC;3692.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 646.
+(rerunfilecheck)             Checksum: 73EAF55ED57B0573BFD86886506B7477;3761.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 681.
  ) 
 Here is how much of TeX's memory you used:
- 9717 strings out of 493634
- 135750 string characters out of 3141317
+ 9728 strings out of 493634
+ 135898 string characters out of 3141317
  239372 words of memory out of 3000000
- 12784 multiletter control sequences out of 15000+200000
+ 12792 multiletter control sequences out of 15000+200000
  61648 words of font info for 83 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  29i,11n,43p,1524b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1128,9 +1160,9 @@ Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on bakalarka.pdf (46 pages, 584109 bytes).
+Output written on bakalarka.pdf (48 pages, 605475 bytes).
 PDF statistics:
- 640 PDF objects out of 1000 (max. 8388607)
- 157 named destinations out of 1000 (max. 500000)
- 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 666 PDF objects out of 1000 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
+ 405 words of extra memory for PDF output out of 10000 (max. 10000000)
 

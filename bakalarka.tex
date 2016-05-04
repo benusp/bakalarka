@@ -602,7 +602,26 @@
 	\setcounter{section}{0}
  	\section{Technická dokumentácia}
  	
+ 	Priebeh testovania zobrazujú diagramy na obrázkoch 4 a 5. Na obrázku 4 je diagram vykonávania testu pre každú testovaciu triedu. Ako môžeme vidieť každá trieda sa vykonáva 100-krát, meriame čas pred spustením a po spustení testu a pred spustením sa priradí k spúšťaču správny listener. V programe je tento diagram implementovaný pomocou 4 tried. 2 triedy pre TestNG a 2 pre JUnit a z týchto dvojíc je vždy jedna na sekvenčné a jedna na paralelné testy. Rozdelené sú pre to, že sú tam odlišnosti v zdrojovom kóde v spúšťaní medzi týmito pracovnými rámcami a aj medzi paralelným a sekvenčným spustením testov, ale postup vykonávanie je veľmi podobný. Aby nevznikla zbytočná duplicita tak sme dali celý postup do jedného diagramu. Pri paralelných JUnit testoch sa nenastavuje počet vlákien explicitne, pretože to spúšťač neumožňuje.
  	
+ 	\begin{center}
+ 		\hspace*{-2.5cm} 
+ 		\includegraphics[width = 500pt, trim = 0pt 440pt 0pt 20pt]{test}
+ 		\newline
+ 		\tiny Obr. 4. Diagram vykonávania testov.
+ 	\end{center}
+ 	
+ 	Na obrázku 5 je diagram, zobrazujúci priebeh testovania každej triedy. Pred a po každej metóde sa zisťuje čas, aby sme vedeli zistiť ako dlho trvá jej vykonávanie. To isté sa vykoná aj pred vykonaním prvej a poslednej metódy v celej triede pre získanie celkového času.
+ 	
+ 	\begin{center}
+ 		\includegraphics[width = 500pt, trim = 0pt 315pt 0pt 40pt, clip]{listener}
+ 		\newline
+ 		\tiny Obr. 5. Diagram priebehu testu testovacej triedy.
+ 	\end{center}
+ 	
+ 	Rovnakým spôsobom boli merané aj časy vykonávania testov mimo testovania, ale boli použité samostatné triedy.
+ 	
+ 	Okrem testovacích tried a listenerov, ktorých modely sú na diagramoch obsahuje projekt aj dve testované triedy. Tieto triedy počítajú prvočísla a ich metódy sú volané v testovacích metódach už spomínaných tried.
  	
  	%Na začiatku práce sme zúžili okruh, na ktorý sa v rámci témy budeme zameriavať na jednotkové testovanie. Tým začínala analytická časť práce, v ktorej sme hľadali dostupné pracovné rámce pre jazyky C\# a Java. Po analytickej časti sme sa rozhodli zamerať na jazyk Java a implementovali sme jednotkové testy pre viacero pracovných rámcov. Testy boli implementované pomocou generatívneho pracovného rámca Randoop a vývojového prostredia Eclipse Mars.2. Používali sme Java virtuálny stroj verzie 7, update 80. Testy boli po implementácií opakovane spúšťané v cykle volaním zo zdrojového kódu programu. Zaznamenávali sme čas, ktorý testy potrebovali na vykonanie a následne sme získané dáta vyhodnotili. Okrem vyhodnocovania času sme vyhodnocovali aj iné vlastnosti pracovných rámcov, ktoré priamo ovplyvňujú prácu s nimi. Na základe tohto hodnotenia sme zostavili rebríček pracovných rámcov podľa ich vlastností. Prílohou k práci sú aj zdrojové kódy testov a testovaných tried a aj výsledky v xlsx súbore s presnými časmi testov. Aby sme zabezpečili čo najmenšie odchýlky počas testovania, počas testov neboli na počítači spustené žiadne aplikácie okrem Eclipse, bol napojený na zdroj elektrickej energie, odpojený od internetu(aby sme zabránili operačnému systému alebo aplikácií bežiacej na pozadí sťahovať a inštalovať aktualizácia a pod.) a v možnostiach napájania bol nastavený maximálny výkon.
  	
@@ -643,4 +662,20 @@
  	%Triedy RunTests a RunTests2 slúžia na opakované spúšťanie testovacích tried. Rozdiel medzi nimi je v tom, že RunTests2 zaznamenáva čas aj pred a po volaní testovacej triedy z nej, narozdiel od RunTests, ktorá spracováva iba čas z listenerov. RunTests bola použitá na prvé testovanie, podľa ktorého sa potom do RunTests2 pridali a pozmenili trochu volania testovacích tried.
  	
  %	Súbor test.xml je konfiguračným súborom pracovného rámca TestNG a slúži na demonštráciu spúšťania JUnit testov prostredníctvom TestNG.	
+ 
+	\newpage
+	\section{Obsah priloženého média}
+	
+	dopíšem aj cesty k súborom keď to budem mať už pripravené
+	\begin{itemize}
+		\item 	pdf s elektronickou verziou bakalárskej práce
+		\item	zdrojové kódy programu
+		\item	namerané hodnoty z testovania vo formáte xlsx
+	\end{itemize}
+
+	
+
+	
+
+	
 \end{document}
