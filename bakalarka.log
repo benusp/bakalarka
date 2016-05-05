@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  4 MAY 2016 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.26)  5 MAY 2016 15:06
 entering extended mode
 **./bakalarka.tex
 (bakalarka.tex
@@ -424,11 +424,7 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidth=\dimen112
 \titlewidthlast=\dimen113
 \titlewidthfirst=\dimen114
-) ("C:\Users\Peto\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
-\Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
@@ -507,6 +503,11 @@ Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count101
+
+("C:\Users\Peto\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen116
 \Fld@menulength=\count102
@@ -542,7 +543,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 
 Package hyperref Warning: Unexpected value for option `hidelinks'
-(hyperref)                is ignored on input line 22.
+(hyperref)                is ignored on input line 23.
 
 ("C:\Users\Peto\AppData\Local\Programs\MiKTeX 2.9\tex\latex\cite\cite.sty"
 LaTeX Info: Redefining \cite on input line 302.
@@ -637,21 +638,21 @@ Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 ) (bakalarka.aux)
 \openout1 = `bakalarka.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 39.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -674,7 +675,7 @@ i"
 \everyMPtoPDFconversion=\toks26
 )
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 39.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -683,9 +684,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count131
 )
-LaTeX Info: Redefining \ref on input line 38.
-LaTeX Info: Redefining \pageref on input line 38.
-LaTeX Info: Redefining \nameref on input line 38.
+LaTeX Info: Redefining \ref on input line 39.
+LaTeX Info: Redefining \pageref on input line 39.
+LaTeX Info: Redefining \nameref on input line 39.
 
 (bakalarka.out) (bakalarka.out)
 \@outlinefile=\write4
@@ -729,77 +730,57 @@ LaTeX Info: Redefining \nameref on input line 38.
 
 \myind=\skip58
 \myrulelength=\skip59
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 61
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 63
 .
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 61
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 63
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd"
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 61
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 63
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 61
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 63
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd"
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 61.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 63.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 61.
-
-Overfull \hbox (17.0pt too wide) in paragraph at lines 61--62
-[]$[]$ 
- []
-
-
-Overfull \hbox (17.0pt too wide) in paragraph at lines 65--66
-[]$[]$ 
- []
-
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 69.
-
-Overfull \hbox (17.0pt too wide) in paragraph at lines 69--70
-[]$[]$ 
- []
-
-
-Overfull \hbox (17.0pt too wide) in paragraph at lines 72--73
-[]$[]$ 
- []
-
-[1
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
+ [1
 Non-PDF special ignored!
 
 {C:/Users/Peto/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 92.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 100.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 	\end{titlepage}
-                      [1]
-Underfull \hbox (badness 10000) in paragraph at lines 108--113
+l.107 	\end{titlepage}
+                       [1]
+Underfull \hbox (badness 10000) in paragraph at lines 116--121
 
  []
 
@@ -807,7 +788,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.116 	\end{titlepage}
+l.124 	\end{titlepage}
                        [1] (bakalarka.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
@@ -824,81 +805,81 @@ l.43 ...ried a met\IeC {\'o}d}{23}{subsection.6.3}
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.142 	P
+l.150 	P
         racovnÃ½ rÃ¡mec, ktorÃ½ by dokÃ¡zal automaticky vykonÃ¡vaÅ¥ jednotko...
 [1]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.150 	\newpage
+l.158 	\newpage
                 [2]
-
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 155.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 156.
-
-[3]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 163.
 
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 164.
+
+[3]
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 171.
+
 [4]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 178.
+(hyperref)                removing `\textasciicaron' on input line 186.
 
 [5]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 187.
+(hyperref)                removing `\textasciicaron' on input line 195.
 
 [6]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 197.
+(hyperref)                removing `\textasciicaron' on input line 205.
 
 [7]
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 205.
+(hyperref)                removing `\textasciicaron' on input line 213.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 205.
+(hyperref)                removing `\textasciicaron' on input line 213.
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 224.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 232.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 224.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 232.
  [9] [10]
 [11] [12]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 272.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 280.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 272.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 280.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 272.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 280.
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
@@ -906,64 +887,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 441.
+(hyperref)                removing `\textasciicaron' on input line 449.
 
 [23]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 453.
+(hyperref)                removing `\textasciicaron' on input line 461.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 453.
+(hyperref)                removing `\textasciicaron' on input line 461.
 
 [24] [25]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 468.
+(hyperref)                removing `\textasciicaron' on input line 476.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 468.
+(hyperref)                removing `\textasciicaron' on input line 476.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 477.
+(hyperref)                removing `\textasciicaron' on input line 485.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 477.
+(hyperref)                removing `\textasciicaron' on input line 485.
 
 [26]
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 480.
+(hyperref)                removing `\textasciicaron' on input line 488.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 483.
+(hyperref)                removing `\textasciicaron' on input line 491.
 
 [27] [28]
 
 Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 499.
+(hyperref)                removing `\textasciicaron' on input line 507.
 
 <graf_rezia.pdf, id=468, 844.83629pt x 597.432pt>
 File: graf_rezia.pdf Graphic file (type pdf)
  <use graf_rezia.pdf>
-Package pdftex.def Info: graf_rezia.pdf used on input line 504.
+Package pdftex.def Info: graf_rezia.pdf used on input line 512.
 (pdftex.def)             Requested size: 500.0pt x 294.40074pt.
 
-Overfull \hbox (52.52689pt too wide) in paragraph at lines 503--507
+Overfull \hbox (52.52689pt too wide) in paragraph at lines 511--515
  |  []  
  []
 
@@ -971,20 +952,20 @@ Overfull \hbox (52.52689pt too wide) in paragraph at lines 503--507
 File: graf_sekvencne.pdf Graphic file (type pdf)
 
 <use graf_sekvencne.pdf>
-Package pdftex.def Info: graf_sekvencne.pdf used on input line 513.
+Package pdftex.def Info: graf_sekvencne.pdf used on input line 521.
 (pdftex.def)             Requested size: 500.0pt x 294.40074pt.
 
-Overfull \hbox (52.52689pt too wide) in paragraph at lines 512--516
+Overfull \hbox (52.52689pt too wide) in paragraph at lines 520--524
  |  []  
  []
 
 <graf_paralelne.pdf, id=479, 844.83629pt x 597.432pt>
 File: graf_paralelne.pdf Graphic file (type pdf)
  <use graf_paralelne.pdf>
-Package pdftex.def Info: graf_paralelne.pdf used on input line 522.
+Package pdftex.def Info: graf_paralelne.pdf used on input line 530.
 (pdftex.def)             Requested size: 500.0pt x 294.40074pt.
 
-Overfull \hbox (52.52689pt too wide) in paragraph at lines 521--525
+Overfull \hbox (52.52689pt too wide) in paragraph at lines 529--533
  |  []  
  []
 
@@ -992,165 +973,136 @@ Overfull \hbox (52.52689pt too wide) in paragraph at lines 521--525
 
 Package hyperref Warning: Composite letter `\textasciicaron+n'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 529.
+(hyperref)                removing `\textasciicaron' on input line 537.
 
 [31 <./graf_paralelne.pdf>] [32] [33]
 <tabulka.pdf, id=505, 597.432pt x 844.83629pt>
 File: tabulka.pdf Graphic file (type pdf)
  <use tabulka.pdf>
-Package pdftex.def Info: tabulka.pdf used on input line 555.
+Package pdftex.def Info: tabulka.pdf used on input line 563.
 (pdftex.def)             Requested size: 400.0pt x 96.97571pt.
 
-Overfull \hbox (1.66142pt too wide) in paragraph at lines 555--558
+Overfull \hbox (1.66142pt too wide) in paragraph at lines 563--566
  []  
  []
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 560.
+(hyperref)                removing `\textasciicaron' on input line 568.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 560.
+(hyperref)                removing `\textasciicaron' on input line 568.
 
 
-Overfull \hbox (0.53429pt too wide) in paragraph at lines 561--562
+Overfull \hbox (0.53429pt too wide) in paragraph at lines 569--570
 \T1/ptm/m/n/10.95 Vyhodnotením sme zís-kali po-rov-na-nie pra-cov-ných rám-cov 
 pod©a rôz-nych kri-té-rií, ale kaºdý
  []
 
 [34 <./tabulka.pdf>] [35] [36] (bakalarka.bbl) [37]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 600.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 608.
 pdfTeX warning (ext4): destination with the same identifier (name{section.1}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.603  	\section{TechnickÃ¡ dokumentÃ¡cia}
+l.611  	\section{TechnickÃ¡ dokumentÃ¡cia}
                                           
+<testng.jpg, id=537, 344.78813pt x 40.65187pt>
+File: testng.jpg Graphic file (type jpg)
+ <use testng.jpg>
+Package pdftex.def Info: testng.jpg used on input line 622.
+(pdftex.def)             Requested size: 320.0pt x 37.72954pt.
+
 
 pdfTeX warning: pdflatex.exe (file ./test.pdf): PDF inclusion: found PDF versio
 n <1.7>, but at most version <1.5> allowed
-<test.pdf, id=537, 614.295pt x 794.97pt>
+<test.pdf, id=538, 614.295pt x 794.97pt>
 File: test.pdf Graphic file (type pdf)
  <use test.pdf>
-Package pdftex.def Info: test.pdf used on input line 609.
-(pdftex.def)             Requested size: 500.0pt x 272.64801pt.
+Package pdftex.def Info: test.pdf used on input line 631.
+(pdftex.def)             Requested size: 500.0pt x 231.95064pt.
 
-Overfull \hbox (32.61005pt too wide) in paragraph at lines 608--612
+Overfull \hbox (32.61005pt too wide) in paragraph at lines 630--634
  |  []  
  []
 
-[38 <./test.pdf>]
+[38 <./testng.jpg> <./test.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./listener.pdf): PDF inclusion: found PDF ve
 rsion <1.7>, but at most version <1.5> allowed
-<listener.pdf, id=549, 794.97pt x 614.295pt>
+<listener.pdf, id=550, 794.97pt x 614.295pt>
 File: listener.pdf Graphic file (type pdf)
  <use listener.pdf>
-Package pdftex.def Info: listener.pdf used on input line 617.
+Package pdftex.def Info: listener.pdf used on input line 639.
 (pdftex.def)             Requested size: 500.0pt x 163.08768pt.
 
-Overfull \hbox (101.66142pt too wide) in paragraph at lines 617--620
+Overfull \hbox (101.66142pt too wide) in paragraph at lines 639--642
  []  
  []
 
-[39 <./listener.pdf>]pdfTeX warning (ext4): destination with the same identifie
-r (name{section.2}) has been already used, duplicate ignored
+<priklad_testu.jpg, id=552, 312.41719pt x 197.23688pt>
+File: priklad_testu.jpg Graphic file (type jpg)
+ <use priklad_testu.jpg>
+Package pdftex.def Info: priklad_testu.jpg used on input line 649.
+(pdftex.def)             Requested size: 350.0pt x 220.96999pt.
+
+[39 <./listener.pdf>] [40 <./priklad_testu.jpg>]pdfTeX warning (ext4): destinat
+ion with the same identifier (name{section.2}) has been already used, duplicate
+ ignored
 <to be read again> 
                    \relax 
-l.629  	\section{PouÅ¾Ã­vateÄ¾skÃ¡ prÃ­ruÄka}
+l.660  	\section{PouÅ¾Ã­vateÄ¾skÃ¡ prÃ­ruÄka}
                                               
 
 Package hyperref Warning: Composite letter `\textasciicaron+l'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 629.
+(hyperref)                removing `\textasciicaron' on input line 660.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 629.
+(hyperref)                removing `\textasciicaron' on input line 660.
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 634.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 665.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (149.06586pt too wide) in paragraph at lines 634--635
-[]$\T1/pcr/m/n/10.95 http : / / www . oracle . com / technetwork / java / javas
-e / downloads / jre7-[]downloads-[]1880261 .$
- []
-
-
-Overfull \hbox (2.2753pt too wide) in paragraph at lines 635--636
+Underfull \hbox (badness 4013) in paragraph at lines 666--667
 []\T1/ptm/m/n/10.95 Stiahnu´ a na-in-²ta-lo-va´ vý-vo-jové pro-stre-die Ec-lips
-e Mars.2 z []$\T1/pcr/m/n/10.95 https : / / eclipse .$
+e Mars.2 z []$\T1/pcr/m/n/10.95 https : / /$
  []
 
 
-Overfull \hbox (32.72827pt too wide) in paragraph at lines 636--637
+Underfull \hbox (badness 1178) in paragraph at lines 667--668
 []\T1/ptm/m/n/10.95 Stiahnu´ a na-in-²ta-lo-va´ Apa-che Ma-ven z []$\T1/pcr/m/n
-/10.95 https : / / maven . apache . org / download .$
+/10.95 https : / / maven . apache . org /$
  []
 
-
-Overfull \hbox (1.30464pt too wide) in paragraph at lines 637--638
-[]\T1/ptm/m/n/10.95 Vygenerova´ Apa-che Ma-ven pro-jekt. Po-u-ºili sme ná-vod z
-o stránky pra-cov-ného rámca
- []
-
-
-Overfull \hbox (10.09602pt too wide) in paragraph at lines 638--639
-[]$\T1/pcr/m/n/10.95 http : / / mvnrepository . com / artifact / org . testng /
- testng / 6 . 9 . 10$[]
- []
-
-
-Overfull \hbox (47.92735pt too wide) in paragraph at lines 639--640
-[]\T1/ptm/m/n/10.95 Stiahnu´ Randoop-2.1.4.jar z []$\T1/pcr/m/n/10.95 https : /
- / github . com / randoop / randoop / releases /$
- []
-
-
-Overfull \hbox (9.5108pt too wide) in paragraph at lines 641--642
-\T1/ptm/m/n/10.95 C:\Users\Peto\workspace\bakalarka>java -ea -classpath randoop
--2.1.4.jar;target\classes
- []
-
-
-Overfull \hbox (5.2331pt too wide) in paragraph at lines 641--642
-\T1/ptm/m/n/10.95 ran-doop.main.Main gen-tests --classlist=classes.txt --output
-limit=100. Sú-bor clas-ses.txt,
- []
-
-[40]
-Overfull \hbox (84.31003pt too wide) in paragraph at lines 645--646
-[]\T1/ptm/m/n/10.95 Pri pa-ra-lel-ných tes-toch po-u-ºi-jeme pre JU-nit pri-po-
-je-nie kniº-nice org.junit.experimental.ParallelComputer.
- []
-
-[41] [42]pdfTeX warning (ext4): destination with the same identifier (name{sect
-ion.3}) has been already used, duplicate ignored
+[41]pdfTeX warning (ext4): destination with the same identifier (name{section.3
+}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.667 	\section{Obsah priloÅ¾enÃ©ho mÃ©dia}
+l.687 	\section{Obsah priloÅ¾enÃ©ho mÃ©dia}
                                            
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 681.
- [43]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 681.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 702.
+ [42]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 702.
  (bakalarka.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 681.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 681.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 702.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 702.
 Package rerunfilecheck Info: File `bakalarka.out' has not changed.
 (rerunfilecheck)             Checksum: 73EAF55ED57B0573BFD86886506B7477;3761.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 681.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 702.
  ) 
 Here is how much of TeX's memory you used:
- 9728 strings out of 493634
- 135898 string characters out of 3141317
- 239372 words of memory out of 3000000
- 12792 multiletter control sequences out of 15000+200000
+ 9720 strings out of 493634
+ 135910 string characters out of 3141317
+ 239382 words of memory out of 3000000
+ 12795 multiletter control sequences out of 15000+200000
  61648 words of font info for 83 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  29i,11n,43p,1524b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1160,9 +1112,9 @@ Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on bakalarka.pdf (48 pages, 605475 bytes).
+Output written on bakalarka.pdf (47 pages, 640423 bytes).
 PDF statistics:
- 666 PDF objects out of 1000 (max. 8388607)
- 159 named destinations out of 1000 (max. 500000)
- 405 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 643 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
+ 415 words of extra memory for PDF output out of 10000 (max. 10000000)
 

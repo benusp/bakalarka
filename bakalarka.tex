@@ -3,6 +3,7 @@
 \usepackage[slovak]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\PassOptionsToPackage{hyphens}{url}
 \usepackage{mathptmx}
 %\usepackage[IL2]{fontenc}
 \usepackage{babel}
@@ -15,7 +16,7 @@
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{titlesec}
-\usepackage{url} % príkaz \url na formátovanie URL
+%\usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
 \hypersetup{
 	hidelinks = true
@@ -38,6 +39,7 @@
 \begin{document}
 	
 	\begin{titlepage}
+		\centering
 		\newlength{\myind}
 		\addtolength{\myind}{57mm}
 		
@@ -57,26 +59,32 @@
 		\end{center}
 
 		
-		\vspace{4mm}
+	%	\vspace{4mm}
 		\myrule
 		
-		\vspace{55mm}
+		\begin{center}
+			FIIT-5212-71998
+		\end{center}
+		
+		\vspace{40mm}
 		
 		\mycbox{Peter Beňuš}
 		
 		\vspace{10mm}
 		
-		\mycbox{\LARGE \textbf{Automatické testovanie softvéru}}
+		\mycbox{\LARGE \textbf{ \MakeUppercase {Automatické testovanie softvéru}}}
 		
 		\vspace{4mm}
-		\mycbox{\large Bakalársky projekt 1}
+		\mycbox{\large Bakalársky práca}
 		
 		
 		\vfill
 		\begin{flushleft}
 			Študijný program: Informatika\\
+			Študijný odbor: 9.2.1 Informatika\\
+			Miesto vypracovania: Ústav informatiky, informačných systémov a softvérového inžinierstva, FIIT STU v Bratislave\\
 			Vedúci bakalárskeho projektu: Ing. Karol Rástočný\\
-			Máj 2016
+			máj 2016
 		\end{flushleft}
 	\end{titlepage}
 	
@@ -89,13 +97,13 @@
 		\end{center}
 		%\fontsize{14}{17}\MakeUppercase{\textbf{Automatické testovanie softvéru}}\\
 		%\\
-		\section*{Anotácia}
+			\section*{Anotácia}
 		Študijný program: Informatika\\
 		Autor: Peter Beňuš\\
 		Názov bakalárskej práce: Automatické testovanie softvéru \\
 		Vedúci bakalárskej práce: Ing. Karol Rástočný\\
 		máj 2016\\
-		Práca sa venuje jednotkovému testovaniu softvéru. Obsahuje analýzu vlastností jednotkového testovania, z ktorých vyplývajú požiadavky na pracovné rámce určené na jednotkové testovanie. Na základe vlastností jednotkového testovania sú odvodené vlastnosti ideálneho testovacieho pracovného na jednotkové testovanie. Vybraných je niekoľko pracovných rámcov pre jazyk C\# a Java patriacich do skupiny xUnit. Tieto pracovné rámce boli analyzované a pre jazyk Java aj experimentálne porovnané. Každý pracovný rámec prináša zo sebou výhody aj nevýhody oproti ostatným. Porovnaním pracovných rámcov sme dospeli k vyhodnoteniu a určeniu toho, ktorý má najlepšie vlastnosti.
+		Práca sa venuje jednotkovému testovaniu softvéru. Obsahuje analýzu vlastností jednotkového testovania, z ktorých vyplývajú požiadavky na pracovné rámce určené na jednotkové testovanie. Na základe vlastností jednotkového testovania sme odvodili vlastnosti ideálneho testovacieho pracovného rámca na jednotkové testovanie. Vybraných je niekoľko pracovných rámcov pre jazyk C\# a Java patriacich do skupiny xUnit. Tieto pracovné rámce boli analyzované a pre jazyk Java aj experimentálne porovnané na prototype, ktorý riešil matematické úlohy. Každý pracovný rámec prináša zo sebou výhody aj nevýhody oproti ostatným. Porovnaním vlastností pracovných rámcov sme určili ich vhodnosť pre špecifické softvérové projekty.
 	\end{titlepage}
 	
 	\begin{titlepage}
@@ -145,7 +153,7 @@
 	
 	V piatej kapitole opisujeme pracovné rámce na jednotkové testovanie pre jazyky C\# a Java. Kapitola obsahuje aj popis vlastností skupiny xUnit, do ktorej všetky tieto pracovné rámce patria.
 	
-	Kapitoly 6, 7 a 8 sú venované metóde, ktorou boli pracovné rámce testované, hodnotené a aké ich porovnaniu na základe zistených vlastností. Rámce sú zoradené podľa vhodnosti použitia, ale uvádzame aj ich vhodnosť na rôzne typy projektov, pretože najvhodnejší pracovný rámec na jeden typ projektu nemusí byť rovnako vhodný na všetky.	
+	Kapitoly 6, 7 a 8 sú venované metóde testovania, hodnotenia a ich porovnania. Vychádzali sme s informácií získaných počas experimentálneho testovania pracovných rámcov na prototype vykonávajúcom matematické výpočty. Rámce sú zoradené podľa vhodnosti použitia, ale uvádzame aj ich vhodnosť na rôzne typy projektov, pretože najvhodnejší pracovný rámec na jeden typ projektu nemusí byť rovnako vhodný na všetky.	
 	
 	\newpage
 	\thispagestyle{plain}
@@ -571,7 +579,7 @@
 	\section{Záver}
 	V práci sme analyzovali testovanie softvéru a zamerali sme sa na analyzovanie jednotkového testovania. Analýzou vlastností jednotkového testovania sa nám podarilo vytvoriť teoretický koncept ideálneho pracovného rámca pre jednotkové testovanie. Snažili sme sa vlastnosti určovať tak, aby sme hovorili o uskutočniteľných vlastnostiach, resp. už skutočných vlastnostiach, ale zatiaľ nie spojených do jedného pracovného rámca, a nebolo to niečo nemožné v realite. Tieto vlastnosti sme porovnali s dostupnými informáciami o vlastnostiach niekoľkých existujúcich pracovných rámcov zo skupiny xUnit. Vybrali sme viacero pracovných rámcov pre jazyk Java. Vlastnosti týchto pracovných rámcov sme porovnali s vlastnosťami ideálneho pracovného rámca. Zhodnotili sme, ktoré vlastnosti pracovné rámce implementujú a ktoré naopak ešte nie alebo ich implementujú len čiastočne. Na základe predbežného hodnotenia, nepotvrdeného testami sa javil najlepší pracovný rámec Randoop. Po testoch na vybraných pracovných rámcoch sa tento predpoklad potvrdil a podarilo sa nám zoradiť vybrané pracovné rámce podľa vhodnosti použitia a zároveň určiť, na ktoré typy projektov sú jednotlivé pracovné rámce vhodné.
 	
-	Samozrejme nemôžeme ostať tam, kde sme teraz a treba sa posúvať stále ďalej. Pracovné rámce sa majú stále ešte v čom zlepšovať. Veľmi nápomocným zlepšením by v praxi bola určite možnosť automatického spúšťania len tých testov, ku ktorým sa viaže nejaká zmena v zdrojovom kóde od posledného testovania. Taktiež by bolo posunom vpred aj rozšírenie možnosti automatického generovania testov, pretože teraz je to viazané v podstate len na jeden pracovný rámec, aj keď sa dajú tieto testy za istých podmienok spustiť aj pomocou iných pracovných rámcov, ale vieme tým pádom využiť pri generovaní len výhody jedného z nich. 
+	Pracovné rámce sa majú stále ešte v čom zlepšovať. Veľmi nápomocným zlepšením by v praxi bola určite možnosť automatického spúšťania len tých testov, ku ktorým sa viaže nejaká zmena v zdrojovom kóde od posledného testovania. Taktiež by bolo posunom vpred aj rozšírenie možnosti automatického generovania testov, pretože teraz je to viazané v podstate len na jeden pracovný rámec, aj keď sa dajú tieto testy za istých podmienok spustiť aj pomocou iných pracovných rámcov, ale vieme tým pádom využiť pri generovaní len výhody jedného z nich. 
 
 %	\section{Ciele a záver práce}
 	
@@ -602,54 +610,66 @@
 	\setcounter{section}{0}
  	\section{Technická dokumentácia}
  	
- 	Priebeh testovania zobrazujú diagramy na obrázkoch 4 a 5. Na obrázku 4 je diagram vykonávania testu pre každú testovaciu triedu. Ako môžeme vidieť každá trieda sa vykonáva 100-krát, meriame čas pred spustením a po spustení testu a pred spustením sa priradí k spúšťaču správny listener. V programe je tento diagram implementovaný pomocou 4 tried. 2 triedy pre TestNG a 2 pre JUnit a z týchto dvojíc je vždy jedna na sekvenčné a jedna na paralelné testy. Rozdelené sú pre to, že sú tam odlišnosti v zdrojovom kóde v spúšťaní medzi týmito pracovnými rámcami a aj medzi paralelným a sekvenčným spustením testov, ale postup vykonávanie je veľmi podobný. Aby nevznikla zbytočná duplicita tak sme dali celý postup do jedného diagramu. Pri paralelných JUnit testoch sa nenastavuje počet vlákien explicitne, pretože to spúšťač neumožňuje.
+ 	Priebeh testovania zobrazujú diagramy na obrázkoch 6 a 7. Na obrázku 6 je diagram vykonávania testu pre každú testovaciu triedu. Ako môžeme vidieť každá trieda sa vykonáva 100-krát, meriame čas pred spustením a po spustení testu a pred spustením sa priradí k spúšťaču správny listener (Obrázok 4 a 5).
+ 	
+ 	%\begin{center}
+ 	%	\includegraphics[width = 200pt]{junit}
+ 	%	\newline
+ 	%	\tiny Obr. 4. Naviazanie JUnit listenera.
+ 	%\end{center}
+ 	
+ 	\begin{center}
+ 		\includegraphics[width = 320pt]{testng}
+ 		\newline
+ 		\tiny Obr. 5. Naviazanie TestNG listenera.
+ 	\end{center}
+ 	
+ 	V programe je tento diagram implementovaný pomocou 4 tried. 2 triedy pre TestNG a 2 pre JUnit a z týchto dvojíc je vždy jedna na sekvenčné a jedna na paralelné testy. Rozdelené sú pre to, že sú tam odlišnosti v zdrojovom kóde v spúšťaní medzi týmito pracovnými rámcami a aj medzi paralelným a sekvenčným spustením testov, ale postup vykonávanie je veľmi podobný. Aby nevznikla zbytočná duplicita tak sme dali celý postup do jedného diagramu. Pri paralelných JUnit testoch sa nenastavuje počet vlákien explicitne, pretože to spúšťač neumožňuje.
  	
  	\begin{center}
  		\hspace*{-2.5cm} 
- 		\includegraphics[width = 500pt, trim = 0pt 440pt 0pt 20pt]{test}
+ 		\includegraphics[width = 500pt, trim = 0pt 440pt 0pt 70pt]{test}
  		\newline
- 		\tiny Obr. 4. Diagram vykonávania testov.
+ 		\tiny Obr. 6. Diagram vykonávania testov.
  	\end{center}
  	
- 	Na obrázku 5 je diagram, zobrazujúci priebeh testovania každej triedy. Pred a po každej metóde sa zisťuje čas, aby sme vedeli zistiť ako dlho trvá jej vykonávanie. To isté sa vykoná aj pred vykonaním prvej a poslednej metódy v celej triede pre získanie celkového času.
+ 	Na obrázku 7 je diagram, zobrazujúci priebeh testovania každej triedy. Pred a po každej metóde sa zisťuje čas, aby sme vedeli zistiť ako dlho trvá jej vykonávanie. To isté sa vykoná aj pred vykonaním prvej a poslednej metódy v celej triede pre získanie celkového času.
  	
  	\begin{center}
  		\includegraphics[width = 500pt, trim = 0pt 315pt 0pt 40pt, clip]{listener}
  		\newline
- 		\tiny Obr. 5. Diagram priebehu testu testovacej triedy.
+ 		\tiny Obr. 7. Diagram priebehu testu testovacej triedy.
  	\end{center}
  	
  	Rovnakým spôsobom boli merané aj časy vykonávania testov mimo testovania, ale boli použité samostatné triedy.
+ 	
+ 	Na obrázku 8 je príklad jednej z testovacích metód pracovného rámca TestNG, použitých na testovanie prototypu. Testovacie metódy vždy vytvoria objekt jednej z tried, ktoré testujeme a následne volajú metódy tejto triedy. Metódy sú volané v rámci jednej testovacej metódy niekedy aj opakovane, buď s rôznymi alebo s rovnakými argumentami. Testuje sa tým, či vracia program vždy správne hodnoty aj po viacnásobnom opakovaní volania tej istej metódy.
+ 	
+ 	\begin{center}
+ 		\includegraphics[width = 350pt]{priklad_testu}
+ 		\newline
+ 		\tiny Obr. 8. Diagram priebehu testu testovacej triedy.
+ 	\end{center}
  	
  	Okrem testovacích tried a listenerov, ktorých modely sú na diagramoch obsahuje projekt aj dve testované triedy. Tieto triedy počítajú prvočísla a ich metódy sú volané v testovacích metódach už spomínaných tried.
  	
  	%Na začiatku práce sme zúžili okruh, na ktorý sa v rámci témy budeme zameriavať na jednotkové testovanie. Tým začínala analytická časť práce, v ktorej sme hľadali dostupné pracovné rámce pre jazyky C\# a Java. Po analytickej časti sme sa rozhodli zamerať na jazyk Java a implementovali sme jednotkové testy pre viacero pracovných rámcov. Testy boli implementované pomocou generatívneho pracovného rámca Randoop a vývojového prostredia Eclipse Mars.2. Používali sme Java virtuálny stroj verzie 7, update 80. Testy boli po implementácií opakovane spúšťané v cykle volaním zo zdrojového kódu programu. Zaznamenávali sme čas, ktorý testy potrebovali na vykonanie a následne sme získané dáta vyhodnotili. Okrem vyhodnocovania času sme vyhodnocovali aj iné vlastnosti pracovných rámcov, ktoré priamo ovplyvňujú prácu s nimi. Na základe tohto hodnotenia sme zostavili rebríček pracovných rámcov podľa ich vlastností. Prílohou k práci sú aj zdrojové kódy testov a testovaných tried a aj výsledky v xlsx súbore s presnými časmi testov. Aby sme zabezpečili čo najmenšie odchýlky počas testovania, počas testov neboli na počítači spustené žiadne aplikácie okrem Eclipse, bol napojený na zdroj elektrickej energie, odpojený od internetu(aby sme zabránili operačnému systému alebo aplikácií bežiacej na pozadí sťahovať a inštalovať aktualizácia a pod.) a v možnostiach napájania bol nastavený maximálny výkon.
  	
  	\newpage
+ 	\sloppy
  	\section{Používateľská príručka}
  	
- 	Pre zopakovanie výsledkov testovania je potrebné zopakovať tieto kroky:
+ 	Návod na spustenie experimentu, ktorého zdrojový kód je na priloženom médiu.
  	
  	\begin{enumerate}
- 		\item Stiahnuť a nainštalovať virtuálny Java stroj. My sme používali verziu 7, update 80, ale možnosť spustenia by nemala ovplyvniť ani iná verzia. Je možné ju stiahnuť tu: \url{http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html}.
+ 		\item Stiahnuť a nainštalovať virtuálny Java stroj. My sme používali verziu 7, update 80, ale možnosť spustenia by nemala ovplyvniť ani iná, kompatibilná verzia. Je možné ju stiahnuť tu: \url{http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html}.
  		\item Stiahnuť a nainštalovať vývojové prostredie Eclipse Mars.2 z \url{https://eclipse.org/downloads/}.
  		\item Stiahnuť a nainštalovať Apache Maven z  \url{https://maven.apache.org/download.cgi}.
- 		\item Vygenerovať Apache Maven projekt. Použili sme návod zo stránky pracovného rámca Arquillian \url{http://arquillian.org/guides/getting_started/}.
- 		\item Pridať do závislostí projektu pracovné rámce JUnit, TestNG a Arquillian, aby Maven posťahoval všetky potrebné súbory k ich používaniu. Závislosti sa dajú po kliknutí na pom.xml súbor na záložke "Dependencies" alebo aj vložením značiek do pom.xml súboru na záložke "pom.xml". Údaje, ktoré treba vložiť pre JUnit sú tu: \url{http://mvnrepository.com/artifact/junit/junit/4.12}, pre TestNG tu: \url{http://mvnrepository.com/artifact/org.testng/testng/6.9.10} a pre Arquillian na odkaze z predchádzajúceho bodu.
  		\item Stiahnuť Randoop-2.1.4.jar z \url{https://github.com/randoop/randoop/releases/tag/v2.1.4}.
- 		\item Vytvoriť v projekte triedy, ktoré budeme testovať. My sme vytvorili triedu, ktorá hľadá prvočísla a triedu, ktorá vypíše prvočísla, ktoré od nej dostane pomocou metód.
- 		\item Vygenerovať testy pomocou Randoop. Použili sme tento príkaz v príkazovom riadku {C:\textbackslash Users\textbackslash Peto\textbackslash workspace\textbackslash bakalarka>java -ea -classpath randoop-2.1.4.jar;target\textbackslash classes\ randoop.main.Main gentests --classlist=classes.txt --outputlimit=100}. Súbor classes.txt, ktorý používame obsahuje názvy tried, pre ktoré sa majú generovať testy. Podrobnejší návod na použitie Randoop je možné nájsť na \url{https://randoop.github.io/randoop/manual/index.html}.
- 		\item Veberieme 15 testov z vygenerovaných a upravíme v nich všetko potrebné jednotlivo pre každý pracovný rámec tak, aby boli pomocou daného rámca spustiteľné. Pridáme ešte na anotáciu, aby sa testy spúšťali v abecednom poradí podľa názvu, resp. pri TestNG rámcoch nastavím prioritu tak, aby boli spúšťané v takomto poradí. Nie je to nevyhnutné, ale uľahčí to následné vyhodnocovanie.
- 		\item Keď už máme vytvorené testy pre všetky pracovné rámce, ktoré chceme používať, vytvoríme si triedu, z ktorej budeme tieto testy opakovane spúšťať a zapisovať si výsledky do súboru. V súbore si časy ukladáme vo formáte "názov metódy";"čas metódy" a na konci aj celkový čas.
- 		\item Aby sme vedeli zistiť čas behu každej metódy potrebujeme si ešte vytvoriť listenery jeden pre TestNG a jeden pre JUnit pracovné rámce a následne spúšťaču testov povedať, aby ich použil.
- 		\item Pri paralelných testoch použijeme pre JUnit pripojenie knižnice org.junit.experimental.ParallelComputer. TestNG spúšťač umožňuje paralelné testovanie implicitne, ale treba nastaviť počet vlákien, ktoré má použiť metódou setThreadCount a metódou setParallel nastaviť paralelizáciu na úrovni metód.
- 		\item Spustíme testy so želaným počtom opakovaní (používali sme 100) a potom si údaje uložené v textovom súbore prekopírujeme do tabuľkového editora (napr. Microsoft Excel). Keďže textový súbor je vo formáte csv pri jeho otvorení sa automaticky načítajú dáta do buniek.
- 		\item Pre overenie správnosti údajov, spočítame, či sa každá metóda nachádza v súbore pre každý rámec požadovaný počet krát (pre nás 100). Keďže ich máme v stĺpcoch pod sebou dá sa to spraviť jednoducho funkciou countif(). 
- 		\item Prekopírujeme názvy metód nad stĺpce s časmi a vymažeme všetky stĺpce, v ktorých máme len názvy metód. 
- 		\item Sčítame časy metód pre každý beh testu funkciu sum().
- 		\item Vylúčime všetky testy s veľkou časovou odchýlkou a aj tie, pri ktorých sa podľa výsledkov jednoznačne vyskytla chyba (napr. namiesto času je v bunke null alebo chýba nejaká metóda z daného behu).
- 		\item Označíme stĺpec s časmi, ktorý chceme zobraziť v grafe a nájdeme medzi grafmi škatuľový graf.
- 		\item Pri paralelných testoch nevieme zabezpečiť poradie časov metód v súbore, takže prípadnú kontrolu treba zabezpečiť iným spôsobom. Časy metód sú pri týchto testoch nie sú relevantné a preto ďalej spracovávame len celkové časy pre celé triedy. 
+ 		%\item Vygenerovať testy pomocou Randoop. Použili sme tento príkaz v príkazovom riadku "java -ea -classpath randoop-2.1.4.jar;target\textbackslash classes\ randoop.main.Main gentests --classlist=classes.txt --outputlimit=100". Príkaz v takomto tvare by mal byť spúšťaný v rovnakej zložke ako projekt alebo treba použiť úplné cesty k súborom namiesto relatívnych. Súbor classes.txt, ktorý používame obsahuje názvy tried, pre ktoré sa majú generovať testy. Podrobnejší návod na použitie Randoop je možné nájsť na \url{https://randoop.github.io/randoop/manual/index.html}.
+		%\item Takto vygenerovaná trieda je základom všetkých ostatných testovacích tried.
+		\item Testovanie spúšťame spustením triedy RunTests2. Nastavením premennej count na počet opakovaní všetkých testovacích tried.
+		\item Namerané časy sa uložia do súboru testy.csv. Pred začiatkom údajov každej spúšťanej testovacej triedy je jej názov a za ním nasledujú názvy metód s časmi metód a celkový čas každého behu.
  	\end{enumerate}
  	
  	
@@ -668,9 +688,10 @@
 	
 	dopíšem aj cesty k súborom keď to budem mať už pripravené
 	\begin{itemize}
-		\item 	pdf s elektronickou verziou bakalárskej práce
-		\item	zdrojové kódy programu
-		\item	namerané hodnoty z testovania vo formáte xlsx
+		\item 	bakalarska praca.pdf - pdf s elektronickou verziou bakalárskej práce
+		\item	bakalarka-testy - zdrojové kódy programu (workspace)
+		\item 	bakalarka-testy\textbackslash vysledky testov - vysledky testov rozdelené po rámcoch v csv súboroch  
+		\item	vysledky.xlsx - namerané hodnoty z testovania
 	\end{itemize}
 
 	
